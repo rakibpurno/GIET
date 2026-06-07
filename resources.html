@@ -89,7 +89,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 });
 </script>
   
-<section class="w-full bg-[#003054] relative overflow-hidden flex flex-col justify-center items-center select-none" style="height: 414.40px;">
+<section class="w-full bg-[#003054] relative overflow-hidden flex flex-col justify-center items-center select-none pt-[72px] pb-[48px] md:pt-0 md:pb-0 md:h-[414px]">
   
   <div class="absolute z-0 pointer-events-none overflow-hidden" 
        class="hidden md:block" style="width:891px;height:594px;top:-142px;right:-100px;transform:rotate(43.37deg);position:absolute;pointer-events:none;">
@@ -100,7 +100,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
   <div class="absolute z-10 -top-[100px] -right-[100px] pointer-events-none bg-[rgba(24,144,156,0.07)] w-[400px] h-[400px] rounded-full"></div>
 
-  <div class="w-full max-w-[1200px] px-[48px] z-20 flex flex-col justify-between items-start" style="height: 270.40px;">
+  <div class="w-full max-w-[1200px] px-4 md:px-[48px] z-20 flex flex-col justify-between items-start gap-6 md:gap-0">
     
     <div class="w-full flex flex-col items-start">
         <div class="flex items-center gap-1.5 text-[12px] text-white/45 font-['Inter'] leading-[19.8px] mb-[4px]">
@@ -111,7 +111,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
         <div class="bg-[#18909C] w-[40px] h-[3px] rounded-[2px] mb-[12px]"></div>
 
-        <h1 class="text-white font-['Merriweather'] font-extrabold text-[52px] leading-[57.2px] tracking-[-1.04px] drop-shadow-sm mb-[14px]">
+        <h1 class="text-white font-['Merriweather'] font-extrabold leading-tight tracking-[-1.04px] drop-shadow-sm mb-[14px]" style="font-size:clamp(28px,5vw,52px);">
           Resources
         </h1>
 
@@ -145,7 +145,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 <section class="w-full bg-[#FFFFFF] pt-[48px] pb-[48px] md:pt-[88px] md:pb-[88px] px-4 md:px-[360px] flex flex-col items-center select-none overflow-hidden">
   
   <!-- INNER LAYOUT CONTAINER (Exact Width: 1200px Layout Engine) -->
-  <div class="w-full max-w-[1200px] flex flex-col gap-[48px] items-start text-left">
+  <div class="w-full max-w-[1200px] px-0 md:px-0 flex flex-col gap-[48px] items-start text-left">
     
     <!-- ========================================================================= -->
     <!-- TAB NAVIGATION SYSTEM (Height: 47px, Border Bottom #E4EAF0) -->
@@ -174,7 +174,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <div class="w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-[480px_1fr] border border-[#E4EAF0] rounded-[20px] bg-white overflow-hidden shadow-sm">
       
       <!-- Column 1: Image Frame -->
-      <div class="w-[480px] h-[320px] relative overflow-hidden">
+      <div class="w-full md:w-[480px] h-[220px] md:h-[320px] relative overflow-hidden">
         <span class="absolute top-[0px] left-[0px] bg-[#003054] text-white text-[10px] font-bold tracking-wider uppercase py-[4px] px-[8px] rounded-[4px] z-10">
           Issue Brief - Featured
         </span>
@@ -182,7 +182,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
       </div>
 
       <!-- Column 2: Right Content Engine -->
-      <div class="w-[718px] h-[320.5px] pt-[55.65px] pr-[32px] pb-[55.66px] pl-[32px] flex flex-col justify-between items-start">
+      <div class="w-full p-[24px] md:pt-[55px] md:pr-[32px] md:pb-[55px] md:pl-[32px] flex flex-col justify-between items-start">
         <div class="flex flex-col gap-[8px]">
           <!-- Meta Tags Structure -->
           <div class="text-[#64748B] text-[11px] font-medium flex items-center gap-[6px]">
@@ -211,10 +211,10 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <!-- ========================================================================= -->
     <!-- SECOND & THIRD GRID BLOCK (3 Columns Grid Layout Engine) -->
     <!-- ========================================================================= -->
-    <div class="w-full max-w-[1200px] grid grid-cols-3 gap-x-[20px] gap-y-[24px]">
+    <div class="w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-x-[20px] gap-y-[24px]">
       
       <!-- --- CARD 1 --- -->
-      <div class="w-[386.66px] h-[379px] border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
+      <div class="w-full border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
         <div class="flex flex-col">
           <div class="h-[160px] w-full relative overflow-hidden rounded-[8px] -mt-[3px] -mx-[3px]">
             <span class="absolute top-[0px] left-[0px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
@@ -240,7 +240,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
       </div>
 
       <!-- --- CARD 2 --- -->
-      <div class="w-[386.66px] h-[379px] border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
+      <div class="w-full border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
         <div class="flex flex-col">
           <div class="h-[160px] w-full relative overflow-hidden rounded-[8px] -mt-[3px] -mx-[3px]">
             <span class="absolute top-[0px] left-[0px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
@@ -266,7 +266,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
       </div>
 
       <!-- --- CARD 3 --- -->
-      <div class="w-[386.66px] h-[379px] border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
+      <div class="w-full border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
         <div class="flex flex-col">
           <div class="h-[160px] w-full relative overflow-hidden rounded-[8px] -mt-[3px] -mx-[3px]">
             <span class="absolute top-[0px] left-[0px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
@@ -292,7 +292,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
       </div>
 
       <!-- --- CARD 4 (3rd Row Exact Copy Design Match) --- -->
-      <div class="w-[386.66px] h-[379px] border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
+      <div class="w-full border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
         <div class="flex flex-col">
           <div class="h-[160px] w-full relative overflow-hidden rounded-[8px] -mt-[3px] -mx-[3px]">
             <span class="absolute top-[0px] left-[0px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
@@ -318,7 +318,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
       </div>
 
       <!-- --- CARD 5 (3rd Row Exact Copy Design Match) --- -->
-      <div class="w-[386.66px] h-[379px] border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
+      <div class="w-full border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
         <div class="flex flex-col">
           <div class="h-[160px] w-full relative overflow-hidden rounded-[8px] -mt-[3px] -mx-[3px]">
             <span class="absolute top-[0px] left-[0px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
@@ -344,7 +344,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
       </div>
 
       <!-- --- CARD 6 (3rd Row Exact Copy Design Match) --- -->
-      <div class="w-[386.66px] h-[379px] border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
+      <div class="w-full border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
         <div class="flex flex-col">
           <div class="h-[160px] w-full relative overflow-hidden rounded-[8px] -mt-[3px] -mx-[3px]">
             <span class="absolute top-[0px] left-[0px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
@@ -395,19 +395,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
   
   <!-- RIGHT UPPER CORNER BACKGROUND DECORATION SHAPE -->
   <!-- আপনার দেওয়া ম্যাট্রিক্স (Width: 300px, Height: 300px, Top: -60px, Left: 1680px, Background: #18909C14)  -->
-  <div style="
-        background-color: rgba(24, 144, 156, 0.08); 
-        width: 300px; 
-        height: 300px; 
-        top: -60px; 
-        left: 1680px; 
-        border-radius: 150px;
-       " 
+  <div class="hidden md:block" style="background-color:rgba(24,144,156,0.08);width:300px;height:300px;top:-60px;right:-60px;border-radius:150px;position:absolute;" 
        class="absolute z-0 pointer-events-none">
   </div>
 
   <!-- INNER CONTENT CONTAINER (Exact Width: 1104px Layout Grid Engine) -->
-  <div class="w-full max-w-[1104px] h-[418px] grid grid-cols-2 gap-[60px] items-center relative z-10">
+  <div class="w-full max-w-[1104px] grid grid-cols-1 md:grid-cols-2 gap-[40px] md:gap-[60px] items-center relative z-10 px-4 md:px-0">
     
     <!-- LEFT SIDE: TEXT CONTENT BLOCK -->
     <div class="w-full max-w-[522px] flex flex-col gap-[14px] px-4">
@@ -433,13 +426,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
     <!-- RIGHT SIDE: SEMI-TRANSPARENT FORM CONTAINER CARD -->
     <!-- Figma Config: Width 522px, Height: 473px, Background #4E4E4E1A (rgba) করা হয়েছে -->
-    <div style="
-          width: 522px; 
-          height: 473px; 
-          background-color: rgba(78, 78, 78, 0.1); 
-          border: 1px solid rgba(255, 255, 255, 0.12);
-          border-radius: 20px;
-         " 
+    <div style="background-color:rgba(78,78,78,0.1);border:1px solid rgba(255,255,255,0.12);border-radius:20px;" 
          class="p-[36px] flex flex-col justify-between shadow-xl backdrop-blur-sm">
       
       <!-- Form Headline Text -->
