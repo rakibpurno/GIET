@@ -13,7 +13,7 @@
 </head>
 <body class="bg-[#FFFFFF] text-[#0F172A] antialiased">
 
-    <nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between mx-auto select-none">
+    <nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between select-none">
     
     <div class="w-full max-w-[1104px] h-[68px] flex items-center justify-between">
       
@@ -96,10 +96,10 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <!-- 1. HERO SECTION (Width: 1920px, Height: 607.78px, Background: #003054)   -->
     <!-- ========================================================================= -->
     <section style="background: linear-gradient(rgba(0, 48, 84, 0.85), rgba(0, 48, 84, 0.95)), url('images/Image.png') center/cover no-repeat;" 
-             class="w-full h-auto md:h-[607.78px] mx-auto relative select-none flex flex-col justify-between pt-[60px]">
+             class="w-full h-auto md:h-[607.78px] relative select-none flex flex-col justify-between pt-[60px]">
         
     <!-- HERO CORE CONTAINER (Width: 1200px, Max-Width: 1200px, Padding Horizontal: 48px) -->
-<div class="w-full max-w-[1200px] mx-auto px-[48px] text-left flex flex-col gap-[11px] mt-4">
+<div class="w-full max-w-[1200px] mx-auto px-4 md:px-[48px] text-left flex flex-col gap-[11px] mt-4">
     
     <!-- 1. BREADCRUMB LAYER (Inter Regular, Size: 12px, Line Height: 100%) -->
     <div style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 100%;" 
@@ -128,9 +128,9 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
         <!-- BOTTOM 4 CATEGORY BLUR BOX MATRIX (Height: 151.78px, Background: #001430B2) -->
 <div style="background: rgba(0, 20, 48, 0.7); backdrop-filter: blur(4px); border-top: 1px solid rgba(255, 255, 255, 0.16);" 
-     class="w-full h-[151.78px] px-4 md:px-[360px] flex items-center justify-center select-none">
+     class="w-full h-auto md:h-[151.78px] py-4 md:py-0 px-4 md:px-[360px] flex items-center justify-center select-none">
     
-    <div class="w-full max-w-[1200px] grid grid-cols-4 h-full items-center">
+    <div class="w-full max-w-[1200px] grid grid-cols-2 md:grid-cols-4 h-full items-center">
         
         <!-- CAT ITEM 1 -->
         <div class="h-full pt-[28px] pr-[24px] pb-[28px] pl-[24px] flex items-start gap-4 border-r border-white/[0.09]">
@@ -211,15 +211,15 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 </div>
     </section>
 
-   <section class="w-full h-[862.53px] mx-auto pt-[72px] pb-[72px] px-4 md:px-[360px] bg-white select-none flex items-center justify-center">
-    <div class="w-full max-w-[1200px] grid grid-cols-2 gap-[72px]">
+   <section class="w-full py-[48px] md:py-[72px] px-4 md:px-[360px] bg-white select-none flex items-center justify-center">
+    <div class="w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-[40px] md:gap-[72px]">
         
-        <div class="w-[516px] flex flex-col text-left">
+        <div class="w-full flex flex-col text-left">
             <h3 style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 22px; line-height: 100%; letter-spacing: 0.88px;" 
                 class="text-[#003054] uppercase mb-[12px]">
                 Overview
             </h3>
-            <div class="bg-[#18909C] w-[516px] h-[2px] mb-[24px]"></div>
+            <div class="bg-[#18909C] w-full h-[2px] mb-[24px]"></div>
             
             <div style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 15px; line-height: 27.3px;" 
                  class="text-[#4B5563] flex flex-col gap-5 text-justify">
@@ -238,16 +238,16 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
         </div>
 
-     <div class="w-[516px] flex flex-col text-left">
+     <div class="w-full flex flex-col text-left">
     <h3 style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 22px; line-height: 100%; letter-spacing: 0.88px;" 
         class="text-[#003054] uppercase mb-[12px]">
         Our Services Include
     </h3>
-    <div class="bg-[#18909C] w-[516px] h-[2px] mb-[24px]"></div>
+    <div class="bg-[#18909C] w-full h-[2px] mb-[24px]"></div>
     
     <div class="flex flex-col">
         <!-- SERVICE 1 -->
-        <div class="w-[516px] flex items-center gap-[14px] pb-[13px] border-b border-[#E4EAF0]">
+        <div class="w-full flex items-center gap-[14px] pb-[13px] border-b border-[#E4EAF0]">
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (33).png" alt="Service Delivery Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
@@ -257,7 +257,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- SERVICE 2 -->
-        <div class="w-[516px] flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
+        <div class="w-full flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (34).png" alt="Grievance Redress Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
@@ -267,7 +267,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- SERVICE 3 -->
-        <div class="w-[516px] flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
+        <div class="w-full flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (35).png" alt="Process Mapping Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
@@ -277,7 +277,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- SERVICE 4 -->
-        <div class="w-[516px] flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
+        <div class="w-full flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (36).png" alt="Performance Management Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
@@ -287,7 +287,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- SERVICE 5 -->
-        <div class="w-[516px] flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
+        <div class="w-full flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (37).png" alt="Ethics & Integrity Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
@@ -297,7 +297,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- SERVICE 6 -->
-        <div class="w-[516px] flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
+        <div class="w-full flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (38).png" alt="Capacity Building Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
@@ -307,7 +307,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- SERVICE 7 -->
-        <div class="w-[516px] flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
+        <div class="w-full flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (39).png" alt="Stakeholder Dialogue Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
@@ -317,7 +317,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- SERVICE 8 -->
-        <div class="w-[516px] flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
+        <div class="w-full flex items-center gap-[14px] py-[13px] border-b border-[#E4EAF0]">
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (40).png" alt="Policy Briefs Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
@@ -327,7 +327,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- SERVICE 9 -->
-        <div class="w-[516px] flex items-center gap-[14px] pt-[13px]">
+        <div class="w-full flex items-center gap-[14px] pt-[13px]">
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (49).png" alt="Reform Roadmaps Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
@@ -343,9 +343,9 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 <!-- 3. PRODUCTS & SOLUTIONS (Width: 1920px, Height: 452.78px, Background #F7F9FB) -->
 <!-- ========================================================================= -->
 <section style="border-top: 1px solid #E4EAF0;" 
-         class="w-full h-[452.78px] mx-auto pt-[72px] pb-[72px] px-4 md:px-[360px] bg-[#F7F9FB] text-center select-none flex flex-col items-center justify-center">
+         class="w-full py-[48px] md:py-[72px] px-4 md:px-[360px] bg-[#F7F9FB] text-center select-none flex flex-col items-center justify-center">
     
-    <div class="w-full max-w-[1200px] px-[48px] flex flex-col gap-[52px] items-center">
+    <div class="w-full max-w-[1200px] px-4 md:px-[48px] flex flex-col gap-[52px] items-center">
         
         <!-- SECTION HEADER LINE DESIGN -->
         <div class="flex items-center justify-center gap-4 w-full">
@@ -362,10 +362,10 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- 7-COLUMN FIXED GRID METRIC ARRAY (Total Width: 1104px) -->
-        <div class="w-full max-w-[1104px] grid grid-cols-7 gap-[20px]">
+        <div class="w-full max-w-[1104px] grid grid-cols-3 md:grid-cols-7 gap-[16px] md:gap-[20px]">
             
             <!-- COL 1 -->
-            <div style="width: 140.57px; height: 225.62px;" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
                 <!-- Icon Frame: Width: 64px, Height: 64px, Border Radius: 32px -->
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (42).png" alt="Policy Reviews Icon" class="w-[28px] h-[28px] object-contain">
@@ -382,7 +382,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- COL 2 -->
-            <div style="width: 140.57px; height: 225.62px;" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (43).png" alt="Citizen Charter Icon" class="w-[28px] h-[28px] object-contain">
                 </div>
@@ -396,7 +396,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- COL 3 -->
-            <div style="width: 140.57px; height: 225.62px;" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (44).png" alt="Grievance Redress Icon" class="w-[28px] h-[28px] object-contain">
                 </div>
@@ -410,7 +410,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- COL 4 -->
-            <div style="width: 140.57px; height: 225.62px;" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (45).png" alt="Performance Management Icon" class="w-[28px] h-[28px] object-contain">
                 </div>
@@ -424,7 +424,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- COL 5 -->
-            <div style="width: 140.57px; height: 225.62px;" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (46).png" alt="Anti-Corruption Icon" class="w-[28px] h-[28px] object-contain">
                 </div>
@@ -438,7 +438,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- COL 6 -->
-            <div style="width: 140.57px; height: 225.62px;" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (47).png" alt="Capacity Building Icon" class="w-[28px] h-[28px] object-contain">
                 </div>
@@ -452,7 +452,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- COL 7 -->
-            <div style="width: 140.57px; height: 225.62px;" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (48).png" alt="Dialogue Platforms Icon" class="w-[28px] h-[28px] object-contain">
                 </div>
@@ -472,9 +472,9 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
    <!-- ========================================================================= -->
 <!-- 4. SECTION - PROJECTS (Width: 1920px, Height: 682.19px, Background: #FFFFFF) -->
 <!-- ========================================================================= -->
-<section class="w-full h-[682.19px] mx-auto pt-[80px] pb-[80px] px-4 md:px-[360px] bg-white select-none flex items-center justify-center">
+<section class="w-full py-[48px] md:py-[80px] px-4 md:px-[360px] bg-white select-none flex items-center justify-center">
     <!-- Container Matrix (Width: 1200px, Padding-X: 48px, Gap: 44px) -->
- <div class="w-full max-w-[1200px] px-[48px] flex flex-col gap-[44px]">
+ <div class="w-full max-w-[1200px] px-4 md:px-[48px] flex flex-col gap-[44px]">
         
         <!-- LIST HEADER ROW MAP (Gray border line removed) -->
         <div class="w-full flex justify-between items-end pb-4">
@@ -499,7 +499,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- 3-CARDS GRID ARRAY (Width: 1104px, Gap: 20px) -->
-        <div class="w-full max-w-[1104px] grid grid-cols-3 gap-[20px]">
+        <div class="w-full max-w-[1104px] grid grid-cols-1 md:grid-cols-3 gap-[20px]">
             
             <!-- CARD 1 -->
             <div style="width: 354.67px; height: 409px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden flex flex-col bg-white hover:shadow-md transition-all">
@@ -617,9 +617,9 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
    <!-- ========================================================================= -->
 <!-- 5. SECTION - EXPERTS (Width: 1920px, Height: 592.59px, Background: #FFFFFF) -->
 <!-- ========================================================================= -->
-<section class="w-full h-[592.59px] mx-auto pt-[80px] pb-[80px] px-4 md:px-[360px] bg-white select-none flex items-center justify-center">
+<section class="w-full py-[48px] md:py-[80px] px-4 md:px-[360px] bg-white select-none flex items-center justify-center">
     <!-- Container Matrix (Width: 1200px, Padding-X: 48px, Gap: 44px) -->
-    <div class="w-full max-w-[1200px] px-[48px] flex flex-col gap-[44px]">
+    <div class="w-full max-w-[1200px] px-4 md:px-[48px] flex flex-col gap-[44px]">
         
         <!-- LIST HEADER ROW MAP -->
         <div class="w-full flex justify-between items-end pb-4">
@@ -644,7 +644,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- 4-EXPERT CARDS ARRAY GRID (Width: 1104px, Columns: 4, Gap: 18px) -->
-        <div class="w-full max-w-[1104px] grid grid-cols-4 gap-[18px]">
+        <div class="w-full max-w-[1104px] grid grid-cols-2 md:grid-cols-4 gap-[18px]">
             
             <!-- EXPERT 1 -->
             <div style="width: 262.5px; height: 318.6px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
@@ -763,7 +763,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     </div>
 </section>
 
-       <footer class="w-full mx-auto relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
+       <footer class="w-full relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
     
     <div class="w-full max-w-[1104px] mx-auto flex flex-col md:flex-row justify-between items-start pb-[40px] px-4 md:px-0 gap-8 md:gap-0">
         
