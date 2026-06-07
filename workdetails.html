@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
     <!-- Google Fonts Framework Integration -->
 </head>
-<body class="bg-[#FFFFFF] text-[#0F172A] antialiased">
+<body class="bg-[#FFFFFF] text-[#0F172A] antialiased overflow-x-hidden">
 
     <nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between select-none">
     
@@ -350,7 +350,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         <!-- SECTION HEADER LINE DESIGN -->
         <div class="flex items-center justify-center gap-4 w-full">
             <!-- Horizontal Divider Left: Width: 387.5px, Height: 2px, Background: #18909C -->
-            <div class="bg-[#18909C] w-[387.5px] h-[2px] shrink-0"></div>
+            <div class="bg-[#18909C] w-full h-[2px] shrink-0"></div>
             
             <h2 style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 22px; line-height: 100%; letter-spacing: 0.88px;" 
                 class="text-[#003054] uppercase whitespace-nowrap">
@@ -358,21 +358,21 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </h2>
             
             <!-- Horizontal Divider Right: Width: 387.5px, Height: 2px, Background: #18909C -->
-            <div class="bg-[#18909C] w-[387.5px] h-[2px] shrink-0"></div>
+            <div class="bg-[#18909C] w-full h-[2px] shrink-0"></div>
         </div>
 
         <!-- 7-COLUMN FIXED GRID METRIC ARRAY (Total Width: 1104px) -->
         <div class="w-full max-w-[1104px] grid grid-cols-3 md:grid-cols-7 gap-[16px] md:gap-[20px]">
             
             <!-- COL 1 -->
-            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div class="px-2 pb-[14.93px] flex flex-col items-center text-center gap-[11px]">
                 <!-- Icon Frame: Width: 64px, Height: 64px, Border Radius: 32px -->
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (42).png" alt="Policy Reviews Icon" class="w-[28px] h-[28px] object-contain">
                 </div>
                 <!-- Title: Manrope 800, Size: 11.5px, Line Height: 14.95px, Letter Spacing: 0.46px -->
                 <h4 style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 11.5px; line-height: 14.95px; letter-spacing: 0.46px;" 
-                    class="text-[#003054] w-[132.95px] h-[30.91px] px-[10.48px] pb-[0.91px] uppercase flex items-center justify-center">
+                    class="text-[#003054] w-full px-[10px] pb-[0.91px] uppercase flex items-center justify-center text-center">
                     Policy Reviews & Diagnostics
                 </h4>
                 <!-- Desc: Inter 400, Size: 12px, Line Height: 18.6px, Color: #6B7280 -->
@@ -382,12 +382,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- COL 2 -->
-            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div class="px-2 pb-[14.93px] flex flex-col items-center text-center gap-[11px]">
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (43).png" alt="Citizen Charter Icon" class="w-[28px] h-[28px] object-contain">
                 </div>
                 <h4 style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 11.5px; line-height: 14.95px; letter-spacing: 0.46px;" 
-                    class="text-[#003054] w-[132.95px] h-[30.91px] px-[10.48px] pb-[0.91px] uppercase flex items-center justify-center">
+                    class="text-[#003054] w-full px-[10px] pb-[0.91px] uppercase flex items-center justify-center text-center">
                     Citizen Charter Design
                 </h4>
                 <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 18.6px;" class="text-[#6B7280]">
@@ -396,12 +396,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- COL 3 -->
-            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div class="px-2 pb-[14.93px] flex flex-col items-center text-center gap-[11px]">
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (44).png" alt="Grievance Redress Icon" class="w-[28px] h-[28px] object-contain">
                 </div>
                 <h4 style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 11.5px; line-height: 14.95px; letter-spacing: 0.46px;" 
-                    class="text-[#003054] w-[132.95px] h-[30.91px] px-[10.48px] pb-[0.91px] uppercase flex items-center justify-center">
+                    class="text-[#003054] w-full px-[10px] pb-[0.91px] uppercase flex items-center justify-center text-center">
                     Grievance Redress Systems
                 </h4>
                 <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 18.6px;" class="text-[#6B7280]">
@@ -410,12 +410,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- COL 4 -->
-            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div class="px-2 pb-[14.93px] flex flex-col items-center text-center gap-[11px]">
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (45).png" alt="Performance Management Icon" class="w-[28px] h-[28px] object-contain">
                 </div>
                 <h4 style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 11.5px; line-height: 14.95px; letter-spacing: 0.46px;" 
-                    class="text-[#003054] w-[132.95px] h-[30.91px] px-[10.48px] pb-[0.91px] uppercase flex items-center justify-center">
+                    class="text-[#003054] w-full px-[10px] pb-[0.91px] uppercase flex items-center justify-center text-center">
                     Performance Management
                 </h4>
                 <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 18.6px;" class="text-[#6B7280]">
@@ -424,12 +424,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- COL 5 -->
-            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div class="px-2 pb-[14.93px] flex flex-col items-center text-center gap-[11px]">
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (46).png" alt="Anti-Corruption Icon" class="w-[28px] h-[28px] object-contain">
                 </div>
                 <h4 style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 11.5px; line-height: 14.95px; letter-spacing: 0.46px;" 
-                    class="text-[#003054] w-[132.95px] h-[30.91px] px-[10.48px] pb-[0.91px] uppercase flex items-center justify-center">
+                    class="text-[#003054] w-full px-[10px] pb-[0.91px] uppercase flex items-center justify-center text-center">
                     Anti-Corruption Programmes
                 </h4>
                 <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 18.6px;" class="text-[#6B7280]">
@@ -438,12 +438,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- COL 6 -->
-            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div class="px-2 pb-[14.93px] flex flex-col items-center text-center gap-[11px]">
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (47).png" alt="Capacity Building Icon" class="w-[28px] h-[28px] object-contain">
                 </div>
                 <h4 style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 11.5px; line-height: 14.95px; letter-spacing: 0.46px;" 
-                    class="text-[#003054] w-[132.95px] h-[30.91px] px-[10.48px] pb-[0.91px] uppercase flex items-center justify-center">
+                    class="text-[#003054] w-full px-[10px] pb-[0.91px] uppercase flex items-center justify-center text-center">
                     Capacity Building & Training
                 </h4>
                 <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 18.6px;" class="text-[#6B7280]">
@@ -452,12 +452,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- COL 7 -->
-            <div style="" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
+            <div class="px-2 pb-[14.93px] flex flex-col items-center text-center gap-[11px]">
                 <div class="w-[64px] h-[64px] rounded-[32px] bg-[#003054] flex items-center justify-center shrink-0 overflow-hidden">
                     <img src="icons/SVG (48).png" alt="Dialogue Platforms Icon" class="w-[28px] h-[28px] object-contain">
                 </div>
                 <h4 style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 11.5px; line-height: 14.95px; letter-spacing: 0.46px;" 
-                    class="text-[#003054] w-[132.95px] h-[30.91px] px-[10.48px] pb-[0.91px] uppercase flex items-center justify-center">
+                    class="text-[#003054] w-full px-[10px] pb-[0.91px] uppercase flex items-center justify-center text-center">
                     Stakeholder Dialogue Platforms
                 </h4>
                 <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 18.6px;" class="text-[#6B7280]">
@@ -502,7 +502,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         <div class="w-full max-w-[1104px] grid grid-cols-1 md:grid-cols-3 gap-[20px]">
             
             <!-- CARD 1 -->
-            <div style="width: 354.67px; height: 409px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden flex flex-col bg-white hover:shadow-md transition-all">
+            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden flex flex-col bg-white hover:shadow-md transition-all">
                 <div class="relative h-[180px] bg-slate-900 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=400" alt="Project Cover" class="w-full h-full object-cover opacity-80">
                     <!-- Image Tag Frame: Width: 148px, Height: 21px, Background: #003054 -->
@@ -543,7 +543,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- CARD 2 -->
-            <div style="width: 354.67px; height: 409px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden flex flex-col bg-white hover:shadow-md transition-all">
+            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden flex flex-col bg-white hover:shadow-md transition-all">
                 <div class="relative h-[180px] bg-slate-900 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400" alt="Project Cover" class="w-full h-full object-cover opacity-80">
                     <span class="bg-[#003054] absolute bottom-[0px] left-[0px] text-white text-[9px] font-bold uppercase pt-[5px] pr-[12px] pb-[5px] pl-[12px] rounded-sm whitespace-nowrap">
@@ -577,7 +577,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- CARD 3 -->
-            <div style="width: 354.67px; height: 409px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden flex flex-col bg-white hover:shadow-md transition-all">
+            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden flex flex-col bg-white hover:shadow-md transition-all">
                 <div class="relative h-[180px] bg-slate-900 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=400" alt="Project Cover" class="w-full h-full object-cover opacity-80">
                     <span class="bg-[#003054] absolute bottom-[0px] left-[0px] text-white text-[9px] font-bold uppercase pt-[5px] pr-[12px] pb-[5px] pl-[12px] rounded-sm whitespace-nowrap">
@@ -647,7 +647,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         <div class="w-full max-w-[1104px] grid grid-cols-2 md:grid-cols-4 gap-[18px]">
             
             <!-- EXPERT 1 -->
-            <div style="width: 262.5px; height: 318.6px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
+            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
                 <!-- Image Wrapper: Width: 260.5px, Height: 200px -->
                 <div class="w-full h-[200px] bg-[#EEF3F8] overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300" alt="Expert Profile Portrait" class="w-full h-full object-cover object-top">
@@ -679,7 +679,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- EXPERT 2 -->
-            <div style="width: 262.5px; height: 318.6px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
+            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
                 <div class="w-full h-[200px] bg-[#EEF3F8] overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300" alt="Expert Profile Portrait" class="w-full h-full object-cover object-top">
                 </div>
@@ -706,7 +706,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- EXPERT 3 -->
-            <div style="width: 262.5px; height: 318.6px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
+            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
                 <div class="w-full h-[200px] bg-[#EEF3F8] overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300" alt="Expert Profile Portrait" class="w-full h-full object-cover object-top">
                 </div>
@@ -733,7 +733,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <!-- EXPERT 4 -->
-            <div style="width: 262.5px; height: 318.6px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
+            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
                 <div class="w-full h-[200px] bg-[#EEF3F8] overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300" alt="Expert Profile Portrait" class="w-full h-full object-cover object-top">
                 </div>
