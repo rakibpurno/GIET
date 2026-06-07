@@ -89,11 +89,10 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 </script>
   
 <!-- ABOUT US HERO BANNER SUPERSTRUCTURE (Figma Container: 1920px x 372.2px) -->
-<section class="bg-[#003054]" 
-         class="w-full h-auto md:h-[372.20px] relative flex flex-col justify-center items-center text-white overflow-hidden mx-auto pt-[72px] px-4 md:pr-[360px] md:pb-[72px] md:pl-[360px] select-none">
-  
-  <!-- INNER CONTENT INNER CONTAINER (Exact Width: 1200px Layout Engine) -->
-  <div class="w-[1200px] h-auto md:h-[228.20px] max-w-[1200px] pr-[48px] pl-[48px] flex flex-col justify-between items-start text-left">
+<section class="bg-[#003054] w-full h-auto md:h-[372.2px] relative flex flex-col justify-center items-center text-white overflow-hidden pt-[72px] pb-[72px] px-4 md:pr-[360px] md:pl-[360px] select-none">
+
+  <!-- INNER CONTENT INNER CONTAINER -->
+  <div class="w-full max-w-[1200px] h-auto md:h-[228.2px] px-4 md:pr-[48px] md:pl-[48px] flex flex-col items-start text-left gap-[15.2px]">
     
     <!-- BREADCRUMBS WRAPPER SYSTEM -->
     <div style="font-family:'Inter',sans-serif;font-size:12px;line-height:19.8px;" 
@@ -171,93 +170,54 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 </section>
 
 <!-- MISSION, VISION & MANDATE SECTION (Figma Full Canvas Outer Frame: 1920px Wide) -->
-<section style="background-color: #F8FAFC;" 
-         class="w-full mx-auto pt-[90px] pb-[100px] px-4 md:px-[408px] text-center select-none flex flex-col items-center">
-    
-    <!-- BRAND CONTENT INNER ENGINE (Width: 1200px, Max-Width: 1200px, Padding Horizontal: 48px, Gap Stack: 52px) -->
-    <div class="w-full max-w-[1200px] px-[48px] flex flex-col items-center text-center gap-[52px]">
-        
-        <!-- HEADER MODULE LAYER -->
+<section style="background-color: #F8FAFC;" class="w-full pt-[90px] pb-[100px] px-4 md:px-[408px] text-center select-none flex flex-col items-center">
+
+    <div class="w-full max-w-[1200px] md:px-[48px] flex flex-col items-center text-center gap-[52px]">
+
         <div class="flex flex-col items-center justify-center gap-3">
-            <!-- OUR INSTITUTION SUB-TITLE METADATA (#0E606B, 11px, SemiBold) -->
-            <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:11px;line-height:18.15px;letter-spacing:1.54px;text-transform:uppercase;" 
-                  class="text-[#0E606B] uppercase block">
-                Our Institution
-            </span>
-            <!-- MAIN HEADING TITLE (Merriweather ExtraBold, 38px, Dark Slate #0F172A) -->
-            <h2 style="font-family:'Merriweather',serif;font-weight:800;font-size:38px;line-height:44.84px;letter-spacing:-0.38px;" 
-                class="text-[#0F172A]">
-                Mission, Vision & Mandate
-            </h2>
+            <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:11px;line-height:18.15px;letter-spacing:1.54px;text-transform:uppercase;" class="text-[#0E606B] block">Our Institution</span>
+            <h2 style="font-family:'Merriweather',serif;font-weight:800;font-size:38px;line-height:44.84px;letter-spacing:-0.38px;" class="text-[#0F172A]">Mission, Vision & Mandate</h2>
         </div>
 
-        <!-- 3-COLUMN FIGMA GRID (Width: 1104px, Height: 298.5px, Column-Gap: 20px) -->
-        <div class="w-[1104px] min-h-[298.5px] grid grid-cols-3 gap-[20px] mx-auto text-left">
-            
-            <!-- CARD 1: MISSION (Deep Blue #003054 with Soft Overlay Circle Effect) -->
-            <div class="bg-[#003054]" 
-                 class="w-[354.67px] h-[298px] rounded-[20px] pt-[40px] pr-[32px] pb-[42px] pl-[32px] flex flex-col justify-start items-start gap-[18px] text-white shadow-sm shrink-0 relative overflow-hidden">
-                
-                <!-- Top Right Abstract Shape Match -->
+        <div class="w-full max-w-[1104px] grid grid-cols-1 md:grid-cols-3 gap-[20px] text-left">
+
+            <!-- MISSION -->
+            <div class="bg-[#003054] rounded-[20px] pt-[40px] pr-[32px] pb-[42px] pl-[32px] flex flex-col justify-start items-start gap-[18px] text-white shadow-sm relative overflow-hidden">
                 <div class="absolute -top-12 -right-12 w-32 h-32 bg-white/5 rounded-full pointer-events-none"></div>
-                
-                <!-- Icon: Clock/Time Pattern -->
-                <div class="w-[42px] h-[42px] bg-white/10 rounded-[8px] flex items-center justify-center overflow-hidden z-10">
-                    <img src="images/icons/mission.svg" alt="Mission Dynamic Icon Asset" class="w-5 h-5 object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <svg class="w-5 h-5 text-[#18909C] hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <div class="w-[42px] h-[42px] bg-white/10 rounded-[8px] flex items-center justify-center z-10">
+                    <svg class="w-5 h-5 text-[#18909C]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                 </div>
-                
-                <div class="flex flex-col gap-1 z-10">
-                    <span style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: 10px; line-height: 14px; letter-spacing: 1.54px;" class="text-[#18909C] uppercase block">Mission</span>
-                </div>
-                
-                <!-- Exact Text from Image Container.png (Justified) -->
-                <p style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 15px; line-height: 24px;" class="text-white text-justify">
+                <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;line-height:14px;letter-spacing:1.54px;" class="text-[#18909C] uppercase block z-10">Mission</span>
+                <p style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:24px;" class="text-white text-justify">
                     To advance transparent, accountable governance and sustainable economic transformation through rigorous research, policy advocacy, and implementation support.
                 </p>
             </div>
 
-            <!-- CARD 2: VISION (Light Mint Theme Background Style) -->
-            <div class="w-[354.67px] h-[298px] bg-white rounded-[20px] pt-[40px] pr-[32px] pb-[42px] pl-[32px] flex flex-col justify-start items-start gap-[18px] border border-gray-100 shadow-sm shrink-0">
-                
-                <!-- Icon: Eye Pattern -->
-                <div class="w-[42px] h-[42px] bg-[#EEF9FA] rounded-[8px] flex items-center justify-center overflow-hidden">
-                    <img src="images/icons/vision.svg" alt="Vision Dynamic Icon Asset" class="w-5 h-5 object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <svg class="w-5 h-5 text-[#0E606B] hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <!-- VISION -->
+            <div class="bg-white rounded-[20px] pt-[40px] pr-[32px] pb-[42px] pl-[32px] flex flex-col justify-start items-start gap-[18px] border border-gray-100 shadow-sm">
+                <div class="w-[42px] h-[42px] bg-[#EEF9FA] rounded-[8px] flex items-center justify-center">
+                    <svg class="w-5 h-5 text-[#0E606B]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                     </svg>
                 </div>
-                
-                <div class="flex flex-col gap-1">
-                    <span style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: 10px; line-height: 14px; letter-spacing: 1.54px;" class="text-[#0E606B] uppercase block">Vision</span>
-                </div>
-                
-                <!-- Exact Text from Image Container.png (Justified) -->
-                <p style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 15px; line-height: 24px;" class="text-[#0F172A] text-justify">
+                <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;line-height:14px;letter-spacing:1.54px;" class="text-[#0E606B] uppercase block">Vision</span>
+                <p style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:24px;" class="text-[#0F172A] text-justify">
                     A Bangladesh where institutions are transparent, economies are competitive, and citizens are empowered through evidence-based policy and good governance.
                 </p>
             </div>
 
-            <!-- CARD 3: MANDATE (Light Rose Theme Background Style) -->
-            <div class="w-[354.67px] h-[298px] bg-white rounded-[20px] pt-[40px] pr-[32px] pb-[42px] pl-[32px] flex flex-col justify-start items-start gap-[18px] border border-gray-100 shadow-sm shrink-0">
-                
-                <!-- Icon: Shield/Checkbox Pattern -->
-                <div class="w-[42px] h-[42px] bg-[#FFF5F5] rounded-[8px] flex items-center justify-center overflow-hidden">
-                    <img src="images/icons/mandate.svg" alt="Mandate Dynamic Icon Asset" class="w-5 h-5 object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <svg class="w-5 h-5 text-[#A80C18] hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <!-- MANDATE -->
+            <div class="bg-white rounded-[20px] pt-[40px] pr-[32px] pb-[42px] pl-[32px] flex flex-col justify-start items-start gap-[18px] border border-gray-100 shadow-sm">
+                <div class="w-[42px] h-[42px] bg-[#FFF5F5] rounded-[8px] flex items-center justify-center">
+                    <svg class="w-5 h-5 text-[#A80C18]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
                     </svg>
                 </div>
-                
-                <div class="flex flex-col gap-1">
-                    <span style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: 10px; line-height: 14px; letter-spacing: 1.54px;" class="text-[#A80C18] uppercase block">Mandate</span>
-                </div>
-                
-                <!-- Exact Text from Image Container.png (Justified) -->
-                <p style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 15px; line-height: 24px;" class="text-[#0F172A] text-justify">
+                <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;line-height:14px;letter-spacing:1.54px;" class="text-[#A80C18] uppercase block">Mandate</span>
+                <p style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:24px;" class="text-[#0F172A] text-justify">
                     A non-political, non-profit, voluntary and charitable organization operating across Bangladesh irrespective of nation, religion, caste, or creed.
                 </p>
             </div>
