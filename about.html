@@ -11,16 +11,16 @@
 </head>
 <body class="overflow-x-hidden">
 
-<nav class="w-[1920px] h-[100px] bg-white border-b border-gray-100 pl-[408px] pr-[408px] flex items-center justify-between mx-auto select-none">
+<nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between mx-auto select-none">
     
-    <div class="w-[1104px] h-[68px] flex items-center justify-between">
+    <div class="w-full max-w-[1104px] h-[68px] flex items-center justify-between">
       
         <div class="w-[78.66px] h-[67.17px] flex flex-col items-center justify-center">
             <img src="images/Frame 26.png" alt="GIET Logo" class="w-[46px] h-[42px] mb-0.5" />
             <span class="text-[8px] font-bold tracking-wide text-[#003054] whitespace-nowrap uppercase">GIET Institute</span>
         </div>
 
-        <div class="flex items-center justify-center gap-[28px] text-[14px] font-semibold text-[#003054]">
+        <div class="hidden md:flex items-center justify-center gap-[28px] text-[14px] font-semibold text-[#003054]">
 
             <a href="#" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
                 Home
@@ -54,6 +54,9 @@
             </a>
         </div>
 
+                <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-[36px] h-[36px] text-[#003054]" aria-label="Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
         <div class="w-[138px] h-[37.44px] flex items-center justify-end gap-[10px]">
         
             <button class="w-[36px] h-[36px] flex items-center justify-center text-[#003054] hover:bg-gray-50 transition-all duration-150 cursor-pointer" aria-label="Search">
@@ -69,13 +72,28 @@
 
     </div>
 </nav>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-4 py-4 flex flex-col gap-3 text-[14px] font-semibold text-[#003054]">
+  <a href="#" class="py-2 hover:text-[#18909C]">Home</a>
+  <a href="#" class="py-2 hover:text-[#18909C]">About Us</a>
+  <a href="#" class="py-2 hover:text-[#18909C]">Areas of Work</a>
+  <a href="#" class="py-2 hover:text-[#18909C]">Projects</a>
+  <a href="#" class="py-2 hover:text-[#18909C]">Resources</a>
+  <a href="#" class="py-2 hover:text-[#18909C]">Our Experts</a>
+  <a href="#" class="py-2 hover:text-[#18909C]">Events</a>
+</div>
+<script>
+document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
+  document.getElementById("mobile-menu").classList.toggle("hidden");
+});
+</script>
   
 <!-- ABOUT US HERO BANNER SUPERSTRUCTURE (Figma Container: 1920px x 372.2px) -->
 <section class="bg-[#003054]" 
-         class="w-[1920px] h-[372.20px] relative flex flex-col justify-center items-center text-white overflow-hidden mx-auto pt-[72px] pr-[360px] pb-[72px] pl-[360px] select-none">
+         class="w-full h-auto md:h-[372.20px] relative flex flex-col justify-center items-center text-white overflow-hidden mx-auto pt-[72px] px-4 md:pr-[360px] md:pb-[72px] md:pl-[360px] select-none">
   
   <!-- INNER CONTENT INNER CONTAINER (Exact Width: 1200px Layout Engine) -->
-  <div class="w-[1200px] h-[228.20px] max-w-[1200px] pr-[48px] pl-[48px] flex flex-col justify-between items-start text-left">
+  <div class="w-[1200px] h-auto md:h-[228.20px] max-w-[1200px] pr-[48px] pl-[48px] flex flex-col justify-between items-start text-left">
     
     <!-- BREADCRUMBS WRAPPER SYSTEM -->
     <div style="font-family:'Inter',sans-serif;font-size:12px;line-height:19.8px;" 
@@ -88,7 +106,7 @@
     <div class="bg-[#18909C] w-[40px] h-[3px] rounded-[2px] my-[6px]"></div>
 
     <!-- MAIN SECTION TITLE (Merriweather Font Layout) -->
-    <h1 style="font-family:'Merriweather',serif;font-weight:800;font-size:52px;line-height:57.2px;letter-spacing:-1.04px;" 
+    <h1 style="font-family:'Merriweather',serif;font-weight:800;font-size:clamp(28px,5vw,52px);line-height:1.1;letter-spacing:-0.5px;" 
         class="text-white tracking-tight drop-shadow-sm">
       About GIET
     </h1>
@@ -103,7 +121,7 @@
 </section>
 
 <!-- STRATEGIC OPPORTUNITIES SECTION (Figma Full Component Wrapper Canvas Width: 1920px) -->
-<section class="w-[1920px] mx-auto bg-white flex justify-center items-center select-none pt-[100px] pb-[90px] px-[408px]">
+<section class="w-full mx-auto bg-white flex justify-center items-center select-none pt-[100px] pb-[90px] px-4 md:px-[408px]">
     
     <!-- INNER CONTAINER CORE (Width: 1104px, Height: ~510.09px Grid Space, Column-Gap: 80px) -->
     <div class="w-[1104px] min-h-[510.09px] flex justify-between items-center gap-[80px]">
@@ -154,10 +172,10 @@
 
 <!-- MISSION, VISION & MANDATE SECTION (Figma Full Canvas Outer Frame: 1920px Wide) -->
 <section style="background-color: #F8FAFC;" 
-         class="w-[1920px] mx-auto pt-[90px] pb-[100px] px-[408px] text-center select-none flex flex-col items-center">
+         class="w-full mx-auto pt-[90px] pb-[100px] px-4 md:px-[408px] text-center select-none flex flex-col items-center">
     
     <!-- BRAND CONTENT INNER ENGINE (Width: 1200px, Max-Width: 1200px, Padding Horizontal: 48px, Gap Stack: 52px) -->
-    <div class="w-[1200px] max-w-[1200px] px-[48px] flex flex-col items-center text-center gap-[52px]">
+    <div class="w-full max-w-[1200px] px-[48px] flex flex-col items-center text-center gap-[52px]">
         
         <!-- HEADER MODULE LAYER -->
         <div class="flex flex-col items-center justify-center gap-3">
@@ -250,10 +268,10 @@
 
    <!-- OUR HISTORY SECTION (Figma Full Canvas Outer Frame: 1920px Wide, Height Sync) -->
 <section style="background-color: #FFFFFF;" 
-         class="w-[1920px] mx-auto pt-[100px] pb-[100px] px-[408px] select-none flex flex-col items-center">
+         class="w-full mx-auto pt-[100px] pb-[100px] px-4 md:px-[408px] select-none flex flex-col items-center">
     
     <!-- MAIN CONTENT WRAPPER (Width: 1104px, Column-Gap: 80px) -->
-    <div class="w-[1104px] flex justify-between items-start gap-[80px]">
+    <div class="w-full max-w-[1104px] flex justify-between items-start gap-[80px]">
         
         <!-- LEFT BRAND PANEL (Width: 360px, Gap Stack Layout) -->
         <div class="w-[360px] text-left shrink-0">
@@ -359,10 +377,10 @@
 
    <!-- DISTINCTION MATRIX SECTION (Figma Outer Frame: 1920px Wide, Background: #F7F9FB) -->
 <section style="background-color: #F7F9FB;" 
-         class="w-[1920px] mx-auto pt-[88px] pb-[88px] px-[360px] text-center select-none flex flex-col items-center">
+         class="w-full mx-auto pt-[88px] pb-[88px] px-4 md:px-[360px] text-center select-none flex flex-col items-center">
     
     <!-- INNER ENGINE CONTAINER (Width: 1200px, Padding Horizontal: 48px, Gap Stack: 52px) -->
-    <div class="w-[1200px] max-w-[1200px] px-[48px] flex flex-col items-start text-left gap-[52px]">
+    <div class="w-full max-w-[1200px] px-[48px] flex flex-col items-start text-left gap-[52px]">
         
         <!-- HEADER TEXT LAYER GROUP -->
         <div class="flex flex-col items-start justify-start gap-3">
@@ -385,7 +403,7 @@
 
         <!-- 3-COLUMN INTEGRATED GRID BLOCK (Width: 1104px, Separator Border Look: 1px Solid #EEF3F8) -->
         <div style="background-color: #EEF3F8; border: 1px solid #EEF3F8;" 
-             class="w-[1104px] grid grid-cols-3 gap-[1px] mx-auto text-left overflow-hidden rounded-[4px]">
+             class="w-full max-w-[1104px] grid grid-cols-3 gap-[1px] mx-auto text-left overflow-hidden rounded-[4px]">
             
             <!-- CARD 01: EVIDENCE-BASED RESEARCH -->
             <div style="background-color: #FFFFFF;" 
@@ -453,10 +471,10 @@
 
    <!-- OPERATING FRAMEWORK SECTION (Figma Outer Frame: 1920px Wide, Background: White Canvas) -->
 <section style="background-color: #FFFFFF;" 
-         class="w-[1920px] mx-auto pt-[88px] pb-[88px] px-[360px] text-center select-none flex flex-col items-center">
+         class="w-full mx-auto pt-[88px] pb-[88px] px-4 md:px-[360px] text-center select-none flex flex-col items-center">
     
     <!-- BRAND CONTENT INNER ENGINE (Width: 1200px, Max-Width: 1200px, Padding Horizontal: 48px, Gap Stack: 52px) -->
-    <div class="w-[1200px] max-w-[1200px] px-[48px] flex flex-col items-start text-left gap-[52px]">
+    <div class="w-full max-w-[1200px] px-[48px] flex flex-col items-start text-left gap-[52px]">
         
         <!-- HEADER TEXT LAYER MODULE -->
         <div class="flex flex-col items-start justify-start gap-3">
@@ -473,7 +491,7 @@
         </div>
 
         <!-- 2x2 FIGMA GRID PATTERN (Width: 1104px, Row/Col Gap: 20px, Outer Border Look #EEF3F8) -->
-        <div class="w-[1104px] grid grid-cols-2 gap-x-[20px] gap-y-[20px] mx-auto text-left">
+        <div class="w-full max-w-[1104px] grid grid-cols-2 gap-x-[20px] gap-y-[20px] mx-auto text-left">
             
             <!-- CARD 1: INTEGRITY -->
             <div style="border: 1px solid #EEF3F8;" 
@@ -564,7 +582,7 @@
     </div>
 </section>
 
-  <section class="w-[1920px] h-[337px] bg-white border-t border-[#F0F0F0] flex items-center justify-center mx-auto relative select-none">
+  <section class="w-full h-[337px] bg-white border-t border-[#F0F0F0] flex items-center justify-center mx-auto relative select-none">
     
     <div class="w-[1200px] h-[184.10px] px-[48px] flex flex-col justify-between items-center relative">
         
@@ -616,11 +634,11 @@
     </div>
 </section>
 
-   <footer class="w-[1920px] mx-auto relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
+   <footer class="w-full mx-auto relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
     
-    <div class="w-[1104px] mx-auto flex justify-between items-start pb-[40px]">
+    <div class="w-full max-w-[1104px] mx-auto flex flex-col md:flex-row justify-between items-start pb-[40px] px-4 md:px-0 gap-8 md:gap-0">
         
-        <div class="w-[500px] flex flex-col text-left">
+        <div class="w-full md:w-[500px] flex flex-col text-left">
             <div class="w-[76px] h-[50px] bg-white rounded-[5px] p-1 flex items-center justify-center mb-4 overflow-hidden">
                 <img class="max-h-full max-w-full object-contain" src="images/Frame 26.png" alt="GIET Logo">
             </div>
@@ -680,8 +698,8 @@
     </div>
 
   <!-- BOTTOM RECONCILIATION STRIP (100% Color & Layout Reconciled with #003054 Background) -->
-<div class="bg-[#003054] w-[1920px] h-[60px] pt-[20px] pb-[20px] px-[408px] flex justify-center items-center border-t border-white/10">
-    <div class="w-[1104px] flex justify-between items-center text-[13px]">
+<div class="bg-[#003054] w-full h-auto py-[20px] px-4 md:px-4 md:px-[408px] flex justify-center items-center border-t border-white/10">
+    <div class="w-full max-w-[1104px] flex flex-col md:flex-row justify-between items-center text-[13px] gap-2 md:gap-0">
         
         <!-- Copyright Stamp with Light Grey Text Matching image_f59846.png -->
         <span class="text-[#BBCDDE] opacity-60 font-normal">

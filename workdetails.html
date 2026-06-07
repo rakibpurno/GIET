@@ -13,16 +13,16 @@
 </head>
 <body class="bg-[#FFFFFF] text-[#0F172A] antialiased">
 
-    <nav class="w-[1920px] h-[100px] bg-white border-b border-gray-100 pl-[408px] pr-[408px] flex items-center justify-between mx-auto select-none">
+    <nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between mx-auto select-none">
     
-    <div class="w-[1104px] h-[68px] flex items-center justify-between">
+    <div class="w-full max-w-[1104px] h-[68px] flex items-center justify-between">
       
         <div class="w-[78.66px] h-[67.17px] flex flex-col items-center justify-center">
             <img src="images/Frame 26.png" alt="GIET Logo" class="w-[46px] h-[42px] mb-0.5" />
             <span class="text-[8px] font-bold tracking-wide text-[#003054] whitespace-nowrap uppercase">GIET Institute</span>
         </div>
 
-        <div class="flex items-center justify-center gap-[28px] text-[14px] font-semibold text-[#003054]">
+        <div class="hidden md:flex items-center justify-center gap-[28px] text-[14px] font-semibold text-[#003054]">
         
 
              <a href="#" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
@@ -58,6 +58,9 @@
             </a>
         </div>
 
+                <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-[36px] h-[36px] text-[#003054]" aria-label="Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
         <div class="w-[138px] h-[37.44px] flex items-center justify-end gap-[10px]">
         
             <button class="w-[36px] h-[36px] flex items-center justify-center text-[#003054] hover:bg-gray-50 transition-all duration-150 cursor-pointer" aria-label="Search">
@@ -73,15 +76,30 @@
 
     </div>
 </nav>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-4 py-4 flex flex-col gap-3 text-[14px] font-semibold text-[#003054]">
+  <a href="#" class="py-2 hover:text-[#18909C]">Home</a>
+  <a href="#" class="py-2 hover:text-[#18909C]">About Us</a>
+  <a href="#" class="py-2 hover:text-[#18909C]">Areas of Work</a>
+  <a href="#" class="py-2 hover:text-[#18909C]">Projects</a>
+  <a href="#" class="py-2 hover:text-[#18909C]">Resources</a>
+  <a href="#" class="py-2 hover:text-[#18909C]">Our Experts</a>
+  <a href="#" class="py-2 hover:text-[#18909C]">Events</a>
+</div>
+<script>
+document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
+  document.getElementById("mobile-menu").classList.toggle("hidden");
+});
+</script>
 
     <!-- ========================================================================= -->
     <!-- 1. HERO SECTION (Width: 1920px, Height: 607.78px, Background: #003054)   -->
     <!-- ========================================================================= -->
     <section style="background: linear-gradient(rgba(0, 48, 84, 0.85), rgba(0, 48, 84, 0.95)), url('images/Image.png') center/cover no-repeat;" 
-             class="w-[1920px] h-[607.78px] mx-auto relative select-none flex flex-col justify-between pt-[60px]">
+             class="w-full h-auto md:h-[607.78px] mx-auto relative select-none flex flex-col justify-between pt-[60px]">
         
     <!-- HERO CORE CONTAINER (Width: 1200px, Max-Width: 1200px, Padding Horizontal: 48px) -->
-<div class="w-[1200px] max-w-[1200px] mx-auto px-[48px] text-left flex flex-col gap-[11px] mt-4">
+<div class="w-full max-w-[1200px] mx-auto px-[48px] text-left flex flex-col gap-[11px] mt-4">
     
     <!-- 1. BREADCRUMB LAYER (Inter Regular, Size: 12px, Line Height: 100%) -->
     <div style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 100%;" 
@@ -110,9 +128,9 @@
 
         <!-- BOTTOM 4 CATEGORY BLUR BOX MATRIX (Height: 151.78px, Background: #001430B2) -->
 <div style="background: rgba(0, 20, 48, 0.7); backdrop-filter: blur(4px); border-top: 1px solid rgba(255, 255, 255, 0.16);" 
-     class="w-[1920px] h-[151.78px] px-[360px] flex items-center justify-center select-none">
+     class="w-full h-[151.78px] px-4 md:px-[360px] flex items-center justify-center select-none">
     
-    <div class="w-[1200px] max-w-[1200px] grid grid-cols-4 h-full items-center">
+    <div class="w-full max-w-[1200px] grid grid-cols-4 h-full items-center">
         
         <!-- CAT ITEM 1 -->
         <div class="h-full pt-[28px] pr-[24px] pb-[28px] pl-[24px] flex items-start gap-4 border-r border-white/[0.09]">
@@ -193,8 +211,8 @@
 </div>
     </section>
 
-   <section class="w-[1920px] h-[862.53px] mx-auto pt-[72px] pb-[72px] px-[360px] bg-white select-none flex items-center justify-center">
-    <div class="w-[1200px] max-w-[1200px] grid grid-cols-2 gap-[72px]">
+   <section class="w-full h-[862.53px] mx-auto pt-[72px] pb-[72px] px-4 md:px-[360px] bg-white select-none flex items-center justify-center">
+    <div class="w-full max-w-[1200px] grid grid-cols-2 gap-[72px]">
         
         <div class="w-[516px] flex flex-col text-left">
             <h3 style="font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 22px; line-height: 100%; letter-spacing: 0.88px;" 
@@ -325,9 +343,9 @@
 <!-- 3. PRODUCTS & SOLUTIONS (Width: 1920px, Height: 452.78px, Background #F7F9FB) -->
 <!-- ========================================================================= -->
 <section style="border-top: 1px solid #E4EAF0;" 
-         class="w-[1920px] h-[452.78px] mx-auto pt-[72px] pb-[72px] px-[360px] bg-[#F7F9FB] text-center select-none flex flex-col items-center justify-center">
+         class="w-full h-[452.78px] mx-auto pt-[72px] pb-[72px] px-4 md:px-[360px] bg-[#F7F9FB] text-center select-none flex flex-col items-center justify-center">
     
-    <div class="w-[1200px] max-w-[1200px] px-[48px] flex flex-col gap-[52px] items-center">
+    <div class="w-full max-w-[1200px] px-[48px] flex flex-col gap-[52px] items-center">
         
         <!-- SECTION HEADER LINE DESIGN -->
         <div class="flex items-center justify-center gap-4 w-full">
@@ -344,7 +362,7 @@
         </div>
 
         <!-- 7-COLUMN FIXED GRID METRIC ARRAY (Total Width: 1104px) -->
-        <div class="w-[1104px] grid grid-cols-7 gap-[20px]">
+        <div class="w-full max-w-[1104px] grid grid-cols-7 gap-[20px]">
             
             <!-- COL 1 -->
             <div style="width: 140.57px; height: 225.62px;" class="pr-[4px] pb-[14.93px] pl-[4px] flex flex-col items-center text-center gap-[11px]">
@@ -454,9 +472,9 @@
    <!-- ========================================================================= -->
 <!-- 4. SECTION - PROJECTS (Width: 1920px, Height: 682.19px, Background: #FFFFFF) -->
 <!-- ========================================================================= -->
-<section class="w-[1920px] h-[682.19px] mx-auto pt-[80px] pb-[80px] px-[360px] bg-white select-none flex items-center justify-center">
+<section class="w-full h-[682.19px] mx-auto pt-[80px] pb-[80px] px-4 md:px-[360px] bg-white select-none flex items-center justify-center">
     <!-- Container Matrix (Width: 1200px, Padding-X: 48px, Gap: 44px) -->
- <div class="w-[1200px] max-w-[1200px] px-[48px] flex flex-col gap-[44px]">
+ <div class="w-full max-w-[1200px] px-[48px] flex flex-col gap-[44px]">
         
         <!-- LIST HEADER ROW MAP (Gray border line removed) -->
         <div class="w-full flex justify-between items-end pb-4">
@@ -481,7 +499,7 @@
         </div>
 
         <!-- 3-CARDS GRID ARRAY (Width: 1104px, Gap: 20px) -->
-        <div class="w-[1104px] grid grid-cols-3 gap-[20px]">
+        <div class="w-full max-w-[1104px] grid grid-cols-3 gap-[20px]">
             
             <!-- CARD 1 -->
             <div style="width: 354.67px; height: 409px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden flex flex-col bg-white hover:shadow-md transition-all">
@@ -599,9 +617,9 @@
    <!-- ========================================================================= -->
 <!-- 5. SECTION - EXPERTS (Width: 1920px, Height: 592.59px, Background: #FFFFFF) -->
 <!-- ========================================================================= -->
-<section class="w-[1920px] h-[592.59px] mx-auto pt-[80px] pb-[80px] px-[360px] bg-white select-none flex items-center justify-center">
+<section class="w-full h-[592.59px] mx-auto pt-[80px] pb-[80px] px-4 md:px-[360px] bg-white select-none flex items-center justify-center">
     <!-- Container Matrix (Width: 1200px, Padding-X: 48px, Gap: 44px) -->
-    <div class="w-[1200px] max-w-[1200px] px-[48px] flex flex-col gap-[44px]">
+    <div class="w-full max-w-[1200px] px-[48px] flex flex-col gap-[44px]">
         
         <!-- LIST HEADER ROW MAP -->
         <div class="w-full flex justify-between items-end pb-4">
@@ -626,7 +644,7 @@
         </div>
 
         <!-- 4-EXPERT CARDS ARRAY GRID (Width: 1104px, Columns: 4, Gap: 18px) -->
-        <div class="w-[1104px] grid grid-cols-4 gap-[18px]">
+        <div class="w-full max-w-[1104px] grid grid-cols-4 gap-[18px]">
             
             <!-- EXPERT 1 -->
             <div style="width: 262.5px; height: 318.6px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
@@ -745,11 +763,11 @@
     </div>
 </section>
 
-       <footer class="w-[1920px] mx-auto relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
+       <footer class="w-full mx-auto relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
     
-    <div class="w-[1104px] mx-auto flex justify-between items-start pb-[40px]">
+    <div class="w-full max-w-[1104px] mx-auto flex flex-col md:flex-row justify-between items-start pb-[40px] px-4 md:px-0 gap-8 md:gap-0">
         
-        <div class="w-[500px] flex flex-col text-left">
+        <div class="w-full md:w-[500px] flex flex-col text-left">
             <div class="w-[76px] h-[50px] bg-white rounded-[5px] p-1 flex items-center justify-center mb-4 overflow-hidden">
                 <img class="max-h-full max-w-full object-contain" src="images/Frame 26.png" alt="GIET Logo">
             </div>
@@ -809,8 +827,8 @@
     </div>
 
   <!-- BOTTOM RECONCILIATION STRIP (100% Color & Layout Reconciled with #003054 Background) -->
-<div class="bg-[#003054] w-[1920px] h-[60px] pt-[20px] pb-[20px] px-[408px] flex justify-center items-center border-t border-white/10">
-    <div class="w-[1104px] flex justify-between items-center text-[13px]">
+<div class="bg-[#003054] w-full h-auto py-[20px] px-4 md:px-4 md:px-[408px] flex justify-center items-center border-t border-white/10">
+    <div class="w-full max-w-[1104px] flex flex-col md:flex-row justify-between items-center text-[13px] gap-2 md:gap-0">
         
         <!-- Copyright Stamp with Light Grey Text Matching image_f59846.png -->
         <span class="text-[#BBCDDE] opacity-60 font-normal">
