@@ -11,7 +11,7 @@
 </head>
 <body class="overflow-x-hidden">
 
-<nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between mx-auto select-none">
+<nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between select-none">
     
     <div class="w-full max-w-[1104px] h-[68px] flex items-center justify-between">
       
@@ -99,7 +99,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
           background-color: #F7F9FB; 
           border-bottom: 1px solid #E4EAF0;
          " 
-         class="mx-auto flex flex-col justify-center items-center select-none overflow-hidden">
+         class="w-full flex flex-col justify-center items-center select-none overflow-hidden">
   
   <div style="
             width: 1200px; 
@@ -204,12 +204,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
           height: 400px; 
           opacity: 1;
          " 
-         class="mx-auto w-full relative overflow-hidden select-none">
+         class="w-full relative overflow-hidden select-none">
   
   <div class="w-full h-full relative">
     <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1920&q=80" 
          alt="Container port — Chittagong, Bangladesh" 
-         style="width: 1920px; height: 400px;"
+         class="w-full"
          class="w-full h-full object-cover object-center pointer-events-none" />
          
     <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
@@ -221,7 +221,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
           margin-top: 60px;
           margin-bottom: 60px;
          " 
-         class="mx-auto grid grid-cols-[744px_300px] gap-[60px] items-stretch select-none">
+         class="w-full max-w-[1104px] mx-auto grid grid-cols-1 md:grid-cols-[744px_300px] gap-[40px] md:gap-[60px] items-start select-none px-4 md:px-0">
   
   <article class="text-[#334155] text-[15px] line-height-[26px] flex flex-col gap-[32px]">
     
@@ -324,11 +324,11 @@ housed within NBR and resourced with seconded staff from all 12 border agencies.
 
   </article>
 
-  <div style="width: 300px;" class="relative">
+  <div class="relative w-full md:w-[300px]">
     
     <aside class="sticky top-[40px] flex flex-col gap-[16px] w-full">
       
-      <div style="width: 300px; height: 148px; padding: 22px; background: #003054; border: 1px solid #003054; border-radius: 14px;" 
+      <div style="background:#003054;border:1px solid #003054;border-radius:14px;padding:22px;" class="w-full" 
            class="flex flex-col justify-between items-center text-center shrink-0">
         <span style="font-size: 10px;" class="text-white/60 uppercase font-bold tracking-widest">Download</span>
         <button style="background: #A80C18;" class="w-full py-[10px] rounded-[6px] text-white text-[12px] font-semibold flex items-center justify-center gap-[6px] hover:bg-[#8F0A13] transition-colors">
@@ -338,7 +338,7 @@ housed within NBR and resourced with seconded staff from all 12 border agencies.
         <span style="font-size: 11px;" class="text-white/50">12 pages · Free · Open Access</span>
       </div>
 
-      <div style="width: 300px; height: 164px; padding: 22px; background: #FFFFFF; border: 1px solid #E4EAF0; border-radius: 14px;" 
+      <div style="background:#FFFFFF;border:1px solid #E4EAF0;border-radius:14px;padding:22px;" class="w-full" 
            class="flex flex-col justify-between shrink-0">
         <span style="font-size: 10px;" class="text-[#64748B] uppercase font-bold tracking-widest w-[254px] h-[24px] pb-[10px] border-b border-[#E4EAF0] block">Author</span>
         <div class="flex items-center gap-[12px]">
@@ -354,7 +354,7 @@ housed within NBR and resourced with seconded staff from all 12 border agencies.
         </div>
       </div>
 
-      <div style="width: 300px; height: 207px; padding: 22px; background: #FFFFFF; border: 1px solid #E4EAF0; border-radius: 14px;" 
+      <div style="background:#FFFFFF;border:1px solid #E4EAF0;border-radius:14px;padding:22px;" class="w-full" 
            class="flex flex-col justify-between text-[13px] shrink-0">
         <span style="font-size: 10px;" class="text-[#64748B] uppercase font-bold tracking-widest mb-[4px]">Publication Details</span>
         <div class="flex justify-between py-[6px] border-b border-[#F1F5F9]"><span class="text-[#64748B]">Type</span><strong class="text-[#0F172A]">Issue Brief</strong></div>
@@ -363,7 +363,7 @@ housed within NBR and resourced with seconded staff from all 12 border agencies.
         <div class="flex justify-between py-[6px]"><span class="text-[#64748B]">Language</span><strong class="text-[#0F172A]">English</strong></div>
       </div>
 
-      <!-- <div style="width: 300px; height: 190px; padding: 22px; background: #FFFFFF; border: 1px solid #E4EAF0; border-radius: 14px;" 
+      <!-- <div style="background:#FFFFFF;border:1px solid #E4EAF0;border-radius:14px;padding:22px;" class="w-full" 
            class="flex flex-col justify-between shrink-0">
         <span style="font-size: 10px;" class="text-[#64748B] uppercase font-bold tracking-widest mb-[8px]">Topics</span>
         <div class="flex flex-wrap gap-[6px]">
@@ -374,7 +374,7 @@ housed within NBR and resourced with seconded staff from all 12 border agencies.
         </div>
       </div> -->
 
-      <div style="width: 300px; height: 303px; padding: 22px; background: #FFFFFF; border: 1px solid #E4EAF0; border-radius: 14px;" 
+      <div style="background:#FFFFFF;border:1px solid #E4EAF0;border-radius:14px;padding:22px;" class="w-full" 
            class="flex flex-col justify-between shrink-0">
         <span style="font-size: 10px;" class="text-[#64748B] uppercase font-bold tracking-widest mb-[10px]">Related Resources</span>
         
@@ -407,7 +407,7 @@ housed within NBR and resourced with seconded staff from all 12 border agencies.
   </div>
 </section>
 
-   <footer class="w-full mx-auto relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
+   <footer class="w-full relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
     
     <div class="w-full max-w-[1104px] mx-auto flex flex-col md:flex-row justify-between items-start pb-[40px] px-4 md:px-0 gap-8 md:gap-0">
         

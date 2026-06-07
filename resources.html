@@ -11,7 +11,7 @@
 </head>
 <body class="overflow-x-hidden">
 
-<nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between mx-auto select-none">
+<nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between select-none">
     
     <div class="w-full max-w-[1104px] h-[68px] flex items-center justify-between">
       
@@ -92,7 +92,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 <section class="w-full bg-[#003054] relative overflow-hidden flex flex-col justify-center items-center select-none" style="height: 414.40px;">
   
   <div class="absolute z-0 pointer-events-none overflow-hidden" 
-       style="width: 891.35px; height: 594.08px; top: -142px; left: 1223px; transform: rotate(43.37deg);">
+       class="hidden md:block" style="width:891px;height:594px;top:-142px;right:-100px;transform:rotate(43.37deg);position:absolute;pointer-events:none;">
     <img src="images/image11.png" alt="Hero Background Graphic" class="w-full h-full object-cover">
     <div class="absolute inset-0 bg-gradient-to-r from-[#003054] via-[#003054]/70 to-[#003054]/40 mix-blend-multiply"></div>
     <div class="absolute inset-0 bg-gradient-to-t from-[#003054]/80 via-transparent to-[#003054]/50"></div>
@@ -121,7 +121,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     </div>
 
     <div class="bg-white border border-[#E4EAF0] flex items-center justify-between gap-[12px] shadow-sm" 
-         style="width: 640px; height: 53px; border-radius: 10px; padding: 8px 8px 8px 18px;">
+         class="w-full max-w-[640px] h-[53px] rounded-[10px] pl-[18px] pr-[8px] py-[8px]">
         
         <div class="flex items-center gap-[10px] w-full">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="text-[#64748B] shrink-0">
@@ -142,7 +142,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 <!-- ========================================================================= -->
 <!-- TABBED RESOURCES SECTION (Width: 1920px, Height: ~1521.78px) -->
 <!-- ========================================================================= -->
-<section class="w-full bg-[#FFFFFF] mx-auto pt-[88px] pr-[360px] pb-[88px] pl-[360px] flex flex-col items-center select-none overflow-hidden">
+<section class="w-full bg-[#FFFFFF] pt-[48px] pb-[48px] md:pt-[88px] md:pb-[88px] px-4 md:px-[360px] flex flex-col items-center select-none overflow-hidden">
   
   <!-- INNER LAYOUT CONTAINER (Exact Width: 1200px Layout Engine) -->
   <div class="w-full max-w-[1200px] flex flex-col gap-[48px] items-start text-left">
@@ -150,7 +150,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <!-- ========================================================================= -->
     <!-- TAB NAVIGATION SYSTEM (Height: 47px, Border Bottom #E4EAF0) -->
     <!-- ========================================================================= -->
-    <div class="w-[1200px] h-[47px] border-b-2 border-[#E4EAF0] flex items-center justify-start gap-[24px]">
+    <div class="w-full max-w-[1200px] h-auto flex flex-wrap items-center justify-start gap-[8px] md:gap-[24px] border-b-2 border-[#E4EAF0] pb-2">
       <button class="h-full border-b-2 border-[#8B1D2F] text-[#003054] font-semibold text-[13px] px-[2px] tracking-tight transition-all">
         Issue Briefs/Articles
       </button>
@@ -171,7 +171,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <!-- ========================================================================= -->
     <!-- FEATURED UPPER CARD (Width: 1200px, Height: 322px, 2-Column Grid Layout) -->
     <!-- ========================================================================= -->
-    <div class="w-[1200px] h-[322px] grid grid-cols-[480px_1fr] border border-[#E4EAF0] rounded-[20px] bg-white overflow-hidden shadow-sm">
+    <div class="w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-[480px_1fr] border border-[#E4EAF0] rounded-[20px] bg-white overflow-hidden shadow-sm">
       
       <!-- Column 1: Image Frame -->
       <div class="w-[480px] h-[320px] relative overflow-hidden">
@@ -233,7 +233,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
           </div>
         </div>
         <!-- Exact Figma Metric Card Bottom Component Blueprint -->
-        <div style="width: 348.66px; height: 26px; border-top: 1px solid #E4EAF0;" class="pt-[10px] pr-[0.01px] flex justify-between items-center bg-white">
+        <div class="w-full pt-[10px] flex justify-between items-center bg-white border-t border-[#E4EAF0]">
           <span class="text-[#64748B] text-[11px] font-medium">Dr. A. Rahman</span>
           <a href="#" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
         </div>
@@ -259,7 +259,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
           </div>
         </div>
         <!-- Exact Figma Metric Card Bottom Component Blueprint -->
-        <div style="width: 348.66px; height: 26px; border-top: 1px solid #E4EAF0;" class="pt-[10px] pr-[0.01px] flex justify-between items-center bg-white">
+        <div class="w-full pt-[10px] flex justify-between items-center bg-white border-t border-[#E4EAF0]">
           <span class="text-[#64748B] text-[11px] font-medium">Prof. N. Islam</span>
           <a href="#" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
         </div>
@@ -285,7 +285,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
           </div>
         </div>
         <!-- Exact Figma Metric Card Bottom Component Blueprint -->
-        <div style="width: 348.66px; height: 26px; border-top: 1px solid #E4EAF0;" class="pt-[10px] pr-[0.01px] flex justify-between items-center bg-white">
+        <div class="w-full pt-[10px] flex justify-between items-center bg-white border-t border-[#E4EAF0]">
           <span class="text-[#64748B] text-[11px] font-medium">Ms. F. Begum</span>
           <a href="#" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
         </div>
@@ -311,7 +311,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
           </div>
         </div>
         <!-- Exact Figma Metric Card Bottom Component Blueprint -->
-        <div style="width: 348.66px; height: 26px; border-top: 1px solid #E4EAF0;" class="pt-[10px] pr-[0.01px] flex justify-between items-center bg-white">
+        <div class="w-full pt-[10px] flex justify-between items-center bg-white border-t border-[#E4EAF0]">
           <span class="text-[#64748B] text-[11px] font-medium">Dr. A. Rahman</span>
           <a href="#" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
         </div>
@@ -337,7 +337,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
           </div>
         </div>
         <!-- Exact Figma Metric Card Bottom Component Blueprint -->
-        <div style="width: 348.66px; height: 26px; border-top: 1px solid #E4EAF0;" class="pt-[10px] pr-[0.01px] flex justify-between items-center bg-white">
+        <div class="w-full pt-[10px] flex justify-between items-center bg-white border-t border-[#E4EAF0]">
           <span class="text-[#64748B] text-[11px] font-medium">Prof. N. Islam</span>
           <a href="#" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
         </div>
@@ -363,7 +363,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
           </div>
         </div>
         <!-- Exact Figma Metric Card Bottom Component Blueprint -->
-        <div style="width: 348.66px; height: 26px; border-top: 1px solid #E4EAF0;" class="pt-[10px] pr-[0.01px] flex justify-between items-center bg-white">
+        <div class="w-full pt-[10px] flex justify-between items-center bg-white border-t border-[#E4EAF0]">
           <span class="text-[#64748B] text-[11px] font-medium">Ms. F. Begum</span>
           <a href="#" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
         </div>
@@ -391,7 +391,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 <!-- HOST AN EVENT / SUBMIT PROPOSAL SECTION (Width: 1920px, Height: 562px)   -->
 <!-- ========================================================================= -->
 <section style="background-color: #083353;" 
-         class="w-full h-[562px] relative flex justify-center items-center text-white overflow-hidden mx-auto select-none">
+         class="w-full py-[48px] md:py-[80px] relative flex justify-center items-center text-white overflow-hidden select-none">
   
   <!-- RIGHT UPPER CORNER BACKGROUND DECORATION SHAPE -->
   <!-- আপনার দেওয়া ম্যাট্রিক্স (Width: 300px, Height: 300px, Top: -60px, Left: 1680px, Background: #18909C14)  -->
@@ -410,7 +410,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
   <div class="w-full max-w-[1104px] h-[418px] grid grid-cols-2 gap-[60px] items-center relative z-10">
     
     <!-- LEFT SIDE: TEXT CONTENT BLOCK -->
-    <div class="w-[522px] flex flex-col gap-[14px]">
+    <div class="w-full max-w-[522px] flex flex-col gap-[14px] px-4">
       
       <!-- Tiny Section Header Tracker -->
       <span style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: 11px;" 
@@ -500,7 +500,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
   </div>
 </section>
 
-   <footer class="w-full mx-auto relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
+   <footer class="w-full relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
     
     <div class="w-full max-w-[1104px] mx-auto flex flex-col md:flex-row justify-between items-start pb-[40px] px-4 md:px-0 gap-8 md:gap-0">
         
