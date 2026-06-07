@@ -78,61 +78,126 @@
     </div>
 </nav>
 
-<header class="w-[1920px] h-[682.85px] min-h-[600px] relative flex flex-col justify-between items-center text-center text-white overflow-hidden mx-auto bg-[#00223D] select-none">
-  
-  <div class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0" 
-       style="background-image: linear-gradient(rgba(0, 24, 43, 0.55), rgba(0, 24, 43, 0.55)), url('images/Image.png');">
-  </div>
+<header id="hero-slider" class="w-[1920px] h-[682.85px] min-h-[600px] relative flex flex-col justify-between items-center text-center text-white overflow-hidden mx-auto bg-[#00223D] select-none">
 
-  <div class="relative z-10 flex flex-col items-center justify-center max-w-[1104px] mx-auto mt-auto mb-auto pt-[45px]">
-    
-    <div class="flex items-center justify-center gap-[6px] mb-5 opacity-90">
-      <span class="text-[10px] font-bold uppercase tracking-[2.5px] text-gray-300 whitespace-nowrap">— GOVERNANCE INNOVATION —</span>
+  <!-- SLIDES -->
+  <div id="hero-slides" class="absolute inset-0 w-full h-full">
+
+    <!-- Slide 1 -->
+    <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-700 opacity-100">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,24,43,0.55),rgba(0,24,43,0.55)), url('images/Image.png');"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full max-w-[1104px] mx-auto pt-[45px]">
+        <span class="text-[10px] font-bold uppercase tracking-[2.5px] text-gray-300 mb-5">— GOVERNANCE INNOVATION —</span>
+        <h1 style="font-family:'Merriweather',serif;font-weight:700;font-size:56px;line-height:68px;letter-spacing:-0.5px;" class="text-white text-center mb-5 drop-shadow-md">
+          Shaping Policy for a <br><span class="text-[#18909C]">Transformed</span> Bangladesh
+        </h1>
+        <p style="font-family:'Inter',sans-serif;font-size:15px;line-height:26px;color:rgba(255,255,255,0.85);" class="max-w-[640px] text-center mb-8">
+          A non-partisan think tank advancing transparent, accountable governance and economic competitiveness through rigorous research, policy advocacy, and institutional reform.
+        </p>
+        <a href="#" style="font-family:'Inter',sans-serif;font-weight:600;font-size:13px;" class="bg-[#BA0C1B] text-white px-[26px] py-[11px] rounded-[4px] flex items-center gap-2 hover:bg-[#960A14] transition-all duration-150 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
+          Explore Our Work ➔
+        </a>
+      </div>
     </div>
 
-    <h1 style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 56px; line-height: 68px; letter-spacing: -0.5px;" 
-        class="text-white text-center mb-5 drop-shadow-md">
-      Shaping Policy for a <br>
-      <span class="text-[#18909C]">Transformed</span> Bangladesh
-    </h1>
+    <!-- Slide 2 -->
+    <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-700 opacity-0">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,24,43,0.60),rgba(0,24,43,0.60)), url('images/Governance Innovation.png');"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full max-w-[1104px] mx-auto pt-[45px]">
+        <span class="text-[10px] font-bold uppercase tracking-[2.5px] text-gray-300 mb-5">— INSTITUTIONAL REFORM —</span>
+        <h1 style="font-family:'Merriweather',serif;font-weight:700;font-size:56px;line-height:68px;letter-spacing:-0.5px;" class="text-white text-center mb-5 drop-shadow-md">
+          Building Stronger <br><span class="text-[#18909C]">Institutions</span> for Tomorrow
+        </h1>
+        <p style="font-family:'Inter',sans-serif;font-size:15px;line-height:26px;color:rgba(255,255,255,0.85);" class="max-w-[640px] text-center mb-8">
+          Strengthening public institutions through evidence-based policy design, regulatory reform, and multi-stakeholder dialogue across Bangladesh.
+        </p>
+        <a href="#" style="font-family:'Inter',sans-serif;font-weight:600;font-size:13px;" class="bg-[#BA0C1B] text-white px-[26px] py-[11px] rounded-[4px] flex items-center gap-2 hover:bg-[#960A14] transition-all duration-150 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
+           Explore Our Work ➔
+        </a>
+      </div>
+    </div>
 
-    <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 15px; line-height: 26px; color: rgba(255, 255, 255, 0.85);" 
-       class="max-w-[640px] text-center mb-8 drop-shadow-sm">
-      A non-partisan think tank advancing transparent, accountable governance and economic competitiveness through rigorous research, policy advocacy, and institutional reform.
-    </p>
-
-    <button style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 13px;" 
-            class="bg-[#BA0C1B] text-white px-[26px] py-[11px] rounded-[4px] flex items-center justify-center gap-2 hover:bg-[#960A14] transition-all duration-150 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] cursor-pointer">
-      <span>Explore</span>
-      <span class="text-[12px] font-normal font-sans pt-[1px]">➔</span>
-    </button>
+    <!-- Slide 3 -->
+    <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-700 opacity-0">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,24,43,0.60),rgba(0,24,43,0.60)), url('images/Economic Transformation.png');"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full max-w-[1104px] mx-auto pt-[45px]">
+        <span class="text-[10px] font-bold uppercase tracking-[2.5px] text-gray-300 mb-5">— ECONOMIC TRANSFORMATION —</span>
+        <h1 style="font-family:'Merriweather',serif;font-weight:700;font-size:56px;line-height:68px;letter-spacing:-0.5px;" class="text-white text-center mb-5 drop-shadow-md">
+          Driving <span class="text-[#18909C]">Inclusive</span> <br>Economic Growth
+        </h1>
+        <p style="font-family:'Inter',sans-serif;font-size:15px;line-height:26px;color:rgba(255,255,255,0.85);" class="max-w-[640px] text-center mb-8">
+          Delivering data-driven economic diagnostics that enable governments and development partners to design structural reforms for sustainable, inclusive growth.
+        </p>
+        <a href="#" style="font-family:'Inter',sans-serif;font-weight:600;font-size:13px;" class="bg-[#BA0C1B] text-white px-[26px] py-[11px] rounded-[4px] flex items-center gap-2 hover:bg-[#960A14] transition-all duration-150 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
+           Explore Our Work ➔
+        </a>
+      </div>
+    </div>
 
   </div>
 
-  <div style="background-color: #001F36;" 
-       class="w-[1920px] h-[82px] relative z-20 flex items-center justify-center gap-[24px] border-t border-white/5 mt-auto">
-    
-    <button class="w-[32px] h-[32px] rounded-full border border-white/15 bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all cursor-pointer">
-      <svg width="10" height="10" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 13L5 8L10 3" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+  <!-- CONTROLS BAR -->
+  <div style="background-color:#001F36;" class="w-[1920px] h-[82px] relative z-20 flex items-center justify-center gap-[24px] border-t border-white/5 mt-auto">
+
+    <button id="hero-prev" class="w-[32px] h-[32px] rounded-full border border-white/15 bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all cursor-pointer">
+      <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M10 13L5 8L10 3" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
 
-    <div class="flex items-center gap-[8px]">
-      <div class="h-[3px] w-[32px] bg-[#18909C] rounded-full"></div>
-      <div class="h-[2px] w-[20px] bg-white/20 rounded-full"></div>
-      <div class="h-[2px] w-[20px] bg-white/20 rounded-full"></div>
+    <div id="hero-dots" class="flex items-center gap-[8px]">
+      <button class="hero-dot h-[3px] w-[32px] bg-[#18909C] rounded-full transition-all duration-300" data-index="0"></button>
+      <button class="hero-dot h-[2px] w-[20px] bg-white/20 rounded-full transition-all duration-300" data-index="1"></button>
+      <button class="hero-dot h-[2px] w-[20px] bg-white/20 rounded-full transition-all duration-300" data-index="2"></button>
     </div>
 
-    <button class="w-[32px] h-[32px] rounded-full border border-white/15 bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all cursor-pointer">
-      <svg width="10" height="10" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+    <button id="hero-next" class="w-[32px] h-[32px] rounded-full border border-white/15 bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all cursor-pointer">
+      <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
-    
+
   </div>
 
 </header>
+
+<script>
+(function () {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots   = document.querySelectorAll('.hero-dot');
+  let current  = 0;
+  let timer;
+
+  function goTo(index) {
+    slides[current].style.opacity = '0';
+    slides[current].style.pointerEvents = 'none';
+    dots[current].style.height  = '2px';
+    dots[current].style.width   = '20px';
+    dots[current].style.backgroundColor = 'rgba(255,255,255,0.2)';
+
+    current = (index + slides.length) % slides.length;
+
+    slides[current].style.opacity = '1';
+    slides[current].style.pointerEvents = '';
+    dots[current].style.height  = '3px';
+    dots[current].style.width   = '32px';
+    dots[current].style.backgroundColor = '#18909C';
+  }
+
+  function startAuto() {
+    timer = setInterval(function () { goTo(current + 1); }, 5000);
+  }
+
+  function resetAuto() {
+    clearInterval(timer);
+    startAuto();
+  }
+
+  document.getElementById('hero-next').addEventListener('click', function () { goTo(current + 1); resetAuto(); });
+  document.getElementById('hero-prev').addEventListener('click', function () { goTo(current - 1); resetAuto(); });
+  dots.forEach(function (dot) {
+    dot.addEventListener('click', function () { goTo(+dot.dataset.index); resetAuto(); });
+  });
+
+  startAuto();
+})();
+</script>
 
 <section class="w-[1920px] h-[645px] bg-white pt-[88px] pb-[88px] px-[408px] flex items-start justify-center select-none">
     
