@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="overflow-x-hidden">
 
@@ -74,12 +73,12 @@
 </nav>
   
 <!-- ABOUT US HERO BANNER SUPERSTRUCTURE (Figma Container: 1920px x 372.2px) -->
-<section class="banner-bg-navy" 
+<section class="bg-[#003054]" 
          class="w-[1920px] h-[372.20px] relative flex flex-col justify-center items-center text-white overflow-hidden mx-auto pt-[72px] pr-[360px] pb-[72px] pl-[360px] select-none">
   
   <!-- RIGHT UPPER CORNER BACKGROUND DECORATION SHAPE -->
   <!-- Width: 400px, Height: 400px, Radius: 200px, Color Token: #18909C12 (rgba) -->
-  <div class="hero-blob" 
+  <div class="absolute pointer-events-none bg-[rgba(24,144,156,0.07)] w-[400px] h-[400px] rounded-full" 
        class="absolute -top-[100px] -right-[100px] pointer-events-none">
   </div>
 
@@ -87,7 +86,7 @@
   <div class="w-[1200px] h-[228.20px] max-w-[1200px] pr-[48px] pl-[48px] flex flex-col justify-between items-start text-left z-10">
     
     <!-- BREADCRUMBS WRAPPER SYSTEM -->
-    <div class="breadcrumb" 
+    <div style="font-family:'Inter',sans-serif;font-size:12px;line-height:19.8px;" 
          class="text-white/45 flex items-center gap-1.5 tracking-normal">
       <a href="#" class="hover:text-white transition-colors">Home</a>
       <span class="text-white/30">/</span>
@@ -98,16 +97,16 @@
     </div>
 
     <!-- Teal Accent Underline Indicator Line -->
-    <div class="accent-bar" class="w-[40px] h-[3px] rounded-[2px] my-[6px]"></div>
+    <div class="bg-[#18909C] w-[40px] h-[3px] rounded-[2px]" class="w-[40px] h-[3px] rounded-[2px] my-[6px]"></div>
 
     <!-- MAIN SECTION TITLE (Merriweather Font Layout) -->
-    <h1 class="hero-heading" 
+    <h1 style="font-family:'Merriweather',serif;font-weight:800;font-size:52px;line-height:57.2px;letter-spacing:-1.04px;" 
         class="text-white tracking-tight drop-shadow-sm">
       Our Projects
     </h1>
 
     <!-- SUMMARY PARAGRAPH SPECIFICATION -->
-    <p class="hero-sub" 
+    <p style="font-family:'Inter',sans-serif;font-size:17px;line-height:29.75px;" 
        class="text-white/60 max-w-[780px] font-normal tracking-normal drop-shadow-sm">
       GIET has delivered governance reform, policy advisory, digital transformation, trade facilitation, and research projects across Bangladesh — for governments, multilateral institutions, and development partners.
     </p>
@@ -126,12 +125,12 @@
         <!-- HEADER ROW -->
         <div class="w-full text-left">
             <!-- Project Portfolio Badge -->
-            <span class="eyebrow" 
+            <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:11px;line-height:18.15px;letter-spacing:1.54px;text-transform:uppercase;" 
                   class="text-[#0E606B] uppercase block mb-2">
                 Project Portfolio
             </span>
             <!-- Section Title -->
-            <h2 class="section-heading" 
+            <h2 style="font-family:'Merriweather',serif;font-weight:800;font-size:38px;line-height:44.84px;letter-spacing:-0.38px;" 
                 class="text-[#0F172A]">
                 Work That Creates Impact
             </h2>
@@ -167,7 +166,7 @@
             <div class="w-[560px] h-[380px] m-[12px] rounded-[12px] overflow-hidden bg-[#EEF3F8] shrink-0 relative">
                 <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=600" alt="Gavel on sounding block" class="w-full h-full object-cover">
                 <!-- Inner Image Tag Component -->
-                <div class="banner-bg-navy" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
+                <div class="bg-[#003054]" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
                     <span class="text-white text-[9.5px] font-bold uppercase tracking-[1px]">Featured Project</span>
                 </div>
             </div>
@@ -190,13 +189,13 @@
                 <!-- Card Footer Info Matrix -->
                 <div class="flex flex-col gap-4">
                     <div class="flex items-center gap-[16px] text-[#6B7280]">
-                        <span class="breadcrumb" class="flex items-center gap-1.5">
+                        <span style="font-family:'Inter',sans-serif;font-size:12px;line-height:19.8px;" class="flex items-center gap-1.5">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#0E606B]"></span> Governance Reform
                         </span>
-                        <span class="breadcrumb" class="flex items-center gap-1.5">
+                        <span style="font-family:'Inter',sans-serif;font-size:12px;line-height:19.8px;" class="flex items-center gap-1.5">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#0E606B]"></span> Dhaka + 6 Districts
                         </span>
-                        <span class="breadcrumb" class="flex items-center gap-1.5">
+                        <span style="font-family:'Inter',sans-serif;font-size:12px;line-height:19.8px;" class="flex items-center gap-1.5">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#0E606B]"></span> 18 Months
                         </span>
                     </div>
@@ -215,7 +214,7 @@
             <div style="width: 354.67px; height: 434px;" class="border border-[#EEF3F8] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left pb-[21.68px]">
                 <div class="w-full h-[180px] bg-[#EEF3F8] relative overflow-hidden shrink-0">
                     <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=400" alt="Signing official reform documents" class="w-full h-full object-cover">
-                    <div class="banner-bg-navy" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
+                    <div class="bg-[#003054]" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
                         <span class="text-white text-[9.5px] font-bold uppercase tracking-[0.5px]">Regulatory Reform</span>
                     </div>
                 </div>
@@ -246,7 +245,7 @@
             <div style="width: 354.67px; height: 434px;" class="border border-[#EEF3F8] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left pb-[21.68px]">
                 <div class="w-full h-[180px] bg-[#EEF3F8] relative overflow-hidden shrink-0">
                     <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400" alt="Parliament Assembly Hall" class="w-full h-full object-cover">
-                    <div class="banner-bg-navy" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
+                    <div class="bg-[#003054]" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
                         <span class="text-white text-[9.5px] font-bold uppercase tracking-[0.5px]">Anti-Corruption</span>
                     </div>
                 </div>
@@ -277,7 +276,7 @@
             <div style="width: 354.67px; height: 434px;" class="border border-[#EEF3F8] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left pb-[21.68px]">
                 <div class="w-full h-[180px] bg-[#EEF3F8] relative overflow-hidden shrink-0">
                     <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=400" alt="Group of diverse people talking" class="w-full h-full object-cover">
-                    <div class="banner-bg-navy" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
+                    <div class="bg-[#003054]" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
                         <span class="text-white text-[9.5px] font-bold uppercase tracking-[0.5px]">Service Delivery</span>
                     </div>
                 </div>
@@ -329,12 +328,12 @@
         <!-- HEADER MAP FRAME -->
         <div class="w-full text-left">
             <!-- Our Impact Badge -->
-            <span class="eyebrow" 
+            <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:11px;line-height:18.15px;letter-spacing:1.54px;text-transform:uppercase;" 
                   class="text-[#0E606B] uppercase block mb-2">
                 Our Impact
             </span>
             <!-- Section Stats Title -->
-            <h2 class="section-heading" 
+            <h2 style="font-family:'Merriweather',serif;font-weight:800;font-size:38px;line-height:44.84px;letter-spacing:-0.38px;" 
                 class="text-[#0F172A]">
                 Measurable Outcomes Across Our Portfolio
             </h2>
@@ -412,7 +411,7 @@
 
 
 <!-- WORK WITH US SECTION (Figma Canvas Outer: 1920px Wide, Background: #003054, Added Subtle Bottom Border) -->
-<section class="banner-bg-navy" 
+<section class="bg-[#003054]" 
          class="w-[1920px] h-[421.68px] mx-auto text-center select-none flex flex-col items-center justify-center relative overflow-hidden border-b border-[#18909C]/[0.15]">
     
     <!-- EXACT FIGMA RIGHT CORNER CIRCLE VECTOR BLOB -->
@@ -423,7 +422,7 @@
     <div class="w-[1200px] max-w-[1200px] px-[48px] flex flex-col items-center justify-center text-center relative z-10">
         
         <!-- SUB-TITLE BADGE LAYER -->
-        <span class="eyebrow" 
+        <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:11px;line-height:18.15px;letter-spacing:1.54px;text-transform:uppercase;" 
               class="text-[#18909C] uppercase block mb-[13px]">
             Collaborate
         </span>
@@ -528,7 +527,7 @@
     </div>
 
   <!-- BOTTOM RECONCILIATION STRIP (100% Color & Layout Reconciled with #003054 Background) -->
-<div class="banner-bg-navy" class="w-[1920px] h-[60px] pt-[20px] pb-[20px] px-[408px] flex justify-center items-center border-t border-white/10">
+<div class="bg-[#003054]" class="w-[1920px] h-[60px] pt-[20px] pb-[20px] px-[408px] flex justify-center items-center border-t border-white/10">
     <div class="w-[1104px] flex justify-between items-center text-[13px]">
         
         <!-- Copyright Stamp with Light Grey Text Matching image_f59846.png -->
