@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,16 +6,11 @@
     <title>Project Details</title>
     <!-- Tailwind CSS Script -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts Framework Integration -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&family=Merriweather:wght@700;800&html=1" rel="stylesheet">
-    
-    <style>
-        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
-        .font-manrope { font-family: 'Manrope', sans-serif; }
-        .font-serif-custom { font-family: 'Merriweather', serif; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts Framework Integration -->
 </head>
 <body class="bg-[#FFFFFF] text-[#0F172A] antialiased">
 
@@ -86,7 +81,7 @@
          class="w-[1920px] h-[607.78px] mx-auto relative select-none flex flex-col justify-between overflow-hidden text-white">
   
   <!-- RIGHT UPPER CORNER BACKGROUND DECORATION SHAPE -->
-  <div style="background-color: rgba(24, 144, 156, 0.07); width: 400px; height: 400px; border-radius: 200px;" 
+  <div class="hero-blob" 
        class="absolute -top-[100px] -right-[100px] pointer-events-none z-0">
   </div>
 
@@ -96,7 +91,7 @@
        class="w-[1200px] max-w-[1200px] mx-auto pr-[48px] pb-[48px] pl-[48px] mt-auto flex flex-col justify-end items-start text-left gap-[14px] z-10 relative">
     
  <div class="w-full flex justify-between items-start">
-    <div style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 19.8px;" 
+    <div class="breadcrumb" 
          class="text-[#FFFFFF]/[0.45] tracking-normal flex items-center gap-1.5">
         <span>Home</span> <span class="text-white/20">/</span>
         <span>Projects</span> <span class="text-white/20">/</span>
@@ -130,7 +125,7 @@
   </div>
 
  <!-- BOTTOM 5 COLUMNS PROJECT META DATA MATRIX (Height: 151.78px, Width: 1920px) -->
-<div style="background: rgba(0, 32, 63, 0.85); backdrop-filter: blur(4px); border-top: 1px solid rgba(255, 255, 255, 0.12);" 
+<div class="meta-strip" 
      class="w-[1920px] h-[151.78px] px-[360px] flex items-center justify-center select-none z-10 shrink-0">
     
     <!-- Inner Grid Frame: Exactly 5 Columns for Pixel-Perfect Layout Match -->
@@ -139,7 +134,7 @@
         <!-- ITEM 1: CLIENT -->
         <div class="h-full pt-[32px] pb-[32px] pl-[16px] pr-[16px] flex items-center gap-[14px] border-r border-white/[0.08]">
             <!-- Styled Icon Container Box -->
-            <div style="background-color: rgba(24, 144, 156, 0.12);" class="w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
+            <div class="meta-icon-box w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden" class="w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
                 <!-- CLIENT ICON IMAGE SLOT -->
                 <img src="icons/SVG (50).png" alt="Client Icon" class="w-[20px] h-[20px] object-contain">
             </div>
@@ -155,7 +150,7 @@
 
         <!-- ITEM 2: DURATION -->
         <div class="h-full pt-[32px] pb-[32px] pl-[20px] pr-[16px] flex items-center gap-[14px] border-r border-white/[0.08]">
-            <div style="background-color: rgba(24, 144, 156, 0.12);" class="w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
+            <div class="meta-icon-box w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden" class="w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
                 <!-- DURATION ICON IMAGE SLOT -->
                 <img src="icons/SVG (51).png" alt="Duration Icon" class="w-[20px] h-[20px] object-contain">
             </div>
@@ -171,7 +166,7 @@
 
         <!-- ITEM 3: LOCATION -->
         <div class="h-full pt-[32px] pb-[32px] pl-[20px] pr-[16px] flex items-center gap-[14px] border-r border-white/[0.08]">
-            <div style="background-color: rgba(24, 144, 156, 0.12);" class="w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
+            <div class="meta-icon-box w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden" class="w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
                 <!-- LOCATION ICON IMAGE SLOT -->
                 <img src="icons/SVG (52).png" alt="Location Icon" class="w-[20px] h-[20px] object-contain">
             </div>
@@ -187,7 +182,7 @@
 
         <!-- ITEM 4: SECTOR -->
         <div class="h-full pt-[32px] pb-[32px] pl-[20px] pr-[16px] flex items-center gap-[14px] border-r border-white/[0.08]">
-            <div style="background-color: rgba(24, 144, 156, 0.12);" class="w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
+            <div class="meta-icon-box w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden" class="w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
                 <!-- SECTOR ICON IMAGE SLOT -->
                 <img src="icons/SVG (53).png" alt="Sector Icon" class="w-[20px] h-[20px] object-contain">
             </div>
@@ -203,7 +198,7 @@
 
         <!-- ITEM 5: STATUS -->
         <div class="h-full pt-[32px] pb-[32px] pl-[20px] pr-[16px] flex items-center gap-[14px]">
-            <div style="background-color: rgba(24, 144, 156, 0.12);" class="w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
+            <div class="meta-icon-box w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden" class="w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
                 <!-- STATUS ICON IMAGE SLOT -->
                 <img src="icons/SVG (54).png" alt="Status Icon" class="w-[20px] h-[20px] object-contain">
             </div>
@@ -621,14 +616,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                     </svg>
-                    <span style="font-family: 'Inter', sans-serif;">Dhaka, Bangladesh</span>
+                    <span>Dhaka, Bangladesh</span>
                 </div>
                 
                 <div class="flex items-center gap-3 text-[#BBCDDE] opacity-90">
                     <svg class="w-[16px] h-[16px] text-[#18909C] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
-                    <a href="mailto:contact@giet.org.bd" style="font-family: 'Inter', sans-serif;" class="hover:text-white hover:underline transition-all">
+                    <a href="mailto:contact@giet.org.bd" class="hover:text-white hover:underline transition-all">
                         contact@giet.org.bd
                     </a>
                 </div>
@@ -638,16 +633,16 @@
     </div>
 
   <!-- BOTTOM RECONCILIATION STRIP (100% Color & Layout Reconciled with #003054 Background) -->
-<div style="background-color: #003054;" class="w-[1920px] h-[60px] pt-[20px] pb-[20px] px-[408px] flex justify-center items-center border-t border-white/10">
+<div class="banner-bg-navy" class="w-[1920px] h-[60px] pt-[20px] pb-[20px] px-[408px] flex justify-center items-center border-t border-white/10">
     <div class="w-[1104px] flex justify-between items-center text-[13px]">
         
         <!-- Copyright Stamp with Light Grey Text Matching image_f59846.png -->
-        <span style="font-family: 'Inter', sans-serif;" class="text-[#BBCDDE] opacity-60 font-normal">
+        <span class="text-[#BBCDDE] opacity-60 font-normal">
             &copy; 2025 Foundation for Governance Innovation and Economic Transformation (GIET). All rights reserved.
         </span>
         
         <!-- Utility Anchor Links -->
-        <div style="font-family: 'Inter', sans-serif;" class="flex items-center gap-6 text-[#BBCDDE] opacity-70 font-normal">
+        <div class="flex items-center gap-6 text-[#BBCDDE] opacity-70 font-normal">
             <a href="#" class="hover:text-white hover:underline transition-all">Privacy Policy</a>
             <a href="#" class="hover:text-white hover:underline transition-all">Terms of Use</a>
         </div>
@@ -657,5 +652,6 @@
 
 </footer>
 
+    <script src="main.js"></script>
 </body>
 </html>

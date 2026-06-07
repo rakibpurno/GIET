@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,16 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #FFFFFF;
-            color: #2D3748;
-        }
-        h1, h2, h3, .serif-font {
-            font-family: 'Merriweather', serif;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="overflow-x-hidden">
 
@@ -83,12 +74,12 @@
 </nav>
   
 <!-- ABOUT US HERO BANNER SUPERSTRUCTURE (Figma Container: 1920px x 372.2px) -->
-<section style="background-color: #003054;" 
+<section class="banner-bg-navy" 
          class="w-[1920px] h-[372.20px] relative flex flex-col justify-center items-center text-white overflow-hidden mx-auto pt-[72px] pr-[360px] pb-[72px] pl-[360px] select-none">
   
   <!-- RIGHT UPPER CORNER BACKGROUND DECORATION SHAPE -->
   <!-- Width: 400px, Height: 400px, Radius: 200px, Color Token: #18909C12 (rgba) -->
-  <div style="background-color: rgba(24, 144, 156, 0.07); width: 400px; height: 400px; border-radius: 200px;" 
+  <div class="hero-blob" 
        class="absolute -top-[100px] -right-[100px] pointer-events-none">
   </div>
 
@@ -96,7 +87,7 @@
   <div class="w-[1200px] h-[228.20px] max-w-[1200px] pr-[48px] pl-[48px] flex flex-col justify-between items-start text-left z-10">
     
     <!-- BREADCRUMBS WRAPPER SYSTEM -->
-    <div style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 19.8px;" 
+    <div class="breadcrumb" 
          class="text-white/45 flex items-center gap-1.5 tracking-normal">
       <a href="#" class="hover:text-white transition-colors">Home</a>
       <span class="text-white/30">/</span>
@@ -107,16 +98,16 @@
     </div>
 
     <!-- Teal Accent Underline Indicator Line -->
-    <div style="background-color: #18909C;" class="w-[40px] h-[3px] rounded-[2px] my-[6px]"></div>
+    <div class="accent-bar" class="w-[40px] h-[3px] rounded-[2px] my-[6px]"></div>
 
     <!-- MAIN SECTION TITLE (Merriweather Font Layout) -->
-    <h1 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 52px; line-height: 57.2px; letter-spacing: -1.04px;" 
+    <h1 class="hero-heading" 
         class="text-white tracking-tight drop-shadow-sm">
       Our Projects
     </h1>
 
     <!-- SUMMARY PARAGRAPH SPECIFICATION -->
-    <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 17px; line-height: 29.75px;" 
+    <p class="hero-sub" 
        class="text-white/60 max-w-[780px] font-normal tracking-normal drop-shadow-sm">
       GIET has delivered governance reform, policy advisory, digital transformation, trade facilitation, and research projects across Bangladesh — for governments, multilateral institutions, and development partners.
     </p>
@@ -135,12 +126,12 @@
         <!-- HEADER ROW -->
         <div class="w-full text-left">
             <!-- Project Portfolio Badge -->
-            <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; line-height: 18.15px; letter-spacing: 1.54px;" 
+            <span class="eyebrow" 
                   class="text-[#0E606B] uppercase block mb-2">
                 Project Portfolio
             </span>
             <!-- Section Title -->
-            <h2 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 38px; line-height: 44.84px; letter-spacing: -0.38px;" 
+            <h2 class="section-heading" 
                 class="text-[#0F172A]">
                 Work That Creates Impact
             </h2>
@@ -176,8 +167,8 @@
             <div class="w-[560px] h-[380px] m-[12px] rounded-[12px] overflow-hidden bg-[#EEF3F8] shrink-0 relative">
                 <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=600" alt="Gavel on sounding block" class="w-full h-full object-cover">
                 <!-- Inner Image Tag Component -->
-                <div style="background-color: #003054;" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
-                    <span style="font-family: 'Inter', sans-serif;" class="text-white text-[9.5px] font-bold uppercase tracking-[1px]">Featured Project</span>
+                <div class="banner-bg-navy" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
+                    <span class="text-white text-[9.5px] font-bold uppercase tracking-[1px]">Featured Project</span>
                 </div>
             </div>
             <!-- Right Side Content Container Matrix -->
@@ -199,13 +190,13 @@
                 <!-- Card Footer Info Matrix -->
                 <div class="flex flex-col gap-4">
                     <div class="flex items-center gap-[16px] text-[#6B7280]">
-                        <span style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 19.8px;" class="flex items-center gap-1.5">
+                        <span class="breadcrumb" class="flex items-center gap-1.5">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#0E606B]"></span> Governance Reform
                         </span>
-                        <span style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 19.8px;" class="flex items-center gap-1.5">
+                        <span class="breadcrumb" class="flex items-center gap-1.5">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#0E606B]"></span> Dhaka + 6 Districts
                         </span>
-                        <span style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 19.8px;" class="flex items-center gap-1.5">
+                        <span class="breadcrumb" class="flex items-center gap-1.5">
                             <span class="w-1.5 h-1.5 rounded-full bg-[#0E606B]"></span> 18 Months
                         </span>
                     </div>
@@ -224,8 +215,8 @@
             <div style="width: 354.67px; height: 434px;" class="border border-[#EEF3F8] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left pb-[21.68px]">
                 <div class="w-full h-[180px] bg-[#EEF3F8] relative overflow-hidden shrink-0">
                     <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=400" alt="Signing official reform documents" class="w-full h-full object-cover">
-                    <div style="background-color: #003054;" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
-                        <span style="font-family: 'Inter', sans-serif;" class="text-white text-[9.5px] font-bold uppercase tracking-[0.5px]">Regulatory Reform</span>
+                    <div class="banner-bg-navy" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
+                        <span class="text-white text-[9.5px] font-bold uppercase tracking-[0.5px]">Regulatory Reform</span>
                     </div>
                 </div>
                 <div class="p-[20px] flex flex-col justify-between flex-grow">
@@ -255,8 +246,8 @@
             <div style="width: 354.67px; height: 434px;" class="border border-[#EEF3F8] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left pb-[21.68px]">
                 <div class="w-full h-[180px] bg-[#EEF3F8] relative overflow-hidden shrink-0">
                     <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=400" alt="Parliament Assembly Hall" class="w-full h-full object-cover">
-                    <div style="background-color: #003054;" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
-                        <span style="font-family: 'Inter', sans-serif;" class="text-white text-[9.5px] font-bold uppercase tracking-[0.5px]">Anti-Corruption</span>
+                    <div class="banner-bg-navy" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
+                        <span class="text-white text-[9.5px] font-bold uppercase tracking-[0.5px]">Anti-Corruption</span>
                     </div>
                 </div>
                 <div class="p-[20px] flex flex-col justify-between flex-grow">
@@ -286,8 +277,8 @@
             <div style="width: 354.67px; height: 434px;" class="border border-[#EEF3F8] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left pb-[21.68px]">
                 <div class="w-full h-[180px] bg-[#EEF3F8] relative overflow-hidden shrink-0">
                     <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=400" alt="Group of diverse people talking" class="w-full h-full object-cover">
-                    <div style="background-color: #003054;" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
-                        <span style="font-family: 'Inter', sans-serif;" class="text-white text-[9.5px] font-bold uppercase tracking-[0.5px]">Service Delivery</span>
+                    <div class="banner-bg-navy" class="absolute left-4 top-4 px-[12px] py-[5px] rounded-[4px]">
+                        <span class="text-white text-[9.5px] font-bold uppercase tracking-[0.5px]">Service Delivery</span>
                     </div>
                 </div>
                 <div class="p-[20px] flex flex-col justify-between flex-grow">
@@ -338,12 +329,12 @@
         <!-- HEADER MAP FRAME -->
         <div class="w-full text-left">
             <!-- Our Impact Badge -->
-            <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; line-height: 18.15px; letter-spacing: 1.54px;" 
+            <span class="eyebrow" 
                   class="text-[#0E606B] uppercase block mb-2">
                 Our Impact
             </span>
             <!-- Section Stats Title -->
-            <h2 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 38px; line-height: 44.84px; letter-spacing: -0.38px;" 
+            <h2 class="section-heading" 
                 class="text-[#0F172A]">
                 Measurable Outcomes Across Our Portfolio
             </h2>
@@ -421,7 +412,7 @@
 
 
 <!-- WORK WITH US SECTION (Figma Canvas Outer: 1920px Wide, Background: #003054, Added Subtle Bottom Border) -->
-<section style="background-color: #003054;" 
+<section class="banner-bg-navy" 
          class="w-[1920px] h-[421.68px] mx-auto text-center select-none flex flex-col items-center justify-center relative overflow-hidden border-b border-[#18909C]/[0.15]">
     
     <!-- EXACT FIGMA RIGHT CORNER CIRCLE VECTOR BLOB -->
@@ -432,7 +423,7 @@
     <div class="w-[1200px] max-w-[1200px] px-[48px] flex flex-col items-center justify-center text-center relative z-10">
         
         <!-- SUB-TITLE BADGE LAYER -->
-        <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; line-height: 18.15px; letter-spacing: 1.54px;" 
+        <span class="eyebrow" 
               class="text-[#18909C] uppercase block mb-[13px]">
             Collaborate
         </span>
@@ -457,7 +448,7 @@
     <a href="#contact" 
        style="background-color: #A80C18; width: 177px; height: 51.09px;" 
        class="pt-[13px] pr-[32px] pb-[14.09px] pl-[32px] rounded-[6px] inline-flex items-center justify-center gap-1 text-white text-[14px] font-bold transition-all duration-200 hover:bg-[#8B0A14] shadow-md shrink-0">
-        <span style="font-family: 'Inter', sans-serif;">Get In Touch</span>
+        <span>Get In Touch</span>
         <span class="inline-block translate-y-[-1px]">→</span>
     </a>
 
@@ -465,7 +456,7 @@
     <a href="#about-us" 
        style="border: 2px solid rgba(255, 255, 255, 0.35); width: 177px; height: 51.09px;" 
        class="pt-[11px] pr-[32px] pb-[12.09px] pl-[32px] rounded-[6px] inline-flex items-center justify-center text-white text-[14px] font-bold transition-all duration-200 hover:bg-white/10 shrink-0">
-        <span style="font-family: 'Inter', sans-serif;">About GIET</span>
+        <span>About GIET</span>
     </a>
 
 </div>
@@ -520,14 +511,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                     </svg>
-                    <span style="font-family: 'Inter', sans-serif;">Dhaka, Bangladesh</span>
+                    <span>Dhaka, Bangladesh</span>
                 </div>
                 
                 <div class="flex items-center gap-3 text-[#BBCDDE] opacity-90">
                     <svg class="w-[16px] h-[16px] text-[#18909C] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
-                    <a href="mailto:contact@giet.org.bd" style="font-family: 'Inter', sans-serif;" class="hover:text-white hover:underline transition-all">
+                    <a href="mailto:contact@giet.org.bd" class="hover:text-white hover:underline transition-all">
                         contact@giet.org.bd
                     </a>
                 </div>
@@ -537,16 +528,16 @@
     </div>
 
   <!-- BOTTOM RECONCILIATION STRIP (100% Color & Layout Reconciled with #003054 Background) -->
-<div style="background-color: #003054;" class="w-[1920px] h-[60px] pt-[20px] pb-[20px] px-[408px] flex justify-center items-center border-t border-white/10">
+<div class="banner-bg-navy" class="w-[1920px] h-[60px] pt-[20px] pb-[20px] px-[408px] flex justify-center items-center border-t border-white/10">
     <div class="w-[1104px] flex justify-between items-center text-[13px]">
         
         <!-- Copyright Stamp with Light Grey Text Matching image_f59846.png -->
-        <span style="font-family: 'Inter', sans-serif;" class="text-[#BBCDDE] opacity-60 font-normal">
+        <span class="text-[#BBCDDE] opacity-60 font-normal">
             &copy; 2025 Foundation for Governance Innovation and Economic Transformation (GIET). All rights reserved.
         </span>
         
         <!-- Utility Anchor Links -->
-        <div style="font-family: 'Inter', sans-serif;" class="flex items-center gap-6 text-[#BBCDDE] opacity-70 font-normal">
+        <div class="flex items-center gap-6 text-[#BBCDDE] opacity-70 font-normal">
             <a href="#" class="hover:text-white hover:underline transition-all">Privacy Policy</a>
             <a href="#" class="hover:text-white hover:underline transition-all">Terms of Use</a>
         </div>
@@ -556,5 +547,6 @@
 
 </footer>
 
+    <script src="main.js"></script>
 </body>
 </html>

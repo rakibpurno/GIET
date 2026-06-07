@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,16 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #FFFFFF;
-            color: #2D3748;
-        }
-        h1, h2, h3, .serif-font {
-            font-family: 'Merriweather', serif;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="overflow-x-hidden">
 
@@ -81,7 +72,7 @@
     </div>
 </nav>
   
-<section style="background-color: #003054;" 
+<section class="banner-bg-navy" 
          class="w-[1920px] h-[414.40px] relative flex flex-col justify-center items-center text-white overflow-hidden mx-auto pt-[72px] pr-[360px] pb-[72px] pl-[360px] select-none">
   
   <div style="
@@ -101,23 +92,23 @@
     <div class="absolute inset-0 bg-gradient-to-t from-[#003054]/80 via-transparent to-[#003054]/50"></div>
   </div>
   
-  <div style="background-color: rgba(24, 144, 156, 0.07); width: 400px; height: 400px; border-radius: 200px;" 
+  <div class="hero-blob" 
        class="absolute -top-[100px] -right-[100px] z-20 pointer-events-none">
   </div>
 
   <div style="height: 270.4px;" class="w-[1200px] max-w-[1200px] pr-[48px] pl-[48px] flex flex-col justify-between items-start text-left z-30">
     
     <div class="w-full flex flex-col items-start">
-        <div style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 19.8px;" 
+        <div class="breadcrumb" 
              class="text-white/45 flex items-center gap-1.5 tracking-normal mb-[4px]">
           <a href="#" class="hover:text-white transition-colors">Home</a>
           <span class="text-white/30">/</span>
           <span class="text-white/45">Resources</span>
         </div>
 
-        <div style="background-color: #18909C;" class="w-[40px] h-[3px] rounded-[2px] mb-[12px]"></div>
+        <div class="accent-bar" class="w-[40px] h-[3px] rounded-[2px] mb-[12px]"></div>
 
-        <h1 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 52px; line-height: 57.2px; letter-spacing: -1.04px;" 
+        <h1 class="hero-heading" 
             class="text-white tracking-tight drop-shadow-sm mb-[14px]">
           Resources
         </h1>
@@ -163,19 +154,19 @@
     <!-- TAB NAVIGATION SYSTEM (Height: 47px, Border Bottom #E4EAF0) -->
     <!-- ========================================================================= -->
     <div class="w-[1200px] h-[47px] border-b-2 border-[#E4EAF0] flex items-center justify-start gap-[24px]">
-      <button style="font-family: 'Inter', sans-serif;" class="h-full border-b-2 border-[#8B1D2F] text-[#003054] font-semibold text-[13px] px-[2px] tracking-tight transition-all">
+      <button class="h-full border-b-2 border-[#8B1D2F] text-[#003054] font-semibold text-[13px] px-[2px] tracking-tight transition-all">
         Issue Briefs/Articles
       </button>
-      <button style="font-family: 'Inter', sans-serif;" class="h-full border-b-2 border-transparent text-[#64748B] font-medium text-[13px] px-[2px] hover:text-[#003054] transition-all">
+      <button class="h-full border-b-2 border-transparent text-[#64748B] font-medium text-[13px] px-[2px] hover:text-[#003054] transition-all">
         Expert Speak/Blog
       </button>
-      <button style="font-family: 'Inter', sans-serif;" class="h-full border-b-2 border-transparent text-[#64748B] font-medium text-[13px] px-[2px] hover:text-[#003054] transition-all">
+      <button class="h-full border-b-2 border-transparent text-[#64748B] font-medium text-[13px] px-[2px] hover:text-[#003054] transition-all">
         Publications & Reports
       </button>
-      <button style="font-family: 'Inter', sans-serif;" class="h-full border-b-2 border-transparent text-[#64748B] font-medium text-[13px] px-[2px] hover:text-[#003054] transition-all">
+      <button class="h-full border-b-2 border-transparent text-[#64748B] font-medium text-[13px] px-[2px] hover:text-[#003054] transition-all">
         News & Commentary/Op-Ed
       </button>
-      <button style="font-family: 'Inter', sans-serif;" class="h-full border-b-2 border-transparent text-[#64748B] font-medium text-[13px] px-[2px] hover:text-[#003054] transition-all">
+      <button class="h-full border-b-2 border-transparent text-[#64748B] font-medium text-[13px] px-[2px] hover:text-[#003054] transition-all">
         Videos & Podcasts
       </button>
     </div>
@@ -187,7 +178,7 @@
       
       <!-- Column 1: Image Frame -->
       <div class="w-[480px] h-[320px] relative overflow-hidden">
-        <span style="font-family: 'Inter', sans-serif;" class="absolute top-[16px] left-[16px] bg-[#003054] text-white text-[10px] font-bold tracking-wider uppercase py-[4px] px-[8px] rounded-[4px] z-10">
+        <span class="absolute top-[16px] left-[16px] bg-[#003054] text-white text-[10px] font-bold tracking-wider uppercase py-[4px] px-[8px] rounded-[4px] z-10">
           Issue Brief - Featured
         </span>
         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=480&q=80" alt="Featured Article Layout" class="w-full h-full object-cover">
@@ -197,7 +188,7 @@
       <div class="w-[718px] h-[320.5px] pt-[55.65px] pr-[32px] pb-[55.66px] pl-[32px] flex flex-col justify-between items-start">
         <div class="flex flex-col gap-[8px]">
           <!-- Meta Tags Structure -->
-          <div style="font-family: 'Inter', sans-serif;" class="text-[#64748B] text-[11px] font-medium flex items-center gap-[6px]">
+          <div class="text-[#64748B] text-[11px] font-medium flex items-center gap-[6px]">
             <span>14 May 2026</span>
             <span class="text-[#CBD5E1]">•</span>
             <span>Economic Policy</span>
@@ -209,12 +200,12 @@
             Trade Facilitation Reform in Bangladesh: A Path to Single Window Implementation
           </h2>
           <!-- Summary Block -->
-          <p style="font-family: 'Inter', sans-serif;" class="text-[#475569] text-[13px] line-height-[22px] max-w-[650px] mt-[4px]">
+          <p class="text-[#475569] text-[13px] line-height-[22px] max-w-[650px] mt-[4px]">
             This brief analyses the current state of trade procedures and proposes a phased roadmap for implementing a Single Window system, potentially reducing border clearance times by 40% and cutting compliance costs for traders.
           </p>
         </div>
         <!-- Action Trigger Link -->
-        <a href="#" style="font-family: 'Inter', sans-serif;" class="text-[#A80C18] hover:text-[#003054] text-[12px] font-bold flex items-center gap-[4px] transition-colors mt-[12px]">
+        <a href="#" class="text-[#A80C18] hover:text-[#003054] text-[12px] font-bold flex items-center gap-[4px] transition-colors mt-[12px]">
           Read Full Brief <span class="text-[14px]">→</span>
         </a>
       </div>
@@ -229,25 +220,25 @@
       <div class="w-[386.66px] h-[379px] border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
         <div class="flex flex-col">
           <div class="h-[160px] w-full relative overflow-hidden rounded-[8px] -mt-[3px] -mx-[3px]">
-            <span style="font-family: 'Inter', sans-serif;" class="absolute top-[12px] left-[12px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
+            <span class="absolute top-[12px] left-[12px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
             <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=390&q=80" alt="Grievance Redress" class="w-full h-full object-cover">
           </div>
           <div class="pt-[14px] flex flex-col gap-[6px]">
-            <div style="font-family: 'Inter', sans-serif;" class="text-[#64748B] text-[11px] font-medium flex items-center gap-[4px]">
+            <div class="text-[#64748B] text-[11px] font-medium flex items-center gap-[4px]">
               <span>28 Apr 2026</span><span class="text-[#CBD5E1]">•</span><span>Governance Reform</span><span class="text-[#CBD5E1]">•</span><span>10 pages</span>
             </div>
             <h3 style="font-family: 'Merriweather', serif;" class="text-[#003054] text-[15px] font-bold leading-[22px] tracking-tight hover:text-[#8B1D2F] cursor-pointer transition-colors line-clamp-2">
               Strengthening Grievance Redress Mechanisms in Public Service Delivery
             </h3>
-            <p style="font-family: 'Inter', sans-serif;" class="text-[#475569] text-[12px] leading-[18px] line-clamp-2 mt-[2px]">
+            <p class="text-[#475569] text-[12px] leading-[18px] line-clamp-2 mt-[2px]">
               Diagnostic of grievance redress gaps across four ministries with recommendations for a unified digital redress platform.
             </p>
           </div>
         </div>
         <!-- Exact Figma Metric Card Bottom Component Blueprint -->
         <div style="width: 348.66px; height: 26px; border-top: 1px solid #E4EAF0;" class="pt-[10px] pr-[0.01px] flex justify-between items-center bg-white">
-          <span style="font-family: 'Inter', sans-serif;" class="text-[#64748B] text-[11px] font-medium">Dr. A. Rahman</span>
-          <a href="#" style="font-family: 'Inter', sans-serif;" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
+          <span class="text-[#64748B] text-[11px] font-medium">Dr. A. Rahman</span>
+          <a href="#" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
         </div>
       </div>
 
@@ -255,25 +246,25 @@
       <div class="w-[386.66px] h-[379px] border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
         <div class="flex flex-col">
           <div class="h-[160px] w-full relative overflow-hidden rounded-[8px] -mt-[3px] -mx-[3px]">
-            <span style="font-family: 'Inter', sans-serif;" class="absolute top-[12px] left-[12px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
+            <span class="absolute top-[12px] left-[12px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
             <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=390&q=80" alt="SME Financing" class="w-full h-full object-cover">
           </div>
           <div class="pt-[14px] flex flex-col gap-[6px]">
-            <div style="font-family: 'Inter', sans-serif;" class="text-[#64748B] text-[11px] font-medium flex items-center gap-[4px]">
+            <div class="text-[#64748B] text-[11px] font-medium flex items-center gap-[4px]">
               <span>10 Apr 2026</span><span class="text-[#CBD5E1]">•</span><span>Economic Policy</span><span class="text-[#CBD5E1]">•</span><span>14 pages</span>
             </div>
             <h3 style="font-family: 'Merriweather', serif;" class="text-[#003054] text-[15px] font-bold leading-[22px] tracking-tight hover:text-[#8B1D2F] cursor-pointer transition-colors line-clamp-2">
               SME Financing Gaps in Bangladesh: Diagnosis and Policy Pathways
             </h3>
-            <p style="font-family: 'Inter', sans-serif;" class="text-[#475569] text-[12px] leading-[18px] line-clamp-2 mt-[2px]">
+            <p class="text-[#475569] text-[12px] leading-[18px] line-clamp-2 mt-[2px]">
               Quantitative analysis of the financing gap facing SMEs across six priority sectors, with targeted recommendations for Bangladesh Bank.
             </p>
           </div>
         </div>
         <!-- Exact Figma Metric Card Bottom Component Blueprint -->
         <div style="width: 348.66px; height: 26px; border-top: 1px solid #E4EAF0;" class="pt-[10px] pr-[0.01px] flex justify-between items-center bg-white">
-          <span style="font-family: 'Inter', sans-serif;" class="text-[#64748B] text-[11px] font-medium">Prof. N. Islam</span>
-          <a href="#" style="font-family: 'Inter', sans-serif;" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
+          <span class="text-[#64748B] text-[11px] font-medium">Prof. N. Islam</span>
+          <a href="#" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
         </div>
       </div>
 
@@ -281,25 +272,25 @@
       <div class="w-[386.66px] h-[379px] border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
         <div class="flex flex-col">
           <div class="h-[160px] w-full relative overflow-hidden rounded-[8px] -mt-[3px] -mx-[3px]">
-            <span style="font-family: 'Inter', sans-serif;" class="absolute top-[12px] left-[12px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
+            <span class="absolute top-[12px] left-[12px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
             <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=390&q=80" alt="Digital Infrastructure" class="w-full h-full object-cover">
           </div>
           <div class="pt-[14px] flex flex-col gap-[6px]">
-            <div style="font-family: 'Inter', sans-serif;" class="text-[#64748B] text-[11px] font-medium flex items-center gap-[4px]">
+            <div class="text-[#64748B] text-[11px] font-medium flex items-center gap-[4px]">
               <span>2 Apr 2026</span><span class="text-[#CBD5E1]">•</span><span>Digital Governance</span><span class="text-[#CBD5E1]">•</span><span>16 pages</span>
             </div>
             <h3 style="font-family: 'Merriweather', serif;" class="text-[#003054] text-[15px] font-bold leading-[22px] tracking-tight hover:text-[#8B1D2F] cursor-pointer transition-colors line-clamp-2">
               Digital Public Infrastructure: Lessons for Bangladesh from South Asia
             </h3>
-            <p style="font-family: 'Inter', sans-serif;" class="text-[#475569] text-[12px] leading-[18px] line-clamp-2 mt-[2px]">
+            <p class="text-[#475569] text-[12px] leading-[18px] line-clamp-2 mt-[2px]">
               Comparative review of India, Sri Lanka, and Nepal's DPI journeys and a readiness framework for Bangladesh's Digital 2041 agenda.
             </p>
           </div>
         </div>
         <!-- Exact Figma Metric Card Bottom Component Blueprint -->
         <div style="width: 348.66px; height: 26px; border-top: 1px solid #E4EAF0;" class="pt-[10px] pr-[0.01px] flex justify-between items-center bg-white">
-          <span style="font-family: 'Inter', sans-serif;" class="text-[#64748B] text-[11px] font-medium">Ms. F. Begum</span>
-          <a href="#" style="font-family: 'Inter', sans-serif;" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
+          <span class="text-[#64748B] text-[11px] font-medium">Ms. F. Begum</span>
+          <a href="#" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
         </div>
       </div>
 
@@ -307,25 +298,25 @@
       <div class="w-[386.66px] h-[379px] border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
         <div class="flex flex-col">
           <div class="h-[160px] w-full relative overflow-hidden rounded-[8px] -mt-[3px] -mx-[3px]">
-            <span style="font-family: 'Inter', sans-serif;" class="absolute top-[12px] left-[12px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
+            <span class="absolute top-[12px] left-[12px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
             <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=390&q=80" alt="Grievance Redress" class="w-full h-full object-cover">
           </div>
           <div class="pt-[14px] flex flex-col gap-[6px]">
-            <div style="font-family: 'Inter', sans-serif;" class="text-[#64748B] text-[11px] font-medium flex items-center gap-[4px]">
+            <div class="text-[#64748B] text-[11px] font-medium flex items-center gap-[4px]">
               <span>28 Apr 2026</span><span class="text-[#CBD5E1]">•</span><span>Governance Reform</span><span class="text-[#CBD5E1]">•</span><span>10 pages</span>
             </div>
             <h3 style="font-family: 'Merriweather', serif;" class="text-[#003054] text-[15px] font-bold leading-[22px] tracking-tight hover:text-[#8B1D2F] cursor-pointer transition-colors line-clamp-2">
               Strengthening Grievance Redress Mechanisms in Public Service Delivery
             </h3>
-            <p style="font-family: 'Inter', sans-serif;" class="text-[#475569] text-[12px] leading-[18px] line-clamp-2 mt-[2px]">
+            <p class="text-[#475569] text-[12px] leading-[18px] line-clamp-2 mt-[2px]">
               Diagnostic of grievance redress gaps across four ministries with recommendations for a unified digital redress platform.
             </p>
           </div>
         </div>
         <!-- Exact Figma Metric Card Bottom Component Blueprint -->
         <div style="width: 348.66px; height: 26px; border-top: 1px solid #E4EAF0;" class="pt-[10px] pr-[0.01px] flex justify-between items-center bg-white">
-          <span style="font-family: 'Inter', sans-serif;" class="text-[#64748B] text-[11px] font-medium">Dr. A. Rahman</span>
-          <a href="#" style="font-family: 'Inter', sans-serif;" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
+          <span class="text-[#64748B] text-[11px] font-medium">Dr. A. Rahman</span>
+          <a href="#" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
         </div>
       </div>
 
@@ -333,25 +324,25 @@
       <div class="w-[386.66px] h-[379px] border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
         <div class="flex flex-col">
           <div class="h-[160px] w-full relative overflow-hidden rounded-[8px] -mt-[3px] -mx-[3px]">
-            <span style="font-family: 'Inter', sans-serif;" class="absolute top-[12px] left-[12px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
+            <span class="absolute top-[12px] left-[12px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
             <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=390&q=80" alt="SME Financing" class="w-full h-full object-cover">
           </div>
           <div class="pt-[14px] flex flex-col gap-[6px]">
-            <div style="font-family: 'Inter', sans-serif;" class="text-[#64748B] text-[11px] font-medium flex items-center gap-[4px]">
+            <div class="text-[#64748B] text-[11px] font-medium flex items-center gap-[4px]">
               <span>10 Apr 2026</span><span class="text-[#CBD5E1]">•</span><span>Economic Policy</span><span class="text-[#CBD5E1]">•</span><span>14 pages</span>
             </div>
             <h3 style="font-family: 'Merriweather', serif;" class="text-[#003054] text-[15px] font-bold leading-[22px] tracking-tight hover:text-[#8B1D2F] cursor-pointer transition-colors line-clamp-2">
               SME Financing Gaps in Bangladesh: Diagnosis and Policy Pathways
             </h3>
-            <p style="font-family: 'Inter', sans-serif;" class="text-[#475569] text-[12px] leading-[18px] line-clamp-2 mt-[2px]">
+            <p class="text-[#475569] text-[12px] leading-[18px] line-clamp-2 mt-[2px]">
               Quantitative analysis of the financing gap facing SMEs across six priority sectors, with targeted recommendations for Bangladesh Bank.
             </p>
           </div>
         </div>
         <!-- Exact Figma Metric Card Bottom Component Blueprint -->
         <div style="width: 348.66px; height: 26px; border-top: 1px solid #E4EAF0;" class="pt-[10px] pr-[0.01px] flex justify-between items-center bg-white">
-          <span style="font-family: 'Inter', sans-serif;" class="text-[#64748B] text-[11px] font-medium">Prof. N. Islam</span>
-          <a href="#" style="font-family: 'Inter', sans-serif;" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
+          <span class="text-[#64748B] text-[11px] font-medium">Prof. N. Islam</span>
+          <a href="#" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
         </div>
       </div>
 
@@ -359,25 +350,25 @@
       <div class="w-[386.66px] h-[379px] border border-[#E4EAF0] rounded-[14px] bg-white overflow-hidden flex flex-col justify-between p-[19px] shadow-sm hover:shadow-md transition-shadow">
         <div class="flex flex-col">
           <div class="h-[160px] w-full relative overflow-hidden rounded-[8px] -mt-[3px] -mx-[3px]">
-            <span style="font-family: 'Inter', sans-serif;" class="absolute top-[12px] left-[12px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
+            <span class="absolute top-[12px] left-[12px] bg-[#003054] text-white text-[9px] font-bold tracking-wider uppercase py-[3px] px-[6px] rounded-[3px] z-10">Issue Brief</span>
             <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=390&q=80" alt="Digital Infrastructure" class="w-full h-full object-cover">
           </div>
           <div class="pt-[14px] flex flex-col gap-[6px]">
-            <div style="font-family: 'Inter', sans-serif;" class="text-[#64748B] text-[11px] font-medium flex items-center gap-[4px]">
+            <div class="text-[#64748B] text-[11px] font-medium flex items-center gap-[4px]">
               <span>2 Apr 2026</span><span class="text-[#CBD5E1]">•</span><span>Digital Governance</span><span class="text-[#CBD5E1]">•</span><span>16 pages</span>
             </div>
             <h3 style="font-family: 'Merriweather', serif;" class="text-[#003054] text-[15px] font-bold leading-[22px] tracking-tight hover:text-[#8B1D2F] cursor-pointer transition-colors line-clamp-2">
               Digital Public Infrastructure: Lessons for Bangladesh from South Asia
             </h3>
-            <p style="font-family: 'Inter', sans-serif;" class="text-[#475569] text-[12px] leading-[18px] line-clamp-2 mt-[2px]">
+            <p class="text-[#475569] text-[12px] leading-[18px] line-clamp-2 mt-[2px]">
               Comparative review of India, Sri Lanka, and Nepal's DPI journeys and a readiness framework for Bangladesh's Digital 2041 agenda.
             </p>
           </div>
         </div>
         <!-- Exact Figma Metric Card Bottom Component Blueprint -->
         <div style="width: 348.66px; height: 26px; border-top: 1px solid #E4EAF0;" class="pt-[10px] pr-[0.01px] flex justify-between items-center bg-white">
-          <span style="font-family: 'Inter', sans-serif;" class="text-[#64748B] text-[11px] font-medium">Ms. F. Begum</span>
-          <a href="#" style="font-family: 'Inter', sans-serif;" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
+          <span class="text-[#64748B] text-[11px] font-medium">Ms. F. Begum</span>
+          <a href="#" class="text-[#0E606B] hover:text-[#8B1D2F] text-[11px] font-bold transition-colors">Download PDF</a>
         </div>
       </div>
 
@@ -387,7 +378,7 @@
     <!-- ACTION CTA: LOAD MORE TRIGGER LINK INTERACTION -->
     <!-- ========================================================================= -->
     <div class="w-full flex justify-center items-center mt-[16px]">
-      <button style="font-family: 'Inter', sans-serif;" 
+      <button 
               class="border border-[#CBD5E1] hover:border-[#003054] text-[#003054] font-semibold text-[13px] py-[10px] px-[24px] rounded-full flex items-center gap-[6px] transition-colors bg-white shadow-sm hover:shadow">
         <span>Load More</span>
         <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-[1px]">
@@ -495,7 +486,7 @@
             <polyline points="17 8 12 3 7 8"/>
             <line x1="12" y1="3" x2="12" y2="15"/>
           </svg>
-          <span style="font-family: 'Inter', sans-serif;" class="text-[12px]">Upload File</span>
+          <span class="text-[12px]">Upload File</span>
         </div>
 
         <!-- Submit Event Button Component Trigger -->
@@ -559,14 +550,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                     </svg>
-                    <span style="font-family: 'Inter', sans-serif;">Dhaka, Bangladesh</span>
+                    <span>Dhaka, Bangladesh</span>
                 </div>
                 
                 <div class="flex items-center gap-3 text-[#BBCDDE] opacity-90">
                     <svg class="w-[16px] h-[16px] text-[#18909C] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
-                    <a href="mailto:contact@giet.org.bd" style="font-family: 'Inter', sans-serif;" class="hover:text-white hover:underline transition-all">
+                    <a href="mailto:contact@giet.org.bd" class="hover:text-white hover:underline transition-all">
                         contact@giet.org.bd
                     </a>
                 </div>
@@ -576,16 +567,16 @@
     </div>
 
   <!-- BOTTOM RECONCILIATION STRIP (100% Color & Layout Reconciled with #003054 Background) -->
-<div style="background-color: #003054;" class="w-[1920px] h-[60px] pt-[20px] pb-[20px] px-[408px] flex justify-center items-center border-t border-white/10">
+<div class="banner-bg-navy" class="w-[1920px] h-[60px] pt-[20px] pb-[20px] px-[408px] flex justify-center items-center border-t border-white/10">
     <div class="w-[1104px] flex justify-between items-center text-[13px]">
         
         <!-- Copyright Stamp with Light Grey Text Matching image_f59846.png -->
-        <span style="font-family: 'Inter', sans-serif;" class="text-[#BBCDDE] opacity-60 font-normal">
+        <span class="text-[#BBCDDE] opacity-60 font-normal">
             &copy; 2025 Foundation for Governance Innovation and Economic Transformation (GIET). All rights reserved.
         </span>
         
         <!-- Utility Anchor Links -->
-        <div style="font-family: 'Inter', sans-serif;" class="flex items-center gap-6 text-[#BBCDDE] opacity-70 font-normal">
+        <div class="flex items-center gap-6 text-[#BBCDDE] opacity-70 font-normal">
             <a href="#" class="hover:text-white hover:underline transition-all">Privacy Policy</a>
             <a href="#" class="hover:text-white hover:underline transition-all">Terms of Use</a>
         </div>
@@ -595,5 +586,6 @@
 
 </footer>
 
+    <script src="main.js"></script>
 </body>
 </html>

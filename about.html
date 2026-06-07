@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,16 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #FFFFFF;
-            color: #2D3748;
-        }
-        h1, h2, h3, .serif-font {
-            font-family: 'Merriweather', serif;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="overflow-x-hidden">
 
@@ -81,30 +72,30 @@
 </nav>
   
 <!-- ABOUT US HERO BANNER SUPERSTRUCTURE (Figma Container: 1920px x 372.2px) -->
-<section style="background-color: #003054;" 
+<section class="banner-bg-navy" 
          class="w-[1920px] h-[372.20px] relative flex flex-col justify-center items-center text-white overflow-hidden mx-auto pt-[72px] pr-[360px] pb-[72px] pl-[360px] select-none">
   
   <!-- INNER CONTENT INNER CONTAINER (Exact Width: 1200px Layout Engine) -->
   <div class="w-[1200px] h-[228.20px] max-w-[1200px] pr-[48px] pl-[48px] flex flex-col justify-between items-start text-left">
     
     <!-- BREADCRUMBS WRAPPER SYSTEM -->
-    <div style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 19.8px;" 
+    <div class="breadcrumb" 
          class="text-white/45 flex items-center gap-1.5 tracking-normal">
       <a href="#" class="hover:text-white transition-colors">Home</a>
       <span class="text-white/30">/</span>
       <span class="text-white">About Us</span>
     </div>
 
-    <div style="background-color: #18909C;" class="w-[40px] h-[3px] rounded-[2px] my-[6px]"></div>
+    <div class="accent-bar" class="w-[40px] h-[3px] rounded-[2px] my-[6px]"></div>
 
     <!-- MAIN SECTION TITLE (Merriweather Font Layout) -->
-    <h1 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 52px; line-height: 57.2px; letter-spacing: -1.04px;" 
+    <h1 class="hero-heading" 
         class="text-white tracking-tight drop-shadow-sm">
       About GIET
     </h1>
 
     <!-- SUMMARY PARAGRAPH SPECIFICATION -->
-    <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 17px; line-height: 29.75px;" 
+    <p class="hero-sub" 
        class="text-white/60 max-w-[780px] font-normal tracking-normal drop-shadow-sm">
       A non-partisan, non-profit think tank dedicated to advancing transparent governance, institutional reform, and economic transformation across Bangladesh.
     </p>
@@ -127,25 +118,25 @@
         <div class="w-[512px] min-h-[482.39px] flex flex-col text-left items-start justify-center gap-[13px] relative top-[13.85px]">
             
             <!-- WHO WE ARE META BADGE (Color Code: #0E606B, SemiBold, Tracking-Spacing) -->
-            <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; line-height: 18.15px; letter-spacing: 1.54px;" 
+            <span class="eyebrow" 
                   class="text-[#0E606B] uppercase block">
                 Who We Are
             </span>
             
             <!-- CORE HEADING HERO (Merriweather, ExtraBold, Font-Size 38px, Dark Slate #0F172A) -->
-            <h2 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 38px; line-height: 44.84px; letter-spacing: -0.38px;" 
+            <h2 class="section-heading" 
                 class="text-[#0F172A]">
                 Transforming Challenges <br>into Strategic <br>Opportunities
             </h2>
             
             <!-- PARAGRAPH ONE TEXT LAYER (#1A1A1A, 16px, Exact Line-Height 28.8px) -->
-            <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; line-height: 28.8px;" 
+            <p class="body-text" 
                class="text-[#1A1A1A] font-normal tracking-normal">
                 Through structured empirical investigations and systematic multi-sectoral stakeholder consultations, GIET directly addresses the systemic complexities surrounding public policy architecture and governance frameworks.
             </p>
             
             <!-- PARAGRAPH TWO TEXT LAYER -->
-            <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; line-height: 28.8px;" 
+            <p class="body-text" 
                class="text-[#1A1A1A] font-normal tracking-normal mb-[2px]">
                 We deliver data-driven diagnostic blueprints that enable government agencies, international development institutions, and regulatory councils to design and execute structural changes.
             </p>
@@ -172,12 +163,12 @@
         <!-- HEADER MODULE LAYER -->
         <div class="flex flex-col items-center justify-center gap-3">
             <!-- OUR INSTITUTION SUB-TITLE METADATA (#0E606B, 11px, SemiBold) -->
-            <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; line-height: 18.15px; letter-spacing: 1.54px;" 
+            <span class="eyebrow" 
                   class="text-[#0E606B] uppercase block">
                 Our Institution
             </span>
             <!-- MAIN HEADING TITLE (Merriweather ExtraBold, 38px, Dark Slate #0F172A) -->
-            <h2 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 38px; line-height: 44.84px; letter-spacing: -0.38px;" 
+            <h2 class="section-heading" 
                 class="text-[#0F172A]">
                 Mission, Vision & Mandate
             </h2>
@@ -187,7 +178,7 @@
         <div class="w-[1104px] min-h-[298.5px] grid grid-cols-3 gap-[20px] mx-auto text-left">
             
             <!-- CARD 1: MISSION (Deep Blue #003054 with Soft Overlay Circle Effect) -->
-            <div style="background-color: #003054;" 
+            <div class="banner-bg-navy" 
                  class="w-[354.67px] h-[298px] rounded-[20px] pt-[40px] pr-[32px] pb-[42px] pl-[32px] flex flex-col justify-start items-start gap-[18px] text-white shadow-sm shrink-0 relative overflow-hidden">
                 
                 <!-- Top Right Abstract Shape Match -->
@@ -377,12 +368,12 @@
         <!-- HEADER TEXT LAYER GROUP -->
         <div class="flex flex-col items-start justify-start gap-3">
             <!-- SUB-TITLE METADATA (Inter SemiBold, Color #0E606B) -->
-            <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; line-height: 18.15px; letter-spacing: 1.54px;" 
+            <span class="eyebrow" 
                   class="text-[#0E606B] uppercase block">
                 Our Approach
             </span>
             <!-- MAIN TITLE HEADING (Merriweather ExtraBold, Color #0F172A) -->
-            <h2 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 38px; line-height: 44.84px; letter-spacing: -0.38px;" 
+            <h2 class="section-heading" 
                 class="text-[#0F172A]">
                 What Sets GIET Apart
             </h2>
@@ -471,12 +462,12 @@
         <!-- HEADER TEXT LAYER MODULE -->
         <div class="flex flex-col items-start justify-start gap-3">
             <!-- SUB-TITLE METADATA (Inter SemiBold, Color #0E606B, 11px) -->
-            <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; line-height: 18.15px; letter-spacing: 1.54px;" 
+            <span class="eyebrow" 
                   class="text-[#0E606B] uppercase block">
                 Our Values
             </span>
             <!-- MAIN HEADING TITLE (Merriweather ExtraBold, 38px, Dark Slate #0F172A) -->
-            <h2 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 38px; line-height: 44.84px; letter-spacing: -0.38px;" 
+            <h2 class="section-heading" 
                 class="text-[#0F172A]">
                 The Principles That Guide Our Work
             </h2>
@@ -673,14 +664,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                     </svg>
-                    <span style="font-family: 'Inter', sans-serif;">Dhaka, Bangladesh</span>
+                    <span>Dhaka, Bangladesh</span>
                 </div>
                 
                 <div class="flex items-center gap-3 text-[#BBCDDE] opacity-90">
                     <svg class="w-[16px] h-[16px] text-[#18909C] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
-                    <a href="mailto:contact@giet.org.bd" style="font-family: 'Inter', sans-serif;" class="hover:text-white hover:underline transition-all">
+                    <a href="mailto:contact@giet.org.bd" class="hover:text-white hover:underline transition-all">
                         contact@giet.org.bd
                     </a>
                 </div>
@@ -690,16 +681,16 @@
     </div>
 
   <!-- BOTTOM RECONCILIATION STRIP (100% Color & Layout Reconciled with #003054 Background) -->
-<div style="background-color: #003054;" class="w-[1920px] h-[60px] pt-[20px] pb-[20px] px-[408px] flex justify-center items-center border-t border-white/10">
+<div class="banner-bg-navy" class="w-[1920px] h-[60px] pt-[20px] pb-[20px] px-[408px] flex justify-center items-center border-t border-white/10">
     <div class="w-[1104px] flex justify-between items-center text-[13px]">
         
         <!-- Copyright Stamp with Light Grey Text Matching image_f59846.png -->
-        <span style="font-family: 'Inter', sans-serif;" class="text-[#BBCDDE] opacity-60 font-normal">
+        <span class="text-[#BBCDDE] opacity-60 font-normal">
             &copy; 2025 Foundation for Governance Innovation and Economic Transformation (GIET). All rights reserved.
         </span>
         
         <!-- Utility Anchor Links -->
-        <div style="font-family: 'Inter', sans-serif;" class="flex items-center gap-6 text-[#BBCDDE] opacity-70 font-normal">
+        <div class="flex items-center gap-6 text-[#BBCDDE] opacity-70 font-normal">
             <a href="#" class="hover:text-white hover:underline transition-all">Privacy Policy</a>
             <a href="#" class="hover:text-white hover:underline transition-all">Terms of Use</a>
         </div>
@@ -709,5 +700,6 @@
 
 </footer>
 
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,183 @@
+/* ══════════════════════════════════════════
+   GIET — Shared Stylesheet
+   Covers: base, typography classes, and
+   complex CSS that Tailwind can't express
+   as simple utility classes (gradients,
+   backdrop-filter, background-image, etc.)
+   ══════════════════════════════════════════ */
+
+/* ── Base ─────────────────────────────── */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF;
+  color: #2D3748;
+  overflow-x: hidden;
+}
+
+/* ── Serif headings ──────────────────── */
+h1, h2, h3, h4, .font-serif-custom {
+  font-family: 'Merriweather', serif;
+}
+
+/* ══ Typography utility classes ══════════
+   These replace repeated inline style=""
+   blocks for font-family + size combos
+   ════════════════════════════════════════ */
+
+/* Hero page-banner heading — 52px */
+.hero-heading {
+  font-family: 'Merriweather', serif;
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 57.2px;
+  letter-spacing: -1.04px;
+}
+
+/* Large section heading — 38px */
+.section-heading {
+  font-family: 'Merriweather', serif;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 44.84px;
+  letter-spacing: -0.38px;
+}
+
+/* Hero h1 used in homepage slider — 56px */
+.hero-h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  letter-spacing: -0.5px;
+}
+
+/* Card / detail heading — 24px */
+.card-heading {
+  font-family: 'Merriweather', serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 31.2px;
+}
+
+/* Eyebrow label — 11px uppercase */
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 18.15px;
+  letter-spacing: 1.54px;
+  text-transform: uppercase;
+}
+
+/* Breadcrumb text — 12px */
+.breadcrumb {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19.8px;
+}
+
+/* Hero subtitle — 17px */
+.hero-sub {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29.75px;
+}
+
+/* Body paragraph — 16px */
+.body-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28.8px;
+}
+
+/* Small body — 14px */
+.small-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23.1px;
+}
+
+/* Footer body — 13px */
+.footer-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23.4px;
+}
+
+/* ══ Decorative helpers ═══════════════════ */
+
+/* Teal accent bar used under section titles */
+.accent-bar {
+  background-color: #18909C;
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+/* Circular blob background decoration in hero banners */
+.hero-blob {
+  background-color: rgba(24, 144, 156, 0.07);
+  width: 400px;
+  height: 400px;
+  border-radius: 200px;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* ══ Complex backgrounds (Tailwind can't do these inline) ══ */
+
+/* Page-banner hero — solid navy bg */
+.banner-bg-navy {
+  background-color: #003054;
+}
+
+/* Metadata strip below hero image */
+.meta-strip {
+  background: rgba(0, 32, 63, 0.85);
+  backdrop-filter: blur(4px);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Dark teal icon container inside meta strip */
+.meta-icon-box {
+  background-color: rgba(24, 144, 156, 0.12);
+}
+
+/* eventdetails / projectdetails hero gradient overlay */
+.hero-gradient-overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 20, 48, 0.96) 0%,
+    rgba(0, 20, 48, 0.6) 55%,
+    rgba(0, 20, 48, 0.2) 100%
+  );
+}
+
+/* workdetails hero gradient */
+.hero-gradient-dark {
+  background: linear-gradient(
+    rgba(0, 48, 84, 0.85),
+    rgba(0, 48, 84, 0.95)
+  );
+}
+
+/* index.html homepage slider slide bg overlays */
+.slide-overlay-55 {
+  background: linear-gradient(rgba(0,24,43,0.55), rgba(0,24,43,0.55));
+}
+.slide-overlay-60 {
+  background: linear-gradient(rgba(0,24,43,0.60), rgba(0,24,43,0.60));
+}
+
+/* ══ Card shadows ═════════════════════════ */
+.card-shadow {
+  box-shadow: 0px 8px 36px 0px rgba(0, 48, 84, 0.13);
+}
+
+/* ══ iframe reset ═════════════════════════ */
+iframe { border: 0; }
