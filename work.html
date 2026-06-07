@@ -8,20 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #FFFFFF;
-            color: #2D3748;
-        }
-        h1, h2, h3, .serif-font {
-            font-family: 'Merriweather', serif;
-        }
-    </style>
 </head>
 <body class="overflow-x-hidden">
 
-<nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between mx-auto select-none">
+<nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between select-none">
     
     <div class="w-full max-w-[1104px] h-[68px] flex items-center justify-between">
       
@@ -101,8 +91,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 </script>
   
 <!-- ABOUT US HERO BANNER SUPERSTRUCTURE (Figma Container: 1920px x 372.2px) -->
-<section style="background-color: #003054;" 
-         class="w-full h-auto md:h-[372.20px] relative flex flex-col justify-center items-center text-white overflow-hidden mx-auto pt-[72px] px-4 md:pr-[360px] md:pb-[72px] md:pl-[360px] select-none">
+<section class="bg-[#003054] w-full h-auto md:h-[372.2px] relative flex flex-col justify-center items-center text-white overflow-hidden pt-[72px] pb-[72px] px-4 md:pr-[360px] md:pl-[360px] select-none">
   
   <!-- RIGHT UPPER CORNER BACKGROUND DECORATION SHAPE -->
   <!-- Width: 400px, Height: 400px, Radius: 200px, Color Token: #18909C12 (rgba 7% opacity) -->
@@ -111,7 +100,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
   </div>
 
   <!-- INNER CONTENT INNER CONTAINER (Exact Width: 1200px Layout Engine) -->
-  <div class="w-[1200px] h-auto md:h-[228.20px] max-w-[1200px] pr-[48px] pl-[48px] flex flex-col justify-between items-start text-left z-10">
+  <div class="w-full max-w-[1200px] h-auto md:h-[228.2px] px-4 md:pr-[48px] md:pl-[48px] flex flex-col items-start text-left z-10 gap-[15.2px]">
     
     <!-- BREADCRUMBS WRAPPER SYSTEM -->
     <div style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 19.8px;" 
@@ -128,7 +117,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <div style="background-color: #18909C;" class="w-[40px] h-[3px] rounded-[2px] my-[6px]"></div>
 
     <!-- MAIN SECTION TITLE (Merriweather Font Layout) -->
-    <h1 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 52px; line-height: 57.2px; letter-spacing: -1.04px;" 
+    <h1 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: clamp(28px,5vw,52px); line-height: 1.1; letter-spacing: -0.5px;" 
         class="text-white tracking-tight drop-shadow-sm">
       Areas of Work
     </h1>
@@ -142,7 +131,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
   </div>
 </section>
 
-<section class="w-full bg-[#F7F9FB] pt-[88px] pb-[88px] px-4 md:px-[408px] flex flex-col items-center mx-auto select-none">
+<section class="w-full bg-[#F7F9FB] pt-[48px] pb-[48px] md:pt-[88px] md:pb-[88px] px-4 md:px-[408px] flex flex-col items-center select-none">
     
     <!-- TOP HEADER UTILITY ROW -->
  <div class="w-full max-w-[1104px] flex justify-between items-end mb-10 text-left">
@@ -153,10 +142,10 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 </div>
 
     <!-- CORE RE-ENGINEERED COMPONENT GRID (9 Cards Matrix Configuration) -->
-    <div class="w-[1104px] max-w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-[22px]">
+    <div class="w-full max-w-[1104px] grid grid-cols-1 md:grid-cols-3 gap-[22px]">
         
         <!-- CARD ITEM 1 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Governance Innovation.png" alt="Governance">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Governance & Accountability</span>
@@ -167,7 +156,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- CARD ITEM 2 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Institutional Reform.png" alt="Regulatory">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Institutional Reforms</span>
@@ -178,7 +167,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- CARD ITEM 3 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Economic Transformation.png" alt="Economic">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Macroeconomic Policy</span>
@@ -189,7 +178,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- CARD ITEM 4 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Trade Facilitation.png" alt="Trade">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Trade & Investment</span>
@@ -200,7 +189,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- CARD ITEM 5 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Background (2).png" alt="Investment">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Investment Promotion</span>
@@ -211,7 +200,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- CARD ITEM 6 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Digital Transformation.png" alt="Digital">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Digital Economy</span>
@@ -222,7 +211,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- CARD ITEM 7 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Research and Publications.png" alt="Research">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Research & Publications</span>
@@ -233,7 +222,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- CARD ITEM 8 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Capacity Building.png" alt="Capacity">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Capacity Building</span>
@@ -244,7 +233,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- CARD ITEM 9 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Social Inclusion.png" alt="Inclusion">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Social Inclusion</span>
@@ -255,7 +244,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
               <!-- CARD ITEM 10 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Trade Facilitation.png" alt="Trade">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Trade & Investment</span>
@@ -266,7 +255,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- CARD ITEM 11 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Background (2).png" alt="Investment">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Investment Promotion</span>
@@ -277,7 +266,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- CARD ITEM 12 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Digital Transformation.png" alt="Digital">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Digital Economy</span>
@@ -288,7 +277,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- CARD ITEM 13 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Research and Publications.png" alt="Research">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Research & Publications</span>
@@ -299,7 +288,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- CARD ITEM 14 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Capacity Building.png" alt="Capacity">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Capacity Building</span>
@@ -310,7 +299,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- CARD ITEM 15 -->
-        <div class="w-[353.33px] h-[466.47px] bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
+        <div class="w-full bg-white border border-[#E4EAF0] rounded-[10px] overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md">
             <img class="w-full h-48 object-cover" src="images/Social Inclusion.png" alt="Inclusion">
             <div class="p-6 flex flex-col flex-grow text-left">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 10.5px; line-height: 100%; letter-spacing: 1.47px;" class="text-[#0E606B] uppercase mb-2 block">Social Inclusion</span>
@@ -326,14 +315,14 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
 <!-- WORK WITH US SECTION (Figma Canvas Outer: 1920px Wide, Background: #003054, Added Subtle Bottom Border) -->
 <section style="background-color: #003054;" 
-         class="w-full h-[421.68px] mx-auto text-center select-none flex flex-col items-center justify-center relative overflow-hidden border-b border-[#18909C]/[0.15]">
+         class="w-full py-[48px] md:py-[80px] text-center select-none flex flex-col items-center justify-center relative overflow-hidden border-b border-[#18909C]/[0.15]">
     
     <!-- EXACT FIGMA RIGHT CORNER CIRCLE VECTOR BLOB -->
     <div style="width: 320px; height: 320px; top: -60px; left: 1660px; background-color: #18909C14; border-radius: 160px;" 
          class="absolute pointer-events-none"></div>
 
     <!-- INNER CONTAINER ELEMENT (Width: 1200px, Padding Horizontal: 48px, Stack Gap: 13px) -->
-    <div class="w-full max-w-[1200px] px-[48px] flex flex-col items-center justify-center text-center relative z-10">
+    <div class="w-full max-w-[1200px] px-4 md:px-[48px] flex flex-col items-center justify-center text-center relative z-10">
         
         <!-- SUB-TITLE BADGE LAYER -->
         <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; line-height: 18.15px; letter-spacing: 1.54px;" 
@@ -364,7 +353,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     </div>
 </section>
 
-   <footer class="w-full mx-auto relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
+   <footer class="w-full relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
     
     <div class="w-full max-w-[1104px] mx-auto flex flex-col md:flex-row justify-between items-start pb-[40px] px-4 md:px-0 gap-8 md:gap-0">
         
