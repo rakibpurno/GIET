@@ -104,8 +104,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
   <!-- TEXT CONTAINER (Exact Width: 1200px, Height: 249px, Padding & Gap Layout Engine) -->
   <!-- pt-[110px] added to push content down perfectly within the 607.78px tall container -->
-  <div style="height: 249px;" 
-       class="w-full max-w-[1200px] mx-auto pr-[48px] pb-[48px] pl-[48px] mt-auto flex flex-col justify-end items-start text-left gap-[14px] z-10 relative">
+  <div class="w-full max-w-[1200px] mx-auto px-4 md:pr-[48px] md:pl-[48px] pb-[48px] mt-auto flex flex-col justify-end items-start text-left gap-[14px] z-10 relative">
     
  <div class="w-full flex justify-between items-start">
     <div style="font-family:'Inter',sans-serif;font-size:12px;line-height:19.8px;" 
@@ -127,7 +126,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     </div>
 
     <!-- 3. MAIN TITLE -->
-    <h1 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 42px; line-height: 52px; letter-spacing: -0.5px;" 
+    <h1 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: clamp(26px,4vw,42px); line-height: 1.2; letter-spacing: -0.5px;" 
         class="text-white max-w-[920px] drop-shadow-sm m-0">
         Strengthening Citizen–Centric Public Service Delivery in Bangladesh
     </h1>
@@ -238,9 +237,9 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
  <section class="w-full py-[48px] md:py-[72px] px-4 md:px-[360px] bg-white select-none flex items-start justify-center">
     
-    <div class="w-full max-w-[1104px] grid grid-cols-[724px_320px] gap-[60px] items-start">
+    <div class="w-full max-w-[1104px] grid grid-cols-1 md:grid-cols-[724px_320px] gap-[40px] md:gap-[60px] items-start">
         
-        <div class="w-[724px] flex flex-col text-left">
+        <div class="w-full flex flex-col text-left">
             
             <h2 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 26px; line-height: 36px;" class="text-[#0F172A] mb-[18px]">
                 Project Overview
@@ -255,7 +254,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </div>
 
             <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-[16px] mb-[44px]">
-                <div style="height: 142.4px;" class="bg-[#F7F9FB] border border-[#E4EAF0] rounded-[14px] p-[22px] flex flex-col justify-center items-center text-center">
+                <div class="bg-[#F7F9FB] border border-[#E4EAF0] rounded-[14px] p-[22px] flex flex-col justify-center items-center text-center">
                     <span style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 38px; line-height: 100%;" class="text-[#0E606B] block mb-[10px]">
                         6
                     </span>
@@ -263,7 +262,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                         Ministries covered across the diagnostic
                     </p>
                 </div>
-                <div style="height: 142.4px;" class="bg-[#F7F9FB] border border-[#E4EAF0] rounded-[14px] p-[22px] flex flex-col justify-center items-center text-center">
+                <div class="bg-[#F7F9FB] border border-[#E4EAF0] rounded-[14px] p-[22px] flex flex-col justify-center items-center text-center">
                     <span style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 38px; line-height: 100%;" class="text-[#A80C18] block mb-[10px]">
                         12K+
                     </span>
@@ -271,7 +270,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                         Civil servants reached through training & reform programme
                     </p>
                 </div>
-                <div style="height: 142.4px;" class="bg-[#F7F9FB] border border-[#E4EAF0] rounded-[14px] p-[22px] flex flex-col justify-center items-center text-center">
+                <div class="bg-[#F7F9FB] border border-[#E4EAF0] rounded-[14px] p-[22px] flex flex-col justify-center items-center text-center">
                     <span style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 38px; line-height: 100%;" class="text-[#0F172A] block mb-[10px]">
                         40%
                     </span>
@@ -405,7 +404,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
         </div>
 
-        <div class="w-[320px] flex flex-col gap-[20px] sticky top-[72px]">
+        <div class="w-full md:w-[320px] flex flex-col gap-[20px] md:sticky md:top-[72px]">
             
             <div class="w-full bg-[#00203F] text-white p-[24px]  text-left flex flex-col gap-[14px]">
                 <div class="flex flex-col gap-[6px]">
@@ -478,8 +477,8 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
 
 
-<section style="height: 521.59px;" class="w-full mx-auto pt-[72px] pb-[72px] px-4 md:px-[360px] bg-[#F7F9FB] select-none flex items-center justify-center">
-    <div class="w-full max-w-[1200px] px-[48px] flex flex-col gap-[36px]">
+<section class="w-full py-[48px] md:py-[72px] px-4 md:px-[360px] bg-[#F7F9FB] select-none flex items-center justify-center">
+    <div class="w-full max-w-[1200px] px-0 md:px-[48px] flex flex-col gap-[36px]">
         
         <div class="w-full flex justify-between items-end pb-4">
             <div class="text-left">
@@ -499,9 +498,9 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </a>
         </div>
 
-        <div class="w-full max-w-[1104px] grid grid-cols-3 gap-[20px]">
+        <div class="w-full max-w-[1104px] grid grid-cols-1 md:grid-cols-3 gap-[20px]">
             
-            <div style="width: 354.67px; height: 318.6px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
+            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
                 <div class="w-full h-[180px] bg-[#EEF3F8] overflow-hidden relative">
                     <img src="images/Institutional Reform.png" alt="Project Gavel" class="w-full h-full object-cover">
                 </div>
@@ -525,7 +524,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 </div>
             </div>
 
-            <div style="width: 354.67px; height: 318.6px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
+            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
                 <div class="w-full h-[180px] bg-[#EEF3F8] overflow-hidden relative">
                     <img src="images/Workshop.png" alt="Parliament Hall" class="w-full h-full object-cover">
                 </div>
@@ -549,7 +548,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 </div>
             </div>
 
-            <div style="width: 354.67px; height: 318.6px;" class="border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
+            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
                 <div class="w-full h-[180px] bg-[#EEF3F8] overflow-hidden relative">
                     <img src="images/Digital Governance.png" alt="People discussing with tablet" class="w-full h-full object-cover">
                 </div>
