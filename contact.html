@@ -71,17 +71,13 @@
     </div>
 </nav>
   
-<section class="bg-[#003054]" 
-         class="w-[1920px] h-[372.20px] relative flex flex-col justify-center items-center text-white overflow-hidden mx-auto pt-[72px] pr-[360px] pb-[72px] pl-[360px] select-none">
-  
-  <!-- RIGHT UPPER CORNER BACKGROUND DECORATION SHAPE -->
-  <!-- Width: 400px, Height: 400px, Radius: 200px, Color Token: #18909C12 (rgba) -->
-  <div class="absolute pointer-events-none bg-[rgba(24,144,156,0.07)] w-[400px] h-[400px] rounded-full" 
-       class="absolute -top-[100px] -right-[100px] pointer-events-none">
-  </div>
+<section class="bg-[#003054] w-[1920px] h-[363.3px] relative flex flex-col justify-center items-center text-white overflow-hidden mx-auto pt-[72px] pr-[360px] pb-[72px] pl-[360px] select-none">
 
-  <!-- INNER CONTENT INNER CONTAINER (Exact Width: 1200px Layout Engine) -->
-  <div class="w-[1200px] h-[228.20px] max-w-[1200px] pr-[48px] pl-[48px] flex flex-col justify-between items-start text-left z-10">
+  <!-- RIGHT UPPER CORNER BACKGROUND DECORATION SHAPE -->
+  <div class="absolute -top-[100px] -right-[100px] pointer-events-none bg-[rgba(24,144,156,0.07)] w-[400px] h-[400px] rounded-full"></div>
+
+  <!-- INNER CONTENT INNER CONTAINER -->
+  <div class="w-[1200px] h-[219.3px] max-w-[1200px] pr-[48px] pl-[48px] flex flex-col items-start text-left z-10 gap-[13.3px]">
     
     <!-- BREADCRUMBS WRAPPER SYSTEM -->
     <div style="font-family:'Inter',sans-serif;font-size:12px;line-height:19.8px;" 
@@ -119,7 +115,7 @@
     <!-- LEFT: CONTACT FORM -->
     <div class="flex flex-col gap-6">
       <div class="flex flex-col gap-2">
-        <p class="text-[12px] font-bold text-[#64748B] uppercase tracking-wider">Send us a message</p>
+        <p class="text-[12px] font-bold text-[#0E606B] uppercase tracking-wider">Send us a message</p>
         <h2 class="text-[40px] font-bold text-[#0F172A]">How Can We Help?</h2>
         <p class="text-[16px] text-[#475569]">Fill out the form below and a member of our team will get back to you within 2 business days. For event enquiries or media requests, please indicate this in your message.</p>
       </div>
@@ -162,7 +158,7 @@
 
     <!-- RIGHT: CONTACT DETAILS & MAP -->
     <div class="w-[400px] flex flex-col gap-[14px]">
-      <p class="text-[12px] font-bold text-[#64748B] uppercase tracking-wider">Our Contact Details</p>
+      <p class="text-[12px] font-bold text-[#0E606B] uppercase tracking-wider">Our Contact Details</p>
 
       <!-- Address -->
       <div class="border border-[#E4EAF0] rounded-[14px] p-[18px] flex gap-4 items-start">
@@ -221,7 +217,7 @@
       </div>
 
       <!-- Follow Us -->
-      <div class="border border-[#E4EAF0] rounded-[14px] p-[18px] flex flex-col gap-3">
+      <div class="bg-[#F7F9FB] border border-[#E4EAF0] rounded-[14px] p-[18px] flex flex-col gap-3">
         <p class="text-[11px] font-bold uppercase text-[#64748B] tracking-wider">Follow Us</p>
         <div class="flex gap-2">
           <button class="border border-[#E4EAF0] px-4 py-2 rounded-[8px] text-[13px] font-semibold hover:bg-gray-50 flex items-center gap-2">
@@ -239,27 +235,63 @@
 </section>
 
 <section class="w-full bg-[#F7F9FB] py-[80px] px-[408px]">
-  <div class="max-w-[1104px] mx-auto grid grid-cols-[300px_1fr] gap-[80px] items-start">
-    
+  <div class="w-[1104px] mx-auto grid grid-cols-[360px_664px] gap-x-[80px] gap-y-[80px] items-start">
+
     <!-- Left: Title -->
-    <div>
-      <p class="text-[12px] font-bold text-[#64748B] uppercase tracking-wider">FAQs</p>
-      <h2 class="text-[40px] font-bold text-[#0F172A] leading-tight">Frequently Asked Questions</h2>
-      <p class="text-[16px] text-[#475569] mt-4">Can't find the answer you're looking for? Send us a message using the form above.</p>
+    <div class="w-[360px] flex flex-col gap-[11.2px]">
+      <p class="text-[12px] font-bold text-[#0E606B] uppercase tracking-wider">FAQs</p>
+      <h2 style="font-family:'Merriweather',serif;font-weight:800;font-size:40px;line-height:48px;letter-spacing:-0.4px;" class="text-[#0F172A]">Frequently Asked Questions</h2>
+      <p class="text-[16px] text-[#475569] leading-[28px]">Can't find the answer you're looking for? Send us a message using the form above.</p>
     </div>
 
-    <!-- Right: FAQ Accordion -->
-    <div class="flex flex-col gap-6">
-      <!-- FAQ Item -->
-      <div class="border-b border-[#E4EAF0] pb-4">
-        <div class="flex justify-between items-center cursor-pointer font-bold text-[#0F172A]">
-          <span>How quickly will GIET respond to my enquiry?</span>
-          <span>+</span>
+    <!-- Right: FAQ List -->
+    <div class="flex flex-col">
+
+      <!-- FAQ 1 -->
+      <div class="border-b border-[#E4EAF0] py-[24px]">
+        <div class="flex justify-between items-start gap-4">
+          <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:22px;" class="text-[#0F172A]">How quickly will GIET respond to my enquiry?</h4>
+          <span class="text-[#64748B] text-[18px] font-light shrink-0">+</span>
         </div>
-        <p class="text-[15px] text-[#475569] mt-2">We aim to respond to all enquiries within 2 business days. For urgent project or media requests, please indicate this in your message subject and we will prioritize accordingly.</p>
+        <p class="text-[15px] text-[#475569] leading-[24px] mt-3">We aim to respond to all enquiries within 2 business days. For urgent project or media requests, please indicate this in your message subject and we will prioritize accordingly.</p>
       </div>
-      
-      <!-- আরও FAQ আইটেমগুলো একইভাবে যোগ করুন -->
+
+      <!-- FAQ 2 -->
+      <div class="border-b border-[#E4EAF0] py-[24px]">
+        <div class="flex justify-between items-start gap-4">
+          <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:22px;" class="text-[#0F172A]">Can GIET work with international organisations?</h4>
+          <span class="text-[#64748B] text-[18px] font-light shrink-0">+</span>
+        </div>
+        <p class="text-[15px] text-[#475569] leading-[24px] mt-3">Yes. GIET works with international development banks, bilateral agencies, UN agencies, NGOs, and academic institutions. We have established partnership frameworks with ADB, World Bank, UNDP, GIZ, and several bilateral donors.</p>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="border-b border-[#E4EAF0] py-[24px]">
+        <div class="flex justify-between items-start gap-4">
+          <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:22px;" class="text-[#0F172A]">How do I submit a publication or article to GIET?</h4>
+          <span class="text-[#64748B] text-[18px] font-light shrink-0">+</span>
+        </div>
+        <p class="text-[15px] text-[#475569] leading-[24px] mt-3">We welcome policy commentaries, issue briefs, expert analyses, and research articles from practitioners and academics. Please submit via the Resources section of our website using the "Write for Us" portal, or email publications@giet.org.bd directly with your draft and a short author bio.</p>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="border-b border-[#E4EAF0] py-[24px]">
+        <div class="flex justify-between items-start gap-4">
+          <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:22px;" class="text-[#0F172A]">Are GIET's publications free to access?</h4>
+          <span class="text-[#64748B] text-[18px] font-light shrink-0">+</span>
+        </div>
+        <p class="text-[15px] text-[#475569] leading-[24px] mt-3">Yes. All GIET publications — including policy briefs, working papers, commentaries, and reports — are freely available on our website under an open-access policy. We believe knowledge should be publicly accessible to those it is meant to serve.</p>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="border-b border-[#E4EAF0] py-[24px]">
+        <div class="flex justify-between items-start gap-4">
+          <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:22px;" class="text-[#0F172A]">How can I propose a collaborative research project?</h4>
+          <span class="text-[#64748B] text-[18px] font-light shrink-0">+</span>
+        </div>
+        <p class="text-[15px] text-[#475569] leading-[24px] mt-3">Use the contact form above, selecting "Project or Research Collaboration" as your reason for contact. Please include a brief description of your proposed scope, timeline, and funding status. Our research team will follow up within 5 business days.</p>
+      </div>
+
     </div>
   </div>
 </section>
