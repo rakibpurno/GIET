@@ -24,34 +24,34 @@
         <div class="hidden md:flex items-center justify-center gap-[28px] text-[14px] font-semibold text-[#003054]">
         
 
-             <a href="#" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
+             <a href="index.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
                 Home
             </a>
 
-            <a href="#" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
+            <a href="about.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
                 About Us
             </a>
 
-            <a href="#" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
+            <a href="work.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
                 Areas of work
             </a>
 
-            <a href="#" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
+            <a href="projects.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
                 Projects
             </a>
 
-            <a href="#" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
+            <a href="resources.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
     <span style="font-family: 'Inter', sans-serif; font-weight: 500; font-size: 13px;">Resources</span>
     <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white mt-[1px] shrink-0">
         <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
 </a>
 
-            <a href="#" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150 whitespace-nowrap">
+            <a href="experts.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150 whitespace-nowrap">
                 Our Experts
             </a>
 
-            <a href="#" class="h-[34.27px] px-[14px] py-[5.5px] bg-[#18909C] text-white rounded-[6px] flex items-center justify-center gap-1.5 transition-colors duration-200">
+            <a href="events.html" class="h-[34.27px] px-[14px] py-[5.5px] bg-[#18909C] text-white rounded-[6px] flex items-center justify-center gap-1.5 transition-colors duration-200">
                 Events
             </a>
         </div>
@@ -67,7 +67,7 @@
                 </svg>
             </button>
 
-            <button class="w-[92px] h-[37.44px] bg-[#A80C18] text-white text-[13px] font-bold rounded-[6px] flex items-center justify-center hover:bg-[#8F0A14] transition-colors duration-150 shadow-sm cursor-pointer">
+            <button onclick="window.location.href='contact.html'" class="w-[92px] h-[37.44px] bg-[#A80C18] text-white text-[13px] font-bold rounded-[6px] flex items-center justify-center hover:bg-[#8F0A14] transition-colors duration-150 shadow-sm cursor-pointer">
                 Contact
             </button>
         </div>
@@ -76,13 +76,13 @@
 </nav>
 <!-- Mobile Menu -->
 <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-4 py-4 flex flex-col gap-3 text-[14px] font-semibold text-[#003054]">
-  <a href="#" class="py-2 hover:text-[#18909C]">Home</a>
-  <a href="#" class="py-2 hover:text-[#18909C]">About Us</a>
-  <a href="#" class="py-2 hover:text-[#18909C]">Areas of Work</a>
-  <a href="#" class="py-2 hover:text-[#18909C]">Projects</a>
-  <a href="#" class="py-2 hover:text-[#18909C]">Resources</a>
-  <a href="#" class="py-2 hover:text-[#18909C]">Our Experts</a>
-  <a href="#" class="py-2 hover:text-[#18909C]">Events</a>
+  <a href="index.html" class="py-2 hover:text-[#18909C]">Home</a>
+  <a href="about.html" class="py-2 hover:text-[#18909C]">About Us</a>
+  <a href="work.html" class="py-2 hover:text-[#18909C]">Areas of Work</a>
+  <a href="projects.html" class="py-2 hover:text-[#18909C]">Projects</a>
+  <a href="resources.html" class="py-2 hover:text-[#18909C]">Resources</a>
+  <a href="experts.html" class="py-2 hover:text-[#18909C]">Our Experts</a>
+  <a href="events.html" class="py-2 hover:text-[#18909C]">Events</a>
 </div>
 <script>
 document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
@@ -327,7 +327,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div class="bg-[#00C49F] h-full w-[68%]"></div>
           </div>
         </div>
-        <button class="bg-[#A80C18] text-white font-bold py-3 rounded-[8px] w-full hover:bg-[#8e0a14] transition-colors flex items-center justify-center gap-2">
+        <button onclick="document.getElementById('registerModal').classList.remove('hidden')" class="bg-[#A80C18] text-white font-bold py-3 rounded-[8px] w-full hover:bg-[#8e0a14] transition-colors flex items-center justify-center gap-2">
           <img src="icons/SVG (29).png" alt="Register Icon" class="w-[18px] h-[18px] brightness-0 invert"> Register Now
         </button>
         <p class="font-[Inter] font-normal text-[11.5px] leading-none text-[#8FB2C9] mt-4 text-center">By registering you agree to GIET’s event terms & privacy policy</p>
@@ -539,5 +539,157 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
 </div>
     <script src="main.js"></script>
+
+<!-- REGISTRATION MODAL -->
+<div id="registerModal" class="hidden fixed inset-0 z-50 flex items-center justify-center px-4 py-8">
+  <!-- Backdrop -->
+  <div onclick="document.getElementById('registerModal').classList.add('hidden')" class="absolute inset-0 bg-[#001430]/70 backdrop-blur-sm"></div>
+
+  <!-- Modal Card -->
+  <div class="relative bg-white rounded-[20px] shadow-2xl w-full max-w-[600px] z-10 flex flex-col max-h-[90vh]">
+
+    <!-- Sticky Header -->
+    <div class="px-[40px] pt-[36px] pb-[20px] border-b border-[#E4EAF0] shrink-0">
+      <button onclick="document.getElementById('registerModal').classList.add('hidden')" class="absolute top-[16px] right-[16px] w-[32px] h-[32px] flex items-center justify-center rounded-full bg-[#F1F5F9] hover:bg-[#E2E8F0] transition-colors text-[#64748B]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <span class="font-['Inter'] font-semibold text-[11px] tracking-[1.5px] uppercase text-[#0E606B] block mb-[6px]">Event Registration</span>
+      <h2 class="font-['Merriweather'] font-extrabold text-[20px] leading-[26px] text-[#0F172A]">National Dialogue on Regulatory Reform</h2>
+      <p class="font-['Inter'] text-[12px] text-[#64748B] mt-[4px]">Wednesday 18 June 2026 · 9:00 AM – 4:30 PM · Dhaka · <span class="text-[#10B981] font-semibold">Free · 48 seats remaining</span></p>
+    </div>
+
+    <!-- Scrollable Form Body -->
+    <div class="overflow-y-auto px-[40px] py-[28px]">
+      <form class="flex flex-col gap-[18px]" onsubmit="handleRegistration(event)">
+
+        <!-- Section: Personal Info -->
+        <p class="font-['Inter'] font-semibold text-[10px] tracking-[1.2px] uppercase text-[#64748B]">Personal Information</p>
+
+        <div class="grid grid-cols-2 gap-[12px]">
+          <div class="flex flex-col gap-[6px]">
+            <label class="font-['Inter'] font-semibold text-[12px] text-[#0F172A]">First Name <span class="text-[#A80C18]">*</span></label>
+            <input type="text" required placeholder="e.g. Aminur" class="border border-[#E4EAF0] rounded-[6px] px-[14px] h-[44px] text-[14px] text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#18909C] transition-colors w-full">
+          </div>
+          <div class="flex flex-col gap-[6px]">
+            <label class="font-['Inter'] font-semibold text-[12px] text-[#0F172A]">Last Name <span class="text-[#A80C18]">*</span></label>
+            <input type="text" required placeholder="e.g. Rahman" class="border border-[#E4EAF0] rounded-[6px] px-[14px] h-[44px] text-[14px] text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#18909C] transition-colors w-full">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-[12px]">
+          <div class="flex flex-col gap-[6px]">
+            <label class="font-['Inter'] font-semibold text-[12px] text-[#0F172A]">Email Address <span class="text-[#A80C18]">*</span></label>
+            <input type="email" required placeholder="name@organisation.com" class="border border-[#E4EAF0] rounded-[6px] px-[14px] h-[44px] text-[14px] text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#18909C] transition-colors w-full">
+          </div>
+          <div class="flex flex-col gap-[6px]">
+            <label class="font-['Inter'] font-semibold text-[12px] text-[#0F172A]">Phone Number</label>
+            <input type="tel" placeholder="+880 1700 000000" class="border border-[#E4EAF0] rounded-[6px] px-[14px] h-[44px] text-[14px] text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#18909C] transition-colors w-full">
+          </div>
+        </div>
+
+        <div class="w-full h-[1px] bg-[#F1F5F9]"></div>
+
+        <!-- Section: Professional Info -->
+        <p class="font-['Inter'] font-semibold text-[10px] tracking-[1.2px] uppercase text-[#64748B]">Professional Background</p>
+
+        <div class="flex flex-col gap-[6px]">
+          <label class="font-['Inter'] font-semibold text-[12px] text-[#0F172A]">Organisation / Institution <span class="text-[#A80C18]">*</span></label>
+          <input type="text" required placeholder="e.g. Ministry of Finance, World Bank, BRAC" class="border border-[#E4EAF0] rounded-[6px] px-[14px] h-[44px] text-[14px] text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#18909C] transition-colors w-full">
+        </div>
+
+        <div class="grid grid-cols-2 gap-[12px]">
+          <div class="flex flex-col gap-[6px]">
+            <label class="font-['Inter'] font-semibold text-[12px] text-[#0F172A]">Designation / Title <span class="text-[#A80C18]">*</span></label>
+            <input type="text" required placeholder="e.g. Senior Policy Analyst" class="border border-[#E4EAF0] rounded-[6px] px-[14px] h-[44px] text-[14px] text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#18909C] transition-colors w-full">
+          </div>
+          <div class="flex flex-col gap-[6px]">
+            <label class="font-['Inter'] font-semibold text-[12px] text-[#0F172A]">Sector <span class="text-[#A80C18]">*</span></label>
+            <select required class="border border-[#E4EAF0] rounded-[6px] px-[14px] h-[44px] text-[14px] text-[#0F172A] bg-white focus:outline-none focus:border-[#18909C] transition-colors w-full">
+              <option value="" disabled selected>Select sector</option>
+              <option>Government / Public Sector</option>
+              <option>International Development</option>
+              <option>Academia / Research</option>
+              <option>Private Sector</option>
+              <option>Civil Society / NGO</option>
+              <option>Media</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="w-full h-[1px] bg-[#F1F5F9]"></div>
+
+        <!-- Section: Event Details -->
+        <p class="font-['Inter'] font-semibold text-[10px] tracking-[1.2px] uppercase text-[#64748B]">Attendance Details</p>
+
+        <div class="flex flex-col gap-[6px]">
+          <label class="font-['Inter'] font-semibold text-[12px] text-[#0F172A]">Attendance Type <span class="text-[#A80C18]">*</span></label>
+          <div class="grid grid-cols-2 gap-[10px]">
+            <label class="flex items-center gap-[10px] border border-[#E4EAF0] rounded-[8px] px-[14px] py-[12px] cursor-pointer hover:border-[#18909C] transition-colors has-[:checked]:border-[#18909C] has-[:checked]:bg-[#F0FAFA]">
+              <input type="radio" name="attendance" value="in-person" required class="accent-[#18909C]">
+              <div>
+                <p class="font-['Inter'] font-semibold text-[13px] text-[#0F172A]">In-Person</p>
+                <p class="font-['Inter'] text-[11px] text-[#64748B]">Dhaka, Bangladesh</p>
+              </div>
+            </label>
+            <label class="flex items-center gap-[10px] border border-[#E4EAF0] rounded-[8px] px-[14px] py-[12px] cursor-pointer hover:border-[#18909C] transition-colors has-[:checked]:border-[#18909C] has-[:checked]:bg-[#F0FAFA]">
+              <input type="radio" name="attendance" value="online" class="accent-[#18909C]">
+              <div>
+                <p class="font-['Inter'] font-semibold text-[13px] text-[#0F172A]">Online</p>
+                <p class="font-['Inter'] text-[11px] text-[#64748B]">Zoom / Live stream</p>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-[6px]">
+          <label class="font-['Inter'] font-semibold text-[12px] text-[#0F172A]">Why do you wish to attend? <span class="text-[#A80C18]">*</span></label>
+          <textarea required rows="3" placeholder="Briefly describe your interest in this dialogue and what you hope to contribute or gain..." class="border border-[#E4EAF0] rounded-[6px] px-[14px] py-[12px] text-[14px] text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#18909C] transition-colors w-full resize-none leading-[22px]"></textarea>
+        </div>
+
+        <div class="flex flex-col gap-[6px]">
+          <label class="font-['Inter'] font-semibold text-[12px] text-[#0F172A]">Dietary / Accessibility Requirements</label>
+          <input type="text" placeholder="e.g. Vegetarian, wheelchair access needed" class="border border-[#E4EAF0] rounded-[6px] px-[14px] h-[44px] text-[14px] text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#18909C] transition-colors w-full">
+        </div>
+
+        <!-- Checkbox -->
+        <label class="flex items-start gap-[10px] cursor-pointer">
+          <input type="checkbox" required class="mt-[3px] accent-[#18909C] shrink-0">
+          <span class="font-['Inter'] text-[12px] text-[#475569] leading-[18px]">I confirm that the information provided is accurate and I agree to GIET's <span class="text-[#0E606B] underline cursor-pointer">event terms & privacy policy</span>.</span>
+        </label>
+
+        <!-- Submit -->
+        <button type="submit" class="bg-[#A80C18] hover:bg-[#8e0a14] text-white font-['Inter'] font-bold text-[14px] h-[50px] rounded-[8px] w-full transition-colors flex items-center justify-center gap-2">
+          Submit Registration
+        </button>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Success Modal -->
+<div id="successModal" class="hidden fixed inset-0 z-50 flex items-center justify-center px-4">
+  <div onclick="document.getElementById('successModal').classList.add('hidden')" class="absolute inset-0 bg-[#001430]/70 backdrop-blur-sm"></div>
+  <div class="relative bg-white rounded-[20px] shadow-2xl w-full max-w-[400px] p-[48px] flex flex-col items-center gap-[16px] z-10 text-center">
+    <div class="w-[64px] h-[64px] bg-[#E8F6F7] rounded-full flex items-center justify-center">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0E606B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h3 class="font-['Merriweather'] font-extrabold text-[20px] text-[#0F172A]">Registration Confirmed!</h3>
+    <p class="font-['Inter'] text-[14px] text-[#64748B] leading-[22px]">Thank you for registering. A confirmation email will be sent to you shortly.</p>
+    <button onclick="document.getElementById('successModal').classList.add('hidden')" class="mt-[8px] bg-[#003054] hover:bg-[#00223C] text-white font-['Inter'] font-semibold text-[13px] px-[32px] h-[44px] rounded-[8px] transition-colors">
+      Done
+    </button>
+  </div>
+</div>
+
+<script>
+function handleRegistration(e) {
+  e.preventDefault();
+  document.getElementById('registerModal').classList.add('hidden');
+  document.getElementById('successModal').classList.remove('hidden');
+  e.target.reset();
+}
+</script>
 </body>
 </html>
