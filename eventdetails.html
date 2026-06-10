@@ -40,12 +40,24 @@
                 Projects
             </a>
 
-            <a href="resources.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
-    <span style="font-family: 'Inter', sans-serif; font-weight: 500; font-size: 13px;">Resources</span>
-    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white mt-[1px] shrink-0">
-        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-</a>
+            <div class="relative" id="res-dd-eventdetails">
+                <button onclick="toggleResDD('eventdetails')" class="h-[34.27px] px-[6px] flex items-center justify-center gap-[4px] hover:text-[#18909C] transition-colors duration-150 text-[#003054] text-[14px] font-semibold">
+                    <span>Resources</span>
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#18909C] mt-[2px]"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div id="res-dd-menu-eventdetails" class="hidden absolute top-full left-0 w-[214px] bg-white border border-[#E4EAF0] shadow-lg z-50 rounded-b-[6px] overflow-hidden">
+                    <a href="resources.html#briefs" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-semibold text-[#003054] border-b-[3px] border-[#A80C18] hover:bg-[#F7F9FB] transition-colors">Issue Briefs/Articles</a>
+                    <a href="resources.html#expert" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Expert Speak/Blog</a>
+                    <a href="resources.html#publications" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Publications & Reports</a>
+                    <a href="resources.html#news" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">News & Commentary/Op-Ed</a>
+                    <a href="resources.html#videos" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Videos & Podcasts</a>
+                </div>
+            </div>
+<script>
+function toggleResDD(id){var m=document.getElementById('res-dd-menu-'+id);m.classList.toggle('hidden');}
+function setResActive(el){document.querySelectorAll('.res-dd-item').forEach(function(i){i.classList.remove('border-[#A80C18]','font-semibold','text-[#003054]');i.classList.add('border-transparent','font-medium','text-[#64748B]');});el.classList.remove('border-transparent','font-medium','text-[#64748B]');el.classList.add('border-[#A80C18]','font-semibold','text-[#003054]');}
+document.addEventListener('click',function(e){var dd=document.getElementById('res-dd-eventdetails');if(dd&&!dd.contains(e.target)){var m=document.getElementById('res-dd-menu-eventdetails');if(m)m.classList.add('hidden');}});
+</script>
 
             <a href="experts.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150 whitespace-nowrap">
                 Our Experts
@@ -120,9 +132,9 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
       <!-- Breadcrumbs -->
       <div class="flex gap-2 items-center">
-        <span class="text-[12px] text-[#FFFFFF66] hover:text-white cursor-pointer">Home</span>
+        <a href="index.html" class="text-[12px] text-[#FFFFFF66] hover:text-white transition-colors duration-150">Home</a>
         <span class="text-[#FFFFFF66]">/</span>
-        <span class="text-[12px] text-[#FFFFFF66] hover:text-white cursor-pointer">Events</span>
+        <a href="events.html" class="text-[12px] text-[#FFFFFF66] hover:text-white transition-colors duration-150">Events</a>
         <span class="text-[#FFFFFF66]">/</span>
         <span class="text-[12px] text-[#FFFFFF66]">National Dialogue: Regulatory Reform</span>
       </div>
@@ -187,7 +199,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     </div>
 
     <!-- Registration -->
-    <div class="flex items-start gap-3 px-3 md:px-6 py-2 md:py-0">
+    <div class="flex items-start gap-[12px] px-3 md:px-[24px] py-2 md:py-[22px]">
       <div class="w-[30px] h-[30px] md:w-[36px] md:h-[36px] rounded-[8px] bg-[#FFFFFF14] flex items-center justify-center shrink-0">
         <img src="icons/SVG (59).png" alt="Registration" class="w-4 h-4 md:w-6 md:h-6 object-contain">
       </div>
@@ -202,8 +214,8 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 </section>
 
 <!-- MAIN CONTENT SECTION -->
-<section class="w-full bg-white py-[72px]">
-  <div class="max-w-[1104px] mx-auto grid grid-cols-1 md:grid-cols-[708px_340px] gap-[40px] md:gap-[56px] items-start px-4 md:px-6">
+<section class="w-full bg-white py-[72px] px-4 md:px-[408px]">
+  <div class="max-w-[1104px] mx-auto grid grid-cols-1 md:grid-cols-[708px_340px] gap-y-[56px] gap-x-[56px] items-start">
     
     <!-- LEFT: PROSE & SPEAKERS -->
     <div class="flex flex-col gap-[24px]">
@@ -218,7 +230,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
       <!-- Who Should Attend -->
       <div class="flex flex-col gap-4">
         <h2 class="font-['Merriweather'] font-extrabold text-[26px] leading-[32.5px] text-[#0F172A]">Who Should Attend</h2>
-        <ul class="space-y-3 text-[15px] text-[#475569]">
+        <ul class="space-y-3 text-[15px] text-[#475569] text-justify">
           <li class="flex items-start gap-3"><img src="icons/SVG (59).png" class="w-[18px] h-[18px] mt-0.5 opacity-80" alt="icon"><span>Senior officials from line ministries, the Cabinet Division, and regulatory agencies.</span></li>
           <li class="flex items-start gap-3"><img src="icons/SVG (59).png" class="w-[18px] h-[18px] mt-0.5 opacity-80" alt="icon"><span>Private sector representatives — particularly SME associations, trade bodies, and chambers of commerce.</span></li>
           <li class="flex items-start gap-3"><img src="icons/SVG (59).png" class="w-[18px] h-[18px] mt-0.5 opacity-80" alt="icon"><span>Development partners, bilateral agencies, and international financial institutions operating in Bangladesh.</span></li>
@@ -229,7 +241,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
       <!-- Featured Speakers -->
       <div>
-        <h2 class="font-['Merriweather'] font-extrabold text-[26px] leading-none text-[#0F172A] mb-6">Featured Speakers</h2>
+        <h2 class="font-['Merriweather'] font-extrabold text-[26px] leading-none text-[#0F172A] mt-[22px] mb-6">Featured Speakers</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-[18px]">
 
           <div class="bg-[#F7F9FB] border border-[#E4EAF0] rounded-[14px] p-[20px] flex items-start gap-[14px]">
@@ -357,7 +369,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         <h4 class="text-[12px] font-bold text-[#6B7280] uppercase tracking-wider w-[294px] h-[24px] pb-[10px] border-b border-[#E4EAF0] block">Event Enquiries</h4>
         <p class="text-[14px] text-[#0F172A] leading-relaxed">For registration support, speaker enquiries, or media accreditation:</p>
         <a href="mailto:events@giet.org.bd" class="text-[14px] font-bold text-[#003054] hover:underline">events@giet.org.bd</a>
-        <p class="text-[12px] text-[#64748B]">We reply within 1 business day</p>
+        <p class="text-[12px] text-[#64748B] -mt-2">We reply within 1 business day</p>
       </div>
 
       <!-- Share This Event -->
@@ -693,3 +705,4 @@ function handleRegistration(e) {
 </script>
 </body>
 </html>
+

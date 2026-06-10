@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Outfit:wght@400;700;800&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="overflow-x-hidden">
 
@@ -40,12 +40,26 @@
             </a>
 
 
-            <a href="resources.html" class="h-[34.27px] px-[6px] flex items-center justify-center gap-[4px] hover:text-[#18909C] transition-colors duration-150 group">
-                <span>Resources</span>
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#18909C] mt-[2px]">
-                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
+            <div class="relative" id="res-dd-expertdetails">
+                <button onclick="toggleResDD('expertdetails')" class="h-[34.27px] px-[6px] flex items-center justify-center gap-[4px] hover:text-[#18909C] transition-colors duration-150 text-[#003054] text-[14px] font-semibold">
+                    <span>Resources</span>
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#18909C] mt-[2px]">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div id="res-dd-menu-expertdetails" class="hidden absolute top-full left-0 w-[214px] bg-white border border-[#E4EAF0] shadow-lg z-50 rounded-b-[6px] overflow-hidden">
+                    <a href="resources.html#briefs" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-semibold text-[#003054] border-b-[3px] border-[#A80C18] hover:bg-[#F7F9FB] transition-colors">Issue Briefs/Articles</a>
+                    <a href="resources.html#expert" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Expert Speak/Blog</a>
+                    <a href="resources.html#publications" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Publications & Reports</a>
+                    <a href="resources.html#news" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">News & Commentary/Op-Ed</a>
+                    <a href="resources.html#videos" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Videos & Podcasts</a>
+                </div>
+            </div>
+<script>
+function toggleResDD(id){var m=document.getElementById('res-dd-menu-'+id);m.classList.toggle('hidden');}
+function setResActive(el){document.querySelectorAll('.res-dd-item').forEach(function(i){i.classList.remove('border-[#A80C18]','font-semibold','text-[#003054]');i.classList.add('border-transparent','font-medium','text-[#64748B]');});el.classList.remove('border-transparent','font-medium','text-[#64748B]');el.classList.add('border-[#A80C18]','font-semibold','text-[#003054]');}
+document.addEventListener('click',function(e){var dd=document.getElementById('res-dd-expertdetails');if(dd&&!dd.contains(e.target)){var m=document.getElementById('res-dd-menu-expertdetails');if(m)m.classList.add('hidden');}});
+</script>
 
               <a href="experts.html" class="h-[34.27px] px-[14px] py-[5.5px] bg-[#18909C] text-white rounded-[6px] flex items-center justify-center transition-colors duration-200">
                   Our Experts
@@ -94,10 +108,10 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
   <p class="text-[14px] text-[#0E606B]"><a href="index.html" class="hover:underline transition-colors duration-150">Home</a> / <a href="experts.html" class="hover:underline transition-colors duration-150">Our Experts</a> / <span class="font-semibold text-[#6B7280]">Dr. Nusrat Jahan</span></p>
 </div>
 
-<section class="w-full bg-white py-[40px] md:py-[60px] px-4 md:px-[360px]">
-  <div class="w-full max-w-[1200px] mx-auto flex flex-col gap-[40px]">
+<section class="w-full bg-white py-[40px] md:py-[60px] px-4 md:px-[408px]">
+  <div class="w-full max-w-[1104px] mx-auto flex flex-col gap-[56px]">
 
-    <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-[40px] md:gap-[56px]">
+    <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-y-[56px] gap-x-[56px]">
 
       <div class="flex flex-col gap-[12px]">
         <img src="images/Dr. Nusrat Jahan.png" alt="Dr. Nusrat Jahan" class="w-full md:w-[280px] h-[300px] md:h-[350px] object-cover rounded-[16px]" />
@@ -165,87 +179,149 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     </div>
 
    <div class="w-full flex flex-col gap-[40px]">
-  <!-- Tabs -->
-  <div class="flex gap-8 border-b border-[#E4EAF0]">
-    <button class="pb-2 border-b-2 border-[#0F172A] font-semibold">Publications</button>
-    <button class="pb-2 text-[#64748B]">Speaking & Events</button>
+
+    <!-- Tabs -->
+    <div class="flex gap-8 border-b border-[#E4EAF0]">
+      <button id="exp-tab-pub" onclick="expSwitchTab('pub')" class="pb-[10px] border-b-2 border-[#A80C18] text-[#0F172A] font-semibold text-[14px] transition-all">Publications</button>
+      <button id="exp-tab-events" onclick="expSwitchTab('events')" class="pb-[10px] border-b-2 border-transparent text-[#64748B] font-medium text-[14px] transition-all">Speaking & Events</button>
+    </div>
+
+    <!-- Publications List -->
+    <div id="exp-content-pub" class="flex flex-col">
+
+      <div class="w-full flex flex-col md:flex-row justify-between items-start md:items-center py-[18px] gap-[12px] md:gap-[18px] border-b border-[#E4EAF0]">
+        <div class="flex gap-4 items-center">
+          <div class="bg-[#F1F5F9] p-2 rounded-[8px] shrink-0"><img src="icons/SVG (55).png" class="w-6 h-6" /></div>
+          <div>
+            <p class="font-sans font-semibold text-[10px] leading-[100%] uppercase tracking-[1px] text-[#0E606B]">ISSUE BRIEF · 14 MAY 2025</p>
+            <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:21px;" class="text-[#0F172A] my-[4px]">Trade Facilitation Reform in Bangladesh: A Path to Single Window Implementation</h4>
+            <p style="font-family:'Outfit',sans-serif;font-weight:400;font-size:12.5px;line-height:1;color:#6B7280;">GIET Foundation · 12 pages · Trade Facilitation</p>
+          </div>
+        </div>
+        <a href="#" class="border border-[#E4EAF0] px-4 py-2 rounded-full text-[14px] font-semibold hover:bg-gray-50 shrink-0 self-start md:self-auto">Read →</a>
+      </div>
+
+      <div class="w-full flex flex-col md:flex-row justify-between items-start md:items-center py-[18px] gap-[12px] md:gap-[18px] border-b border-[#E4EAF0]">
+        <div class="flex gap-4 items-center">
+          <div class="bg-[#F1F5F9] p-2 rounded-[8px] shrink-0"><img src="icons/SVG (55).png" class="w-6 h-6" /></div>
+          <div>
+            <p class="font-sans font-semibold text-[10px] leading-[100%] uppercase tracking-[1px] text-[#0E606B]">EXPERT SPEAK · 10 MAY 2025</p>
+            <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:21px;" class="text-[#0F172A] my-[4px]">The Political Economy of Trade Policy Reform in South Asia</h4>
+            <p style="font-family:'Outfit',sans-serif;font-weight:400;font-size:12.5px;line-height:1;color:#6B7280;">GIET Resources · Economic Policy</p>
+          </div>
+        </div>
+        <a href="#" class="border border-[#E4EAF0] px-4 py-2 rounded-full text-[14px] font-semibold hover:bg-gray-50 shrink-0 self-start md:self-auto">Read →</a>
+      </div>
+
+      <div class="w-full flex flex-col md:flex-row justify-between items-start md:items-center py-[18px] gap-[12px] md:gap-[18px] border-b border-[#E4EAF0]">
+        <div class="flex gap-4 items-center">
+          <div class="bg-[#F1F5F9] p-2 rounded-[8px] shrink-0"><img src="icons/SVG (55).png" class="w-6 h-6" /></div>
+          <div>
+            <p class="font-sans font-semibold text-[10px] leading-[100%] uppercase tracking-[1px] text-[#0E606B]">WORKING PAPER · JANUARY 2024</p>
+            <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:21px;" class="text-[#0F172A] my-[4px]">Port Efficiency and Logistics Reform: A Priority Agenda for Bangladesh</h4>
+            <p style="font-family:'Outfit',sans-serif;font-weight:400;font-size:12.5px;line-height:1;color:#6B7280;">GIET Foundation · 22 pages · Trade & Logistics</p>
+          </div>
+        </div>
+        <a href="#" class="border border-[#E4EAF0] px-4 py-2 rounded-full text-[14px] font-semibold hover:bg-gray-50 shrink-0 self-start md:self-auto">Download →</a>
+      </div>
+
+      <div class="w-full flex flex-col md:flex-row justify-between items-start md:items-center py-[18px] gap-[12px] md:gap-[18px] border-b border-[#E4EAF0]">
+        <div class="flex gap-4 items-center">
+          <div class="bg-[#F1F5F9] p-2 rounded-[8px] shrink-0"><img src="icons/SVG (55).png" class="w-6 h-6" /></div>
+          <div>
+            <p class="font-sans font-semibold text-[10px] leading-[100%] uppercase tracking-[1px] text-[#0E606B]">JOURNAL ARTICLE · 2023</p>
+            <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:21px;" class="text-[#0F172A] my-[4px]">Regulatory Reform Sequencing and Political Sustainability in South Asian Economies</h4>
+            <p style="font-family:'Outfit',sans-serif;font-weight:400;font-size:12.5px;line-height:1;color:#6B7280;">Journal of Development Economics · Vol. 162 · Co-authored with D. Khatun</p>
+          </div>
+        </div>
+        <a href="#" class="border border-[#E4EAF0] px-4 py-2 rounded-full text-[14px] font-semibold hover:bg-gray-50 shrink-0 self-start md:self-auto">View →</a>
+      </div>
+
+      <div class="w-full flex flex-col md:flex-row justify-between items-start md:items-center py-[18px] gap-[12px] md:gap-[18px] border-b border-[#E4EAF0]">
+        <div class="flex gap-4 items-center">
+          <div class="bg-[#F1F5F9] p-2 rounded-[8px] shrink-0"><img src="icons/SVG (55).png" class="w-6 h-6" /></div>
+          <div>
+            <p class="font-sans font-semibold text-[10px] leading-[100%] uppercase tracking-[1px] text-[#0E606B]">ANNUAL REPORT · 2024</p>
+            <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:21px;" class="text-[#0F172A] my-[4px]">Annual State of Governance Report: Bangladesh 2024</h4>
+            <p style="font-family:'Outfit',sans-serif;font-weight:400;font-size:12.5px;line-height:1;color:#6B7280;">GIET Foundation · 84 pages · Lead Editor</p>
+          </div>
+        </div>
+        <a href="#" class="border border-[#E4EAF0] px-4 py-2 rounded-full text-[14px] font-semibold hover:bg-gray-50 shrink-0 self-start md:self-auto">Download →</a>
+      </div>
+
+    </div>
+
+    <!-- Speaking & Events List -->
+    <div id="exp-content-events" class="hidden flex flex-col">
+
+      <div class="flex items-start gap-[18px] py-[18px] border-b border-[#E4EAF0]">
+        <div class="flex flex-col items-center w-[50px] shrink-0 gap-[3px]">
+          <span class="text-[9px] font-bold text-[#6B7280] uppercase tracking-wider">JUN</span>
+          <span class="text-[26px] font-extrabold text-[#003054] leading-none">18</span>
+        </div>
+        <div class="flex flex-col gap-[4px]">
+          <p style="font-family:'Outfit',sans-serif;font-weight:700;font-size:10.5px;line-height:1;letter-spacing:1.05px;text-transform:uppercase;color:#0E606B;">Keynote Address</p>
+          <h4 style="font-family:'Manrope',sans-serif;font-weight:700;font-size:14.5px;line-height:20.3px;color:#0F172A;">National Dialogue on Regulatory Reform & Business Environment Improvement</h4>
+          <p style="font-family:'Outfit',sans-serif;font-weight:400;font-size:12.5px;line-height:1;color:#6B7280;">BRAC Centre Inn, Dhaka · GIET / ADB · Upcoming</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-[18px] py-[18px] border-b border-[#E4EAF0]">
+        <div class="flex flex-col items-center w-[50px] shrink-0 gap-[3px]">
+          <span class="text-[9px] font-bold text-[#6B7280] uppercase tracking-wider">MAY</span>
+          <span class="text-[26px] font-extrabold text-[#003054] leading-none">08</span>
+        </div>
+        <div class="flex flex-col gap-[4px]">
+          <p style="font-family:'Outfit',sans-serif;font-weight:700;font-size:10.5px;line-height:1;letter-spacing:1.05px;text-transform:uppercase;color:#0E606B;">Panel Discussion</p>
+          <h4 style="font-family:'Manrope',sans-serif;font-weight:700;font-size:14.5px;line-height:20.3px;color:#0F172A;">Trade Facilitation Reform: Lessons from the ADB Support Programme</h4>
+          <p style="font-family:'Outfit',sans-serif;font-weight:400;font-size:12.5px;line-height:1;color:#6B7280;">Dhaka · BGMEA Annual Trade Forum 2025</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-[18px] py-[18px] border-b border-[#E4EAF0]">
+        <div class="flex flex-col items-center w-[50px] shrink-0 gap-[3px]">
+          <span class="text-[9px] font-bold text-[#6B7280] uppercase tracking-wider">APR</span>
+          <span class="text-[26px] font-extrabold text-[#003054] leading-none">20</span>
+        </div>
+        <div class="flex flex-col gap-[4px]">
+          <p style="font-family:'Outfit',sans-serif;font-weight:700;font-size:10.5px;line-height:1;letter-spacing:1.05px;text-transform:uppercase;color:#0E606B;">Expert Interview</p>
+          <h4 style="font-family:'Manrope',sans-serif;font-weight:700;font-size:14.5px;line-height:20.3px;color:#0F172A;">GIET Talks: Trade Facilitation & Single Window</h4>
+          <p style="font-family:'Outfit',sans-serif;font-weight:400;font-size:12.5px;line-height:1;color:#6B7280;">GIET Video Series · April 2025</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-[18px] py-[18px] border-b border-[#E4EAF0]">
+        <div class="flex flex-col items-center w-[50px] shrink-0 gap-[3px]">
+          <span class="text-[9px] font-bold text-[#6B7280] uppercase tracking-wider">FEB</span>
+          <span class="text-[26px] font-extrabold text-[#003054] leading-none">12</span>
+        </div>
+        <div class="flex flex-col gap-[4px]">
+          <p style="font-family:'Outfit',sans-serif;font-weight:700;font-size:10.5px;line-height:1;letter-spacing:1.05px;text-transform:uppercase;color:#0E606B;">Conference Paper</p>
+          <h4 style="font-family:'Manrope',sans-serif;font-weight:700;font-size:14.5px;line-height:20.3px;color:#0F172A;">Political Economy of Regulatory Reform in LDC Graduating Economies</h4>
+          <p style="font-family:'Outfit',sans-serif;font-weight:400;font-size:12.5px;line-height:1;color:#6B7280;">BIDS Annual Conference 2025 · Dhaka</p>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
-  <!-- Publications List -->
-  <div class="flex flex-col">
-    
-    <!-- Item 1 -->
-    <div class="w-full max-w-[1104px] flex flex-col md:flex-row justify-between items-start md:items-center py-[18px] gap-[12px] md:gap-[18px] border-b border-[#E4EAF0]">
-      <div class="flex gap-4 items-center">
-        <div class="bg-[#F1F5F9] p-2 rounded-[8px]"><img src="icons/SVG (55).png" class="w-6 h-6" /></div>
-        <div>
-       <p class="font-sans font-semibold text-[10px] leading-[100%] uppercase tracking-[1px] text-[#0E606B]">ISSUE BRIEF · 14 MAY 2025</p>
-          <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:21px;letter-spacing:0;" class="text-[#0F172A] my-[4px]">Trade Facilitation Reform in Bangladesh: A Path to Single Window Implementation</h4>
-          <p class="text-[12px] text-[#6B7280]">GIET Foundation · 12 pages · Trade Facilitation</p>
-        </div>
-      </div>
-      <a href="#" class="border border-[#E4EAF0] px-4 py-2 rounded-full text-[14px] font-semibold hover:bg-gray-50 shrink-0 self-start md:self-auto">Read →</a>
-    </div>
+<script>
+function expSwitchTab(tab) {
+  document.getElementById('exp-content-pub').classList.add('hidden');
+  document.getElementById('exp-content-events').classList.add('hidden');
+  document.getElementById('exp-tab-pub').className = 'pb-[10px] border-b-2 border-transparent text-[#64748B] font-medium text-[14px] transition-all';
+  document.getElementById('exp-tab-events').className = 'pb-[10px] border-b-2 border-transparent text-[#64748B] font-medium text-[14px] transition-all';
 
-    <!-- Item 2 -->
-    <div class="w-full max-w-[1104px] flex flex-col md:flex-row justify-between items-start md:items-center py-[18px] gap-[12px] md:gap-[18px] border-b border-[#E4EAF0]">
-      <div class="flex gap-4 items-center">
-        <div class="bg-[#F1F5F9] p-2 rounded-[8px]"><img src="icons/SVG (55).png" class="w-6 h-6" /></div>
-        <div>
-          <p class="font-sans font-semibold text-[10px] leading-[100%] uppercase tracking-[1px] text-[#0E606B]">EXPERT SPEAK · 10 MAY 2025</p>
-          <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:21px;letter-spacing:0;" class="text-[#0F172A] my-[4px]">The Political Economy of Trade Policy Reform in South Asia</h4>
-          <p class="text-[12px] text-[#6B7280]">GIET Resources · Economic Policy</p>
-        </div>
-      </div>
-      <a href="#" class="border border-[#E4EAF0] px-4 py-2 rounded-full text-[14px] font-semibold hover:bg-gray-50 shrink-0 self-start md:self-auto">Read →</a>
-    </div>
-
-    <!-- Item 3 -->
-    <div class="w-full max-w-[1104px] flex flex-col md:flex-row justify-between items-start md:items-center py-[18px] gap-[12px] md:gap-[18px] border-b border-[#E4EAF0]">
-      <div class="flex gap-4 items-center">
-        <div class="bg-[#F1F5F9] p-2 rounded-[8px]"><img src="icons/SVG (55).png" class="w-6 h-6" /></div>
-        <div>
-          <p class="font-sans font-semibold text-[10px] leading-[100%] uppercase tracking-[1px] text-[#0E606B]">WORKING PAPER · JANUARY 2024</p>
-          <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:21px;letter-spacing:0;" class="text-[#0F172A] my-[4px]">Port Efficiency and Logistics Reform: A Priority Agenda for Bangladesh</h4>
-          <p class="text-[12px] text-[#6B7280]">GIET Foundation · 22 pages · Trade & Logistics</p>
-        </div>
-      </div>
-      <a href="#" class="border border-[#E4EAF0] px-4 py-2 rounded-full text-[14px] font-semibold hover:bg-gray-50 shrink-0 self-start md:self-auto">Download →</a>
-    </div>
-
-    <!-- Item 4 -->
-    <div class="w-full max-w-[1104px] flex flex-col md:flex-row justify-between items-start md:items-center py-[18px] gap-[12px] md:gap-[18px] border-b border-[#E4EAF0]">
-      <div class="flex gap-4 items-center">
-        <div class="bg-[#F1F5F9] p-2 rounded-[8px]"><img src="icons/SVG (55).png" class="w-6 h-6" /></div>
-        <div>
-          <p class="font-sans font-semibold text-[10px] leading-[100%] uppercase tracking-[1px] text-[#0E606B]">JOURNAL ARTICLE · 2023</p>
-          <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:21px;letter-spacing:0;" class="text-[#0F172A] my-[4px]">Regulatory Reform Sequencing and Political Sustainability in South Asian Economies</h4>
-          <p class="text-[12px] text-[#6B7280]">Journal of Development Economics · Vol. 162 · Co-authored with D. Khatun</p>
-        </div>
-      </div>
-      <a href="#" class="border border-[#E4EAF0] px-4 py-2 rounded-full text-[14px] font-semibold hover:bg-gray-50 shrink-0 self-start md:self-auto">View →</a>
-    </div>
-
-    <!-- Item 5 -->
-    <div class="w-full max-w-[1104px] flex flex-col md:flex-row justify-between items-start md:items-center py-[18px] gap-[12px] md:gap-[18px] border-b border-[#E4EAF0]">
-      <div class="flex gap-4 items-center">
-        <div class="bg-[#F1F5F9] p-2 rounded-[8px]"><img src="icons/SVG (55).png" class="w-6 h-6" /></div>
-        <div>
-          <p class="font-sans font-semibold text-[10px] leading-[100%] uppercase tracking-[1px] text-[#0E606B]">ANNUAL REPORT · 2024</p>
-          <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:21px;letter-spacing:0;" class="text-[#0F172A] my-[4px]">Annual State of Governance Report: Bangladesh 2024</h4>
-          <p class="text-[12px] text-[#6B7280]">GIET Foundation · 84 pages · Lead Editor</p>
-        </div>
-      </div>
-      <a href="#" class="border border-[#E4EAF0] px-4 py-2 rounded-full text-[14px] font-semibold hover:bg-gray-50 shrink-0 self-start md:self-auto">Download →</a>
-    </div>
-
-  </div>
-</div>
+  document.getElementById('exp-content-' + tab).classList.remove('hidden');
+  document.getElementById('exp-tab-' + tab).className = 'pb-[10px] border-b-2 border-[#A80C18] text-[#0F172A] font-semibold text-[14px] transition-all';
+}
+</script>
   </div>
 </section>
 
-<section class="w-full bg-[#F7F9FB] py-[40px] md:py-[72px] px-4 md:px-[360px] box-border">
-  <div class="max-w-[1200px] mx-auto px-[48px] flex flex-col gap-[36px]">
+<section class="w-full bg-[#F7F9FB] py-[40px] md:py-[72px] px-4 md:px-[408px] box-border">
+  <div class="max-w-[1104px] mx-auto flex flex-col gap-[40px]">
     
     <!-- Header Row -->
     <div class="flex justify-between items-end">
@@ -394,3 +470,8 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <script src="main.js"></script>
 </body>
 </html>
+
+
+
+
+

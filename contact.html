@@ -39,12 +39,24 @@
                 Projects
             </a>
 
-            <a href="resources.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
-    <span style="font-family: 'Inter', sans-serif; font-weight: 500; font-size: 13px;">Resources</span>
-    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white mt-[1px] shrink-0">
-        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-</a>
+            <div class="relative" id="res-dd-contact">
+                <button onclick="toggleResDD('contact')" class="h-[34.27px] px-[6px] flex items-center justify-center gap-[4px] hover:text-[#18909C] transition-colors duration-150 text-[#003054] text-[14px] font-semibold">
+                    <span>Resources</span>
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#18909C] mt-[2px]"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div id="res-dd-menu-contact" class="hidden absolute top-full left-0 w-[214px] bg-white border border-[#E4EAF0] shadow-lg z-50 rounded-b-[6px] overflow-hidden">
+                    <a href="resources.html#briefs" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-semibold text-[#003054] border-b-[3px] border-[#A80C18] hover:bg-[#F7F9FB] transition-colors">Issue Briefs/Articles</a>
+                    <a href="resources.html#expert" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Expert Speak/Blog</a>
+                    <a href="resources.html#publications" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Publications & Reports</a>
+                    <a href="resources.html#news" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">News & Commentary/Op-Ed</a>
+                    <a href="resources.html#videos" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Videos & Podcasts</a>
+                </div>
+            </div>
+<script>
+function toggleResDD(id){var m=document.getElementById('res-dd-menu-'+id);m.classList.toggle('hidden');}
+function setResActive(el){document.querySelectorAll('.res-dd-item').forEach(function(i){i.classList.remove('border-[#A80C18]','font-semibold','text-[#003054]');i.classList.add('border-transparent','font-medium','text-[#64748B]');});el.classList.remove('border-transparent','font-medium','text-[#64748B]');el.classList.add('border-[#A80C18]','font-semibold','text-[#003054]');}
+document.addEventListener('click',function(e){var dd=document.getElementById('res-dd-contact');if(dd&&!dd.contains(e.target)){var m=document.getElementById('res-dd-menu-contact');if(m)m.classList.add('hidden');}});
+</script>
 
             <a href="experts.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150 whitespace-nowrap">
                 Our Experts
@@ -100,7 +112,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <!-- BREADCRUMBS WRAPPER SYSTEM -->
     <div style="font-family:'Inter',sans-serif;font-size:12px;line-height:19.8px;" 
          class="text-white/45 flex items-center gap-1.5 tracking-normal">
-      <a href="#" class="hover:text-white transition-colors">Home</a>
+      <a href="index.html" class="hover:text-white transition-colors">Home</a>
       <span class="text-white/30">/</span>
       <span style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; line-height: 19.8px; color: rgba(255, 255, 255, 0.45);" 
             class="vertical-middle">
@@ -161,7 +173,16 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         <div class="flex flex-col gap-1 col-span-2">
           <label class="font-['Inter'] font-semibold text-[12.5px] leading-none tracking-[0.25px] text-[#0F172A]">Reason for Contact *</label>
           <select class="border border-[#E4EAF0] p-3 rounded-[8px] w-full text-[14px] text-[#475569]">
-            <option>— Select a topic —</option>
+            <option value="">— Select a topic —</option>
+            <option>Governance Frameworks & Public Sector Management</option>
+            <option>Institutional Reforms & Regulatory Architecture</option>
+            <option>Macroeconomic Innovations & Financial Structures</option>
+            <option>Trade Facilitation & Business Environment Reforms</option>
+            <option>Investment Promotion & Export Diversification</option>
+            <option>Digital Transformation & E-Governance</option>
+            <option>Research, Publications & Knowledge Platforms</option>
+            <option>Capacity Building & Professional Development</option>
+            <option>Social Inclusion, Equity & Human Capital</option>
           </select>
         </div>
         <div class="flex flex-col gap-1 col-span-2">
@@ -265,53 +286,63 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <div class="flex flex-col">
 
       <!-- FAQ 1 -->
-      <div class="border-b border-[#E4EAF0] py-[24px]">
+      <div class="faq-item border-b border-[#E4EAF0] py-[24px] cursor-pointer" onclick="toggleFaq(this)">
         <div class="flex justify-between items-start gap-4">
           <h4 class="font-['Merriweather'] font-bold text-[16px] leading-none text-[#0F172A]">How quickly will GIET respond to my enquiry?</h4>
-          <span class="text-[#64748B] text-[18px] font-light shrink-0">+</span>
+          <span class="faq-icon text-[#64748B] text-[18px] font-light shrink-0">+</span>
         </div>
-        <p class="text-[15px] text-[#475569] leading-[24px] mt-3 text-justify">We aim to respond to all enquiries within 2 business days. For urgent project or media requests, please indicate this in your message subject and we will prioritize accordingly.</p>
+        <p class="faq-answer hidden text-[15px] text-[#475569] leading-[24px] mt-3 text-justify">We aim to respond to all enquiries within 2 business days. For urgent project or media requests, please indicate this in your message subject and we will prioritize accordingly.</p>
       </div>
 
       <!-- FAQ 2 -->
-      <div class="border-b border-[#E4EAF0] py-[24px]">
+      <div class="faq-item border-b border-[#E4EAF0] py-[24px] cursor-pointer" onclick="toggleFaq(this)">
         <div class="flex justify-between items-start gap-4">
           <h4 class="font-['Merriweather'] font-bold text-[16px] leading-none text-[#0F172A]">Can GIET work with international organisations?</h4>
-          <span class="text-[#64748B] text-[18px] font-light shrink-0">+</span>
+          <span class="faq-icon text-[#64748B] text-[18px] font-light shrink-0">+</span>
         </div>
-        <p class="text-[15px] text-[#475569] leading-[24px] mt-3 text-justify">Yes. GIET works with international development banks, bilateral agencies, UN agencies, NGOs, and academic institutions. We have established partnership frameworks with ADB, World Bank, UNDP, GIZ, and several bilateral donors.</p>
+        <p class="faq-answer hidden text-[15px] text-[#475569] leading-[24px] mt-3 text-justify">Yes. GIET works with international development banks, bilateral agencies, UN agencies, NGOs, and academic institutions. We have established partnership frameworks with ADB, World Bank, UNDP, GIZ, and several bilateral donors.</p>
       </div>
 
       <!-- FAQ 3 -->
-      <div class="border-b border-[#E4EAF0] py-[24px]">
+      <div class="faq-item border-b border-[#E4EAF0] py-[24px] cursor-pointer" onclick="toggleFaq(this)">
         <div class="flex justify-between items-start gap-4">
           <h4 class="font-['Merriweather'] font-bold text-[16px] leading-none text-[#0F172A]">How do I submit a publication or article to GIET?</h4>
-          <span class="text-[#64748B] text-[18px] font-light shrink-0">+</span>
+          <span class="faq-icon text-[#64748B] text-[18px] font-light shrink-0">+</span>
         </div>
-        <p class="text-[15px] text-[#475569] leading-[24px] mt-3 text-justify">We welcome policy commentaries, issue briefs, expert analyses, and research articles from practitioners and academics. Please submit via the Resources section of our website using the "Write for Us" portal, or email publications@giet.org.bd directly with your draft and a short author bio.</p>
+        <p class="faq-answer hidden text-[15px] text-[#475569] leading-[24px] mt-3 text-justify">We welcome policy commentaries, issue briefs, expert analyses, and research articles from practitioners and academics. Please submit via the Resources section of our website using the "Write for Us" portal, or email publications@giet.org.bd directly with your draft and a short author bio.</p>
       </div>
 
       <!-- FAQ 4 -->
-      <div class="border-b border-[#E4EAF0] py-[24px]">
+      <div class="faq-item border-b border-[#E4EAF0] py-[24px] cursor-pointer" onclick="toggleFaq(this)">
         <div class="flex justify-between items-start gap-4">
           <h4 class="font-['Merriweather'] font-bold text-[16px] leading-none text-[#0F172A]">Are GIET's publications free to access?</h4>
-          <span class="text-[#64748B] text-[18px] font-light shrink-0">+</span>
+          <span class="faq-icon text-[#64748B] text-[18px] font-light shrink-0">+</span>
         </div>
-        <p class="text-[15px] text-[#475569] leading-[24px] mt-3 text-justify">Yes. All GIET publications — including policy briefs, working papers, commentaries, and reports — are freely available on our website under an open-access policy. We believe knowledge should be publicly accessible to those it is meant to serve.</p>
+        <p class="faq-answer hidden text-[15px] text-[#475569] leading-[24px] mt-3 text-justify">Yes. All GIET publications — including policy briefs, working papers, commentaries, and reports — are freely available on our website under an open-access policy. We believe knowledge should be publicly accessible to those it is meant to serve.</p>
       </div>
 
       <!-- FAQ 5 -->
-      <div class="border-b border-[#E4EAF0] py-[24px]">
+      <div class="faq-item border-b border-[#E4EAF0] py-[24px] cursor-pointer" onclick="toggleFaq(this)">
         <div class="flex justify-between items-start gap-4">
           <h4 class="font-['Merriweather'] font-bold text-[16px] leading-none text-[#0F172A]">How can I propose a collaborative research project?</h4>
-          <span class="text-[#64748B] text-[18px] font-light shrink-0">+</span>
+          <span class="faq-icon text-[#64748B] text-[18px] font-light shrink-0">+</span>
         </div>
-        <p class="text-[15px] text-[#475569] leading-[24px] mt-3 text-justify">Use the contact form above, selecting "Project or Research Collaboration" as your reason for contact. Please include a brief description of your proposed scope, timeline, and funding status. Our research team will follow up within 5 business days.</p>
+        <p class="faq-answer hidden text-[15px] text-[#475569] leading-[24px] mt-3 text-justify">Use the contact form above, selecting "Project or Research Collaboration" as your reason for contact. Please include a brief description of your proposed scope, timeline, and funding status. Our research team will follow up within 5 business days.</p>
       </div>
 
     </div>
   </div>
 </section>
+
+<script>
+function toggleFaq(item) {
+  var answer = item.querySelector('.faq-answer');
+  var icon = item.querySelector('.faq-icon');
+  var isOpen = !answer.classList.contains('hidden');
+  answer.classList.toggle('hidden', isOpen);
+  icon.textContent = isOpen ? '+' : '-';
+}
+</script>
 
    <footer class="w-full relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
     
@@ -399,3 +430,4 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <script src="main.js"></script>
 </body>
 </html>
+

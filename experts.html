@@ -40,12 +40,24 @@
             </a>
 
 
-            <a href="resources.html" class="h-[34.27px] px-[6px] flex items-center justify-center gap-[4px] hover:text-[#18909C] transition-colors duration-150 group">
-                <span>Resources</span>
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#18909C] mt-[2px]">
-                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
+            <div class="relative" id="res-dd-experts">
+                <button onclick="toggleResDD('experts')" class="h-[34.27px] px-[6px] flex items-center justify-center gap-[4px] hover:text-[#18909C] transition-colors duration-150 text-[#003054] text-[14px] font-semibold">
+                    <span>Resources</span>
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#18909C] mt-[2px]"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div id="res-dd-menu-experts" class="hidden absolute top-full left-0 w-[214px] bg-white border border-[#E4EAF0] shadow-lg z-50 rounded-b-[6px] overflow-hidden">
+                    <a href="resources.html#briefs" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-semibold text-[#003054] border-b-[3px] border-[#A80C18] hover:bg-[#F7F9FB] transition-colors">Issue Briefs/Articles</a>
+                    <a href="resources.html#expert" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Expert Speak/Blog</a>
+                    <a href="resources.html#publications" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Publications & Reports</a>
+                    <a href="resources.html#news" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">News & Commentary/Op-Ed</a>
+                    <a href="resources.html#videos" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Videos & Podcasts</a>
+                </div>
+            </div>
+<script>
+function toggleResDD(id){var m=document.getElementById('res-dd-menu-'+id);m.classList.toggle('hidden');}
+function setResActive(el){document.querySelectorAll('.res-dd-item').forEach(function(i){i.classList.remove('border-[#A80C18]','font-semibold','text-[#003054]');i.classList.add('border-transparent','font-medium','text-[#64748B]');});el.classList.remove('border-transparent','font-medium','text-[#64748B]');el.classList.add('border-[#A80C18]','font-semibold','text-[#003054]');}
+document.addEventListener('click',function(e){var dd=document.getElementById('res-dd-experts');if(dd&&!dd.contains(e.target)){var m=document.getElementById('res-dd-menu-experts');if(m)m.classList.add('hidden');}});
+</script>
 
               <a href="experts.html" class="h-[34.27px] px-[14px] py-[5.5px] bg-[#18909C] text-white rounded-[6px] flex items-center justify-center transition-colors duration-200">
                   Our Experts
@@ -109,7 +121,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
       Our Experts
     </h1>
 
-    <p class="text-[17px] text-white/60 font-['Inter'] leading-[29.75px] max-w-[780px] m-0">
+    <p class="text-[17px] text-white/60 font-['Inter'] leading-[29.75px] max-w-[780px] m-0 text-justify">
       GIET's team of researchers, policy analysts, and practitioners brings decades of combined experience in governance reform, economic transformation, trade policy, and digital development across South Asia.
     </p>
 
@@ -142,16 +154,17 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
       CHAIRMAN
     </div>
   </div>
+  <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
 
   <!-- Text Section -->
   <div class="p-[26px] flex flex-col flex-grow">
-    <h3 class="font-serif text-[20px] font-extrabold text-[#0F172A] mb-2">Dr. Aminur Rahman</h3>
+    <h3 class="font-serif text-[20px] font-extrabold text-[#0F172A] mb-1">Dr. Aminur Rahman</h3>
     <p class="font-sans text-[12px] text-[#64748B] mb-4">PhD in Public Administration - University of Dhaka</p>
-    <p class="font-sans text-[14px] leading-[22px] text-[#475569] flex-grow text-justify">
+    <p class="font-sans text-[14px] leading-[22px] text-[#475569] mb-[16px] text-justify flex-grow">
      Dr. Rahman brings over 25 years of experience in public administration reform, anti-corruption policy, and institutional capacity development. He previously served as Joint Secretary at the Cabinet Division and held senior advisory roles at UNDP Bangladesh. He chairs GIET's Board of Governors and oversees the organization's strategic direction and policy advocacy mandate.
     </p>
 
-    <div class="flex flex-wrap gap-2 mb-6">
+    <div class="flex flex-wrap gap-2 pb-[18px]" style="height:74.63px;">
   <span class="px-3 py-1 bg-[#F0F7F7] text-[#0E606B] text-[11px] font-semibold rounded-full border border-[#D1E5E5]">Public Administration</span>
   <span class="px-3 py-1 bg-[#F0F7F7] text-[#0E606B] text-[11px] font-semibold rounded-full border border-[#D1E5E5]">Anti-Corruption</span>
   <span class="px-3 py-1 bg-[#00305412] text-[#0E606B] text-[11px] font-semibold rounded-full border border-[#D1E5E5]">Institutional Reform</span>
@@ -187,16 +200,17 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
       Executive Director
     </div>
   </div>
+  <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
 
   <!-- Text Section -->
   <div class="p-[26px] flex flex-col flex-grow">
-    <h3 class="font-serif text-[20px] font-extrabold text-[#0F172A] mb-2">Dr. Nusrat Jahan</h3>
+    <h3 class="font-serif text-[20px] font-extrabold text-[#0F172A] mb-1">Dr. Nusrat Jahan</h3>
     <p class="font-sans text-[12px] text-[#64748B] mb-4">PhD in Public Policy · London School of Economics</p>
-    <p class="font-sans text-[14px] leading-[22px] text-[#475569] flex-grow text-justify">
+    <p class="font-sans text-[14px] leading-[22px] text-[#475569] mb-[16px] text-justify flex-grow">
      Dr. Jahan has over 18 years of experience in governance reform, trade facilitation, and economic policy across South Asia. She previously served as Senior Economist at the World Bank's Dhaka office and as Policy Advisor to the Ministry of Finance. As Executive Director, she leads GIET's research agenda, strategic partnerships, and operational management.
     </p>
 
-    <div class="flex flex-wrap gap-2 mb-6">
+    <div class="flex flex-wrap gap-2 pb-[18px]" style="height:74.63px;">
   <span class="px-3 py-1 bg-[#F0F7F7] text-[#0E606B] text-[11px] font-semibold rounded-full border border-[#D1E5E5]">Governance Reform</span>
   <span class="px-3 py-1 bg-[#F0F7F7] text-[#0E606B] text-[11px] font-semibold rounded-full border border-[#D1E5E5]">Trade Facilitation</span>
   <span class="px-3 py-1 bg-[#00305412] text-[#0E606B] text-[11px] font-semibold rounded-full border border-[#D1E5E5]">Economic Policy</span>
@@ -235,16 +249,17 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
       Vice Chairman
     </div>
   </div>
+  <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
 
   <!-- Text Section -->
   <div class="p-[26px] flex flex-col flex-grow">
-    <h3 class="font-serif text-[20px] font-extrabold text-[#0F172A] mb-2">Mr. Tariqul Islam</h3>
+    <h3 class="font-serif text-[20px] font-extrabold text-[#0F172A] mb-1">Mr. Tariqul Islam</h3>
     <p class="font-sans text-[12px] text-[#64748B] mb-4">MPA in Economic Policy · Harvard Kennedy School</p>
-    <p class="font-sans text-[14px] leading-[22px] text-[#475569] flex-grow text-justify">
+    <p class="font-sans text-[14px] leading-[22px] text-[#475569] mb-[16px] text-justify flex-grow">
       Mr. Islam has 20 years of experience in trade policy and investment promotion in Bangladesh. He was Director General at BIDA and led the WTO Trade Facilitation Agreement task force. As Vice Chairman, he oversees GIET's economic transformation and trade facilitation.
     </p>
 
-    <div class="flex flex-wrap gap-2 mb-6">
+    <div class="flex flex-wrap gap-2 pb-[18px]" style="height:74.63px;">
   <span class="px-3 py-1 bg-[#F0F7F7] text-[#0E606B] text-[11px] font-semibold rounded-full border border-[#D1E5E5]">Trade Policy</span>
   <span class="px-3 py-1 bg-[#F0F7F7] text-[#0E606B] text-[11px] font-semibold rounded-full border border-[#D1E5E5]">Investment Promotion</span>
   <span class="px-3 py-1 bg-[#00305412] text-[#0E606B] text-[11px] font-semibold rounded-full border border-[#D1E5E5]">Private Sector Dev.</span>
@@ -283,180 +298,163 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
     <div class="grid grid-cols-1 md:grid-cols-4 gap-[20px] w-full max-w-[1104px]">
       
-      <div class="w-[261px] h-[345px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
-        <img src="images/Dr. Aminur Rahman.png" alt="Dr. Aminur Rahman" class="w-full h-[200px] object-cover" />
-        <div class="w-full h-[3px] bg-[#003054]"></div>
-        <div class="p-[16px] flex flex-col gap-[8px]">
-          <div>
-            <h3 class="font-bold text-[16px] text-[#0F172A]">Dr. Aminur Rahman</h3>
-            <p class="text-[12px] text-[#64748B]">Chairman & Senior Fellow, Governance</p>
-          </div>
-          <div class="flex gap-[8px] flex-wrap">
-            <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Governance</span>
-            <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Policy Design</span>
-          </div>
-        </div>
-      </div>
+    <div class="w-[261px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
+  <img src="images/Dr. Aminur Rahman.png" alt="Dr. Aminur Rahman" class="w-full h-[200px] object-cover" />
+  <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
+  
+  <!-- Increased gap from 4px to 12px -->
+  <div class="pt-[18px] pr-[16px] pb-[18px] pl-[16px] flex flex-col gap-[12px]">
+    
+    <!-- Increased gap from 6px to 8px -->
+    <div class="flex flex-col gap-[8px]">
+      <h3 style="font-family:'Merriweather',serif;font-weight:800;font-size:16px;line-height:26.4px;color:#0F172A;">Dr. Aminur Rahman</h3>
+      <p class="text-[12px] text-[#64748B] leading-none">Chairman & Senior Fellow, Governance</p>
+    </div>
+    
+    <div class="flex gap-[5px] flex-wrap">
+      <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Governance</span>
+      <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Policy Design</span>
+    </div>
+  </div>
+</div>
 
-      <div class="w-[261px] h-[345px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
+      <div class="w-[261px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
         <img src="images/Mr. Tariqul Islam.png" alt="Mr. Kamal Hossain" class="w-full h-[200px] object-cover" />
-        <div class="w-full h-[3px] bg-[#003054]"></div>
-        <div class="p-[16px] flex flex-col gap-[8px]">
-          <div>
-            <h3 class="font-bold text-[16px] text-[#0F172A]">Mr. Kamal Hossain</h3>
-            <p class="text-[12px] text-[#64748B]">Director of Research & Publications</p>
-          </div>
-          <div class="flex gap-[8px] flex-wrap">
+        <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
+        <div class="pt-[18px] pr-[16px] pb-[18px] pl-[16px] flex flex-col gap-[12px]"><div class="flex flex-col gap-[8px]">
+            <h3 style="font-family:'Merriweather',serif;font-weight:800;font-size:16px;line-height:26.4px;color:#0F172A;">Mr. Kamal Hossain</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Director of Research & Publications</p>
+          </div><div class="flex gap-[5px] flex-wrap">
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Research</span>
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Institutional Reform</span>
           </div>
         </div>
       </div>
 
-      <div class="w-[261px] h-[345px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
+      <div class="w-[261px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
         <img src="images/Ms. Fatema Begum.png" alt="Ms. Fatema Begum" class="w-full h-[200px] object-cover" />
-        <div class="w-full h-[3px] bg-[#003054]"></div>
-        <div class="p-[16px] flex flex-col gap-[8px]">
-          <div>
-            <h3 class="font-bold text-[16px] text-[#0F172A]">Ms. Fatema Begum</h3>
-            <p class="text-[12px] text-[#64748B]">Director, Programmes & Partnerships</p>
-          </div>
-          <div class="flex gap-[8px] flex-wrap">
+        <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
+        <div class="pt-[18px] pr-[16px] pb-[18px] pl-[16px] flex flex-col gap-[12px]"><div class="flex flex-col gap-[8px]">
+            <h3 style="font-family:'Merriweather',serif;font-weight:800;font-size:16px;line-height:26.4px;color:#0F172A;">Ms. Fatema Begum</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Director, Programmes & Partnerships</p>
+          </div><div class="flex gap-[5px] flex-wrap">
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Digital Gov</span>
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Inclusion</span>
           </div>
         </div>
       </div>
 
-      <div class="w-[261px] h-[345px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
+      <div class="w-[261px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
         <img src="images/Prof. Nazrul Islam.png" alt="Prof. Nazrul Islam" class="w-full h-[200px] object-cover" />
-        <div class="w-full h-[3px] bg-[#003054]"></div>
-        <div class="p-[16px] flex flex-col gap-[8px]">
-          <div>
-            <h3 class="font-bold text-[16px] text-[#0F172A]">Prof. Nazrul Islam</h3>
-            <p class="text-[12px] text-[#64748B]">Senior Fellow, Economic Transformation</p>
-          </div>
-          <div class="flex gap-[8px] flex-wrap">
+        <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
+        <div class="pt-[18px] pr-[16px] pb-[18px] pl-[16px] flex flex-col gap-[12px]"><div class="flex flex-col gap-[8px]">
+            <h3 style="font-family:'Merriweather',serif;font-weight:800;font-size:16px;line-height:26.4px;color:#0F172A;">Prof. Nazrul Islam</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Senior Fellow, Economic Transformation</p>
+          </div><div class="flex gap-[5px] flex-wrap">
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Trade Policy</span>
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Economics</span>
           </div>
         </div>
       </div>
 
-      <div class="w-[261px] h-[345px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
+      <div class="w-[261px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
         <img src="images/Dr. Taslima Khatun.png" alt="Dr. Taslima Khatun" class="w-full h-[200px] object-cover" />
-        <div class="w-full h-[3px] bg-[#003054]"></div>
-        <div class="p-[16px] flex flex-col gap-[8px]">
-          <div>
-            <h3 class="font-bold text-[16px] text-[#0F172A]">Dr. Taslima Khatun</h3>
-            <p class="text-[12px] text-[#64748B]">Research Fellow, Trade & Investment</p>
-          </div>
-          <div class="flex gap-[8px] flex-wrap">
+        <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
+        <div class="pt-[18px] pr-[16px] pb-[18px] pl-[16px] flex flex-col gap-[12px]"><div class="flex flex-col gap-[8px]">
+            <h3 style="font-family:'Merriweather',serif;font-weight:800;font-size:16px;line-height:26.4px;color:#0F172A;">Dr. Taslima Khatun</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Research Fellow, Trade & Investment</p>
+          </div><div class="flex gap-[5px] flex-wrap">
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Investment</span>
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Export</span>
           </div>
         </div>
       </div>
 
-      <div class="w-[261px] h-[345px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
+      <div class="w-[261px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
         <img src="images/Mr. Farhan Ahmed.png" alt="Mr. Farhan Ahmed" class="w-full h-[200px] object-cover" />
-        <div class="w-full h-[3px] bg-[#003054]"></div>
-        <div class="p-[16px] flex flex-col gap-[8px]">
-          <div>
-            <h3 class="font-bold text-[16px] text-[#0F172A]">Mr. Farhan Ahmed</h3>
-            <p class="text-[12px] text-[#64748B]">Policy Analyst, Digital & E-Governance</p>
-          </div>
-          <div class="flex gap-[8px] flex-wrap">
+        <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
+        <div class="pt-[18px] pr-[16px] pb-[18px] pl-[16px] flex flex-col gap-[12px]"><div class="flex flex-col gap-[8px]">
+            <h3 style="font-family:'Merriweather',serif;font-weight:800;font-size:16px;line-height:26.4px;color:#0F172A;">Mr. Farhan Ahmed</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Policy Analyst, Digital & E-Governance</p>
+          </div><div class="flex gap-[5px] flex-wrap">
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">E-Gov</span>
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">ICT Policy</span>
           </div>
         </div>
       </div>
 
-      <div class="w-[261px] h-[345px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
+      <div class="w-[261px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
         <img src="images/Mr. Shafiqul Islam.png" alt="Mr. Shafiqul Islam" class="w-full h-[200px] object-cover" />
-        <div class="w-full h-[3px] bg-[#003054]"></div>
-        <div class="p-[16px] flex flex-col gap-[8px]">
-          <div>
-            <h3 class="font-bold text-[16px] text-[#0F172A]">Mr. Shafiqul Islam</h3>
-            <p class="text-[12px] text-[#64748B]">Associate Fellow, Regulatory Reform</p>
-          </div>
-          <div class="flex gap-[8px] flex-wrap">
+        <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
+        <div class="pt-[18px] pr-[16px] pb-[18px] pl-[16px] flex flex-col gap-[12px]"><div class="flex flex-col gap-[8px]">
+            <h3 style="font-family:'Merriweather',serif;font-weight:800;font-size:16px;line-height:26.4px;color:#0F172A;">Mr. Shafiqul Islam</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Associate Fellow, Regulatory Reform</p>
+          </div><div class="flex gap-[5px] flex-wrap">
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Regulation</span>
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Compliance</span>
           </div>
         </div>
       </div>
 
-      <div class="w-[261px] h-[345px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
+      <div class="w-[261px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
         <img src="images/Ms. Roksana Parvin.png" alt="Ms. Roksana Parvin" class="w-full h-[200px] object-cover" />
-        <div class="w-full h-[3px] bg-[#003054]"></div>
-        <div class="p-[16px] flex flex-col gap-[8px]">
-          <div>
-            <h3 class="font-bold text-[16px] text-[#0F172A]">Ms. Roksana Parvin</h3>
-            <p class="text-[12px] text-[#64748B]">Research Analyst, Social Inclusion</p>
-          </div>
-          <div class="flex gap-[8px] flex-wrap">
+        <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
+        <div class="pt-[18px] pr-[16px] pb-[18px] pl-[16px] flex flex-col gap-[12px]"><div class="flex flex-col gap-[8px]">
+            <h3 style="font-family:'Merriweather',serif;font-weight:800;font-size:16px;line-height:26.4px;color:#0F172A;">Ms. Roksana Parvin</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Research Analyst, Social Inclusion</p>
+          </div><div class="flex gap-[5px] flex-wrap">
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Gender</span>
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Social Policy</span>
           </div>
         </div>
       </div>
 
-      <div class="w-[261px] h-[345px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
+      <div class="w-[261px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
         <img src="images/Prof. Nazrul Islam.png" alt="Mr. Imran Chowdhury" class="w-full h-[200px] object-cover" />
-        <div class="w-full h-[3px] bg-[#003054]"></div>
-        <div class="p-[16px] flex flex-col gap-[8px]">
-          <div>
-            <h3 class="font-bold text-[16px] text-[#0F172A]">Mr. Imran Chowdhury</h3>
-            <p class="text-[12px] text-[#64748B]">Senior Analyst, SME & Entrepreneurship</p>
-          </div>
-          <div class="flex gap-[8px] flex-wrap">
+        <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
+        <div class="pt-[18px] pr-[16px] pb-[18px] pl-[16px] flex flex-col gap-[12px]"><div class="flex flex-col gap-[8px]">
+            <h3 style="font-family:'Merriweather',serif;font-weight:800;font-size:16px;line-height:26.4px;color:#0F172A;">Mr. Imran Chowdhury</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Senior Analyst, SME & Entrepreneurship</p>
+          </div><div class="flex gap-[5px] flex-wrap">
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">SME</span>
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Finance</span>
           </div>
         </div>
       </div>
 
-      <div class="w-[261px] h-[345px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
+      <div class="w-[261px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
         <img src="images/Dr. Sabrina Hossain.png" alt="Dr. Sabrina Hossain" class="w-full h-[200px] object-cover" />
-        <div class="w-full h-[3px] bg-[#003054]"></div>
-        <div class="p-[16px] flex flex-col gap-[8px]">
-          <div>
-            <h3 class="font-bold text-[16px] text-[#0F172A]">Dr. Sabrina Hossain</h3>
-            <p class="text-[12px] text-[#64748B]">Fellow, Climate & Environment Policy</p>
-          </div>
-          <div class="flex gap-[8px] flex-wrap">
+        <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
+        <div class="pt-[18px] pr-[16px] pb-[18px] pl-[16px] flex flex-col gap-[12px]"><div class="flex flex-col gap-[8px]">
+            <h3 style="font-family:'Merriweather',serif;font-weight:800;font-size:16px;line-height:26.4px;color:#0F172A;">Dr. Sabrina Hossain</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Fellow, Climate & Environment Policy</p>
+          </div><div class="flex gap-[5px] flex-wrap">
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Climate</span>
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Sustainability</span>
           </div>
         </div>
       </div>
 
-      <div class="w-[261px] h-[345px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
+      <div class="w-[261px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
         <img src="images/Background (12).png" alt="Mr. Zahirul Haque" class="w-full h-[200px] object-cover" />
-        <div class="w-full h-[3px] bg-[#003054]"></div>
-        <div class="p-[16px] flex flex-col gap-[8px]">
-          <div>
-            <h3 class="font-bold text-[16px] text-[#0F172A]">Mr. Zahirul Haque</h3>
-            <p class="text-[12px] text-[#64748B]">Senior Advisor, Capacity Building</p>
-          </div>
-          <div class="flex gap-[8px] flex-wrap">
+        <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
+        <div class="pt-[18px] pr-[16px] pb-[18px] pl-[16px] flex flex-col gap-[12px]"><div class="flex flex-col gap-[8px]">
+            <h3 style="font-family:'Merriweather',serif;font-weight:800;font-size:16px;line-height:26.4px;color:#0F172A;">Mr. Zahirul Haque</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Senior Advisor, Capacity Building</p>
+          </div><div class="flex gap-[5px] flex-wrap">
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Training</span>
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Leadership</span>
           </div>
         </div>
       </div>
 
-      <div class="w-[261px] h-[345px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
+      <div class="w-[261px] border border-[#EEF3F8] rounded-[14px] bg-white overflow-hidden flex flex-col">
         <img src="images/Ms. Sharmin Akter.png" alt="Ms. Sharmin Akter" class="w-full h-[200px] object-cover" />
-        <div class="w-full h-[3px] bg-[#003054]"></div>
-        <div class="p-[16px] flex flex-col gap-[8px]">
-          <div>
-            <h3 class="font-bold text-[16px] text-[#0F172A]">Ms. Sharmin Akter</h3>
-            <p class="text-[12px] text-[#64748B]">Policy Analyst, Public Finance</p>
-          </div>
-          <div class="flex gap-[8px] flex-wrap">
+        <div style="height:4px;background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div>
+        <div class="pt-[18px] pr-[16px] pb-[18px] pl-[16px] flex flex-col gap-[12px]"><div class="flex flex-col gap-[8px]">
+            <h3 style="font-family:'Merriweather',serif;font-weight:800;font-size:16px;line-height:26.4px;color:#0F172A;">Ms. Sharmin Akter</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Policy Analyst, Public Finance</p>
+          </div><div class="flex gap-[5px] flex-wrap">
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">PFM</span>
             <span class="px-2 py-1 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Budget</span>
           </div>
@@ -490,7 +488,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         <img src="images/Advisor.png" alt="Prof. David Morrison" class="w-[60px] h-[60px] rounded-full object-cover" />
         <div class="flex flex-col gap-[4px]">
           <h3 class="font-['Merriweather'] font-extrabold text-[15px] leading-[24.75px] text-[#0F172A]">Prof. David Morrison</h3>
-          <p class="text-[12px] text-[#64748B]">Professor of Public Policy, Oxford University</p>
+          <p class="text-[12px] text-[#64748B] leading-none">Professor of Public Policy, Oxford University</p>
           <div class="flex gap-[8px] mt-1">
             <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Governance</span>
             <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">UK</span>
@@ -503,7 +501,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         <img src="images/Advisor (1).png" alt="Dr. Priya Sharma" class="w-[60px] h-[60px] rounded-full object-cover" />
         <div class="flex flex-col gap-[4px]">
           <h3 class="font-['Merriweather'] font-extrabold text-[15px] leading-[24.75px] text-[#0F172A]">Dr. Priya Sharma</h3>
-          <p class="text-[12px] text-[#64748B]">Senior Economist, Asian Development Bank</p>
+          <p class="text-[12px] text-[#64748B] leading-none">Senior Economist, Asian Development Bank</p>
           <div class="flex gap-[8px] mt-1">
             <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Economics</span>
             <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Manila</span>
@@ -516,7 +514,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         <img src="images/Advisor (2).png" alt="Mr. Thomas Brandt" class="w-[60px] h-[60px] rounded-full object-cover" />
         <div class="flex flex-col gap-[4px]">
           <h3 class="font-['Merriweather'] font-extrabold text-[15px] leading-[24.75px] text-[#0F172A]">Mr. Thomas Brandt</h3>
-          <p class="text-[12px] text-[#64748B]">Regional Director, GIZ South Asia</p>
+          <p class="text-[12px] text-[#64748B] leading-none">Regional Director, GIZ South Asia</p>
           <div class="flex gap-[8px] mt-1">
             <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Development</span>
             <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Germany</span>
@@ -611,3 +609,15 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <script src="main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -39,12 +39,24 @@
                 Projects
             </a>
 
-           <a href="resources.html" class="h-[34.27px] px-[14px] py-[5.5px] bg-[#18909C] text-white rounded-[6px] flex items-center justify-center gap-1.5 transition-colors duration-200">
-    <span style="font-family: 'Inter', sans-serif; font-weight: 500; font-size: 13px;">Resources</span>
-    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white mt-[1px] shrink-0">
-        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-</a>
+            <div class="relative" id="res-dd-resourcesdetails">
+                <button onclick="toggleResDD('resourcesdetails')" class="h-[34.27px] px-[14px] py-[5.5px] bg-[#18909C] text-white rounded-[6px] flex items-center justify-center gap-[4px] transition-colors duration-200 text-[14px] font-semibold">
+                    <span>Resources</span>
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white mt-[2px]"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div id="res-dd-menu-resourcesdetails" class="hidden absolute top-full left-0 w-[214px] bg-white border border-[#E4EAF0] shadow-lg z-50 rounded-b-[6px] overflow-hidden">
+                    <a href="resources.html#briefs" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-semibold text-[#003054] border-b-[3px] border-[#A80C18] hover:bg-[#F7F9FB] transition-colors">Issue Briefs/Articles</a>
+                    <a href="resources.html#expert" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Expert Speak/Blog</a>
+                    <a href="resources.html#publications" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Publications & Reports</a>
+                    <a href="resources.html#news" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">News & Commentary/Op-Ed</a>
+                    <a href="resources.html#videos" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Videos & Podcasts</a>
+                </div>
+            </div>
+<script>
+function toggleResDD(id){var m=document.getElementById('res-dd-menu-'+id);m.classList.toggle('hidden');}
+function setResActive(el){document.querySelectorAll('.res-dd-item').forEach(function(i){i.classList.remove('border-[#A80C18]','font-semibold','text-[#003054]');i.classList.add('border-transparent','font-medium','text-[#64748B]');});el.classList.remove('border-transparent','font-medium','text-[#64748B]');el.classList.add('border-[#A80C18]','font-semibold','text-[#003054]');}
+document.addEventListener('click',function(e){var dd=document.getElementById('res-dd-resourcesdetails');if(dd&&!dd.contains(e.target)){var m=document.getElementById('res-dd-menu-resourcesdetails');if(m)m.classList.add('hidden');}});
+</script>
 
             <a href="experts.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150 whitespace-nowrap">
                 Our Experts
@@ -435,3 +447,4 @@ housed within NBR and resourced with seconded staff from all 12 border agencies.
     <script src="main.js"></script>
 </body>
 </html>
+

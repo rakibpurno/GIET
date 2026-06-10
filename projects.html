@@ -40,12 +40,24 @@
             </a>
 
 
-            <a href="resources.html" class="h-[34.27px] px-[6px] flex items-center justify-center gap-[4px] hover:text-[#18909C] transition-colors duration-150 group">
-                <span>Resources</span>
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#18909C] mt-[2px]">
-                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
+            <div class="relative" id="res-dd-projects">
+                <button onclick="toggleResDD('projects')" class="h-[34.27px] px-[6px] flex items-center justify-center gap-[4px] hover:text-[#18909C] transition-colors duration-150 text-[#003054] text-[14px] font-semibold">
+                    <span>Resources</span>
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#18909C] mt-[2px]"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div id="res-dd-menu-projects" class="hidden absolute top-full left-0 w-[214px] bg-white border border-[#E4EAF0] shadow-lg z-50 rounded-b-[6px] overflow-hidden">
+                    <a href="resources.html#briefs" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-semibold text-[#003054] border-b-[3px] border-[#A80C18] hover:bg-[#F7F9FB] transition-colors">Issue Briefs/Articles</a>
+                    <a href="resources.html#expert" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Expert Speak/Blog</a>
+                    <a href="resources.html#publications" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Publications & Reports</a>
+                    <a href="resources.html#news" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">News & Commentary/Op-Ed</a>
+                    <a href="resources.html#videos" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Videos & Podcasts</a>
+                </div>
+            </div>
+<script>
+function toggleResDD(id){var m=document.getElementById('res-dd-menu-'+id);m.classList.toggle('hidden');}
+function setResActive(el){document.querySelectorAll('.res-dd-item').forEach(function(i){i.classList.remove('border-[#A80C18]','font-semibold','text-[#003054]');i.classList.add('border-transparent','font-medium','text-[#64748B]');});el.classList.remove('border-transparent','font-medium','text-[#64748B]');el.classList.add('border-[#A80C18]','font-semibold','text-[#003054]');}
+document.addEventListener('click',function(e){var dd=document.getElementById('res-dd-projects');if(dd&&!dd.contains(e.target)){var m=document.getElementById('res-dd-menu-projects');if(m)m.classList.add('hidden');}});
+</script>
 
             <a href="experts.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150 whitespace-nowrap">
                 Our Experts
@@ -102,7 +114,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     
     <!-- BREADCRUMBS -->
     <div class="flex items-center gap-1.5 text-[12px] text-white/45 font-['Inter'] leading-[19.8px]">
-      <a href="#" class="hover:text-white transition-colors">Home</a>
+      <a href="index.html" class="hover:text-white transition-colors">Home</a>
       <span>/</span>
       <span class="text-white/45">Projects</span>
     </div>
@@ -172,7 +184,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         <!-- FEATURED PROJECT FEATURED CARD -->
         <div class="w-full border border-[#EEF3F8] rounded-[20px] overflow-hidden flex flex-col md:flex-row bg-white hover:shadow-md transition-all text-left">
             <!-- Left Side Image Framework -->
-            <div class="w-full md:w-[560px] h-[240px] md:h-[380px] m-[12px] rounded-[12px] overflow-hidden bg-[#EEF3F8] md:shrink-0 relative">
+            <div class="w-full md:w-[560px] md:h-[403.81px] overflow-hidden bg-[#EEF3F8] md:shrink-0 relative">
                 <img src="images/Governance Innovation.png" alt="Gavel on sounding block" class="w-full h-full object-cover">
                 <!-- Inner Image Tag Component -->
                 <div class="absolute left-4 top-4 bg-[#003054] w-[144px] h-[29px] flex items-center justify-center rounded-[2px] px-[14px] py-[6px]">
@@ -193,22 +205,18 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                         Strengthening Citizen-Centric Public Service Delivery in Bangladesh
                     </h3>
                     <!-- Description context text -->
-                    <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14.5px; line-height: 25.38px;" class="text-[#1A1A1A] text-justify mt-1">
+                    <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14.5px; line-height: 25.38px;" class="text-[#1A1A1A] text-justify mt-[20px]">
                         A comprehensive multi-district diagnostic of service delivery bottlenecks across six ministries, delivering actionable grievance redress system recommendations and a digital service transformation roadmap — with a 3-year implementation plan and change management framework for 12,000+ civil servants.
                     </p>
                 </div>
                 <!-- Card Footer Info Matrix -->
                 <div class="flex flex-col gap-4">
-                    <div class="flex items-center gap-[16px] text-[#6B7280]">
-                        <span style="font-family:'Inter',sans-serif;font-size:12px;line-height:19.8px;" class="flex items-center gap-1.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[#0E606B]"></span> Governance Reform
-                        </span>
-                        <span style="font-family:'Inter',sans-serif;font-size:12px;line-height:19.8px;" class="flex items-center gap-1.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[#0E606B]"></span> Dhaka + 6 Districts
-                        </span>
-                        <span style="font-family:'Inter',sans-serif;font-size:12px;line-height:19.8px;" class="flex items-center gap-1.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-[#0E606B]"></span> 18 Months
-                        </span>
+                    <div class="flex items-center gap-[10px]" style="font-family:'Inter',sans-serif;font-size:12px;line-height:19.8px;color:#6B7280;">
+                        <span>Governance Reform</span>
+                        <span>·</span>
+                        <span>Dhaka + 6 Districts</span>
+                        <span>·</span>
+                        <span>18 Months</span>
                     </div>
                     <!-- Action Link CTA -->
                     <a href="projectdetails.html" style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 12.5px; line-height: 20.63px;" class="text-[#A80C18] hover:text-[#8e0a14] transition-colors flex items-center gap-1">
@@ -351,56 +359,56 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         <div class="w-full max-w-[1104px] grid grid-cols-2 md:grid-cols-4 gap-[1px] border border-[#EEF3F8] overflow-hidden rounded-[4px] bg-[#EEF3F8]">
 
             <!-- ITEM 1 -->
-            <div class="bg-white pt-[28px] pr-[24px] pb-[28px] pl-[24px] md:pt-[36px] md:pr-[28px] md:pb-[36px] md:pl-[28px] flex flex-col gap-[20px] text-left">
-                <div class="flex flex-col gap-1">
+            <div class="bg-white pt-[36px] pr-[28px] pb-[36px] pl-[28px] flex flex-col gap-[16px] text-left">
+                <div class="flex flex-col gap-[10px]">
                     <div class="font-['Merriweather'] font-extrabold text-[44px] leading-none flex items-baseline">
                         <span class="text-[#003054]">24</span>
                         <span class="text-[#A80C18] ml-1">+</span>
                     </div>
-                    <div class="w-[36px] h-[3px] mt-1 rounded-sm bg-[#008080]"></div>
+                    <div class="w-[36px] h-[3px] rounded-sm bg-[#18909C]"></div>
                 </div>
-                <span class="font-['Inter'] font-medium text-[13px] leading-[21.45px] tracking-[0.78px] uppercase text-[#6B7280] mt-auto">
+                <span class="font-['Inter'] font-medium text-[13px] leading-[21.45px] tracking-[0.78px] uppercase text-[#6B7280]">
                     Projects Delivered
                 </span>
             </div>
 
             <!-- ITEM 2 -->
-            <div class="bg-white pt-[28px] pr-[24px] pb-[28px] pl-[24px] md:pt-[36px] md:pr-[28px] md:pb-[36px] md:pl-[28px] flex flex-col gap-[20px] text-left">
-                <div class="flex flex-col gap-1">
+            <div class="bg-white pt-[36px] pr-[28px] pb-[36px] pl-[28px] flex flex-col gap-[16px] text-left">
+                <div class="flex flex-col gap-[10px]">
                     <div class="font-['Merriweather'] font-extrabold text-[44px] leading-none flex items-baseline">
                         <span class="text-[#003054]">6</span>
                         <span class="text-[#A80C18]">K+</span>
                     </div>
-                    <div class="w-[36px] h-[3px] mt-1 rounded-sm bg-[#008080]"></div>
+                    <div class="w-[36px] h-[3px] rounded-sm bg-[#18909C]"></div>
                 </div>
-                <span class="font-['Inter'] font-medium text-[13px] leading-[21.45px] tracking-[0.78px] uppercase text-[#6B7280] mt-auto">
+                <span class="font-['Inter'] font-medium text-[13px] leading-[21.45px] tracking-[0.78px] uppercase text-[#6B7280]">
                     Officials Trained
                 </span>
             </div>
 
             <!-- ITEM 3 -->
-            <div class="bg-white pt-[28px] pr-[24px] pb-[28px] pl-[24px] md:pt-[36px] md:pr-[28px] md:pb-[36px] md:pl-[28px] flex flex-col gap-[20px] text-left">
-                <div class="flex flex-col gap-1">
+            <div class="bg-white pt-[36px] pr-[28px] pb-[36px] pl-[28px] flex flex-col gap-[16px] text-left">
+                <div class="flex flex-col gap-[10px]">
                     <div class="font-['Merriweather'] font-extrabold text-[44px] leading-none flex items-baseline">
                         <span class="text-[#003054]">38</span>
                     </div>
-                    <div class="w-[36px] h-[3px] mt-1 rounded-sm bg-[#008080]"></div>
+                    <div class="w-[36px] h-[3px] rounded-sm bg-[#18909C]"></div>
                 </div>
-                <span class="font-['Inter'] font-medium text-[13px] leading-[21.45px] tracking-[0.78px] uppercase text-[#6B7280] mt-auto">
+                <span class="font-['Inter'] font-medium text-[13px] leading-[21.45px] tracking-[0.78px] uppercase text-[#6B7280]">
                     Policy Recommendations Adopted
                 </span>
             </div>
 
             <!-- ITEM 4 -->
-            <div class="bg-white pt-[28px] pr-[24px] pb-[28px] pl-[24px] md:pt-[36px] md:pr-[28px] md:pb-[36px] md:pl-[28px] flex flex-col gap-[20px] text-left">
-                <div class="flex flex-col gap-1">
+            <div class="bg-white pt-[36px] pr-[28px] pb-[36px] pl-[28px] flex flex-col gap-[16px] text-left">
+                <div class="flex flex-col gap-[10px]">
                     <div class="font-['Merriweather'] font-extrabold text-[44px] leading-none flex items-baseline">
                         <span class="text-[#003054]">12</span>
                         <span class="text-[#A80C18] ml-1">+</span>
                     </div>
-                    <div class="w-[36px] h-[3px] mt-1 rounded-sm bg-[#008080]"></div>
+                    <div class="w-[36px] h-[3px] rounded-sm bg-[#18909C]"></div>
                 </div>
-                <span class="font-['Inter'] font-medium text-[13px] leading-[21.45px] tracking-[0.78px] uppercase text-[#6B7280] mt-auto">
+                <span class="font-['Inter'] font-medium text-[13px] leading-[21.45px] tracking-[0.78px] uppercase text-[#6B7280]">
                     Partner Organizations
                 </span>
             </div>
@@ -437,14 +445,14 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         <!-- BUTTON GROUP -->
         <div class="flex items-center gap-4 mt-[15px]">
             <!-- PRIMARY BUTTON -->
-            <a href="#contact" 
+            <a href="contact.html" 
                class="bg-[#A80C18] px-[32px] py-[14px] rounded-[6px] inline-flex items-center justify-center gap-1 text-white text-[14px] font-bold transition-all duration-200 hover:bg-[#8B0A14] shadow-md"
                 <span>Get In Touch</span>
                 <span class="inline-block translate-y-[-1px]">→</span>
             </a>
 
             <!-- SECONDARY BUTTON -->
-            <a href="#about-us" 
+            <a href="about.html" 
                class="border-[2px] border-white/35 px-[32px] py-[14px] rounded-[6px] inline-flex items-center justify-center text-white text-[14px] font-bold transition-all duration-200 hover:bg-white/10"
                 <span>About GIET</span>
             </a>
@@ -538,3 +546,4 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <script src="main.js"></script>
 </body>
 </html>
+

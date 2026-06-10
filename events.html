@@ -39,12 +39,24 @@
                 Projects
             </a>
 
-            <a href="resources.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150">
-    <span style="font-family: 'Inter', sans-serif; font-weight: 500; font-size: 13px;">Resources</span>
-    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-white mt-[1px] shrink-0">
-        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-</a>
+            <div class="relative" id="res-dd-events">
+                <button onclick="toggleResDD('events')" class="h-[34.27px] px-[6px] flex items-center justify-center gap-[4px] hover:text-[#18909C] transition-colors duration-150 text-[#003054] text-[14px] font-semibold">
+                    <span>Resources</span>
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#18909C] mt-[2px]"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div id="res-dd-menu-events" class="hidden absolute top-full left-0 w-[214px] bg-white border border-[#E4EAF0] shadow-lg z-50 rounded-b-[6px] overflow-hidden">
+                    <a href="resources.html#briefs" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-semibold text-[#003054] border-b-[3px] border-[#A80C18] hover:bg-[#F7F9FB] transition-colors">Issue Briefs/Articles</a>
+                    <a href="resources.html#expert" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Expert Speak/Blog</a>
+                    <a href="resources.html#publications" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Publications & Reports</a>
+                    <a href="resources.html#news" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">News & Commentary/Op-Ed</a>
+                    <a href="resources.html#videos" onclick="setResActive(this)" class="res-dd-item flex items-center w-full h-[45px] px-[22px] text-[13px] font-medium text-[#64748B] border-b-[3px] border-transparent hover:bg-[#F7F9FB] transition-colors">Videos & Podcasts</a>
+                </div>
+            </div>
+<script>
+function toggleResDD(id){var m=document.getElementById('res-dd-menu-'+id);m.classList.toggle('hidden');}
+function setResActive(el){document.querySelectorAll('.res-dd-item').forEach(function(i){i.classList.remove('border-[#A80C18]','font-semibold','text-[#003054]');i.classList.add('border-transparent','font-medium','text-[#64748B]');});el.classList.remove('border-transparent','font-medium','text-[#64748B]');el.classList.add('border-[#A80C18]','font-semibold','text-[#003054]');}
+document.addEventListener('click',function(e){var dd=document.getElementById('res-dd-events');if(dd&&!dd.contains(e.target)){var m=document.getElementById('res-dd-menu-events');if(m)m.classList.add('hidden');}});
+</script>
 
             <a href="experts.html" class="h-[34.27px] px-[6px] flex items-center justify-center hover:text-[#18909C] transition-colors duration-150 whitespace-nowrap">
                 Our Experts
@@ -139,7 +151,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <div class="flex flex-col gap-8">
       
       <!-- Event Item (Repeat for each event) -->
-      <div class="flex gap-6 items-start">
+      <a href="eventdetails.html" class="flex gap-6 items-start group cursor-pointer">
         <!-- Date Box -->
         <div class="flex flex-col items-center w-[56px]">
           <span class="bg-[#A80C18] text-white text-[10px] font-bold py-1 w-full text-center rounded-t-[4px]">JUL</span>
@@ -151,12 +163,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
           <!-- Tags stacked vertically -->
           <div class="flex flex-col gap-2 items-start">
             <span class="px-3 py-0.5 bg-[#E8F6F7] text-[#0E606B] text-[10px] font-semibold uppercase rounded-[12px] border border-[#0E606B33]">Hybrid</span>
-            <button class="px-4 py-0.5 bg-[#003054] text-white text-[10px] font-semibold uppercase rounded-[12px]">Register</button>
+            <span onclick="event.preventDefault(); window.location.href='eventdetails.html'" class="px-4 py-0.5 bg-[#003054] text-white text-[10px] font-semibold uppercase rounded-[12px] cursor-pointer">Register</span>
           </div>
-          
+
           <div class="mt-1">
             <p class="text-[11px] font-bold text-[#0E606B] uppercase tracking-[0.5px]">Policy Dialogue</p>
-            <h4 class="font-['Merriweather'] font-bold text-[15px] leading-[21.3px] text-[#0F172A] max-w-[411px]">Public Policy Forum: Digital Governance & E-Service Delivery in Bangladesh</h4>
+            <h4 class="font-['Merriweather'] font-bold text-[15px] leading-[21.3px] text-[#0F172A] max-w-[411px] group-hover:text-[#18909C] transition-colors duration-150">Public Policy Forum: Digital Governance & E-Service Delivery in Bangladesh</h4>
            <!-- Location Section Updated -->
                 <p class="text-[13px] text-[#64748B] flex items-center gap-1 mt-1">
                 <img src="https://api.iconify.design/heroicons/map-pin.svg?color=%2364748b" alt="location" class="w-4 h-4" />
@@ -164,7 +176,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 </p>
           </div>
         </div>
-      </div>
+      </a>
 
     </div>
 
@@ -172,7 +184,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <div class="flex flex-col gap-8">
       
       <!-- Event Item (Repeat for each event) -->
-      <div class="flex gap-6 items-start">
+      <a href="eventdetails.html" class="flex gap-6 items-start group cursor-pointer">
         <!-- Date Box -->
         <div class="flex flex-col items-center w-[56px]">
           <span class="bg-[#A80C18] text-white text-[10px] font-bold py-1 w-full text-center rounded-t-[4px]">JUL</span>
@@ -184,12 +196,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
           <!-- Tags stacked vertically -->
           <div class="flex flex-col gap-2 items-start">
             <span class="px-3 py-0.5 bg-[#E8F6F7] text-[#0E606B] text-[10px] font-semibold uppercase rounded-[12px] border border-[#0E606B33]">Online</span>
-            <button class="px-4 py-0.5 bg-[#003054] text-white text-[10px] font-semibold uppercase rounded-[12px]">Register</button>
+            <span onclick="event.preventDefault(); window.location.href='eventdetails.html'" class="px-4 py-0.5 bg-[#003054] text-white text-[10px] font-semibold uppercase rounded-[12px] cursor-pointer">Register</span>
           </div>
-          
+
           <div class="mt-1">
             <p class="text-[11px] font-bold text-[#0E606B] uppercase tracking-[0.5px]">Webinar</p>
-            <h4 class="font-['Merriweather'] font-bold text-[15px] leading-[21.3px] text-[#0F172A] max-w-[411px]">Governance Research Olympiad 2025 — Launch & Call for Submissions</h4>
+            <h4 class="font-['Merriweather'] font-bold text-[15px] leading-[21.3px] text-[#0F172A] max-w-[411px] group-hover:text-[#18909C] transition-colors duration-150">Governance Research Olympiad 2025 — Launch & Call for Submissions</h4>
             <!-- Location Section Updated -->
             <p class="text-[13px] text-[#64748B] flex items-center gap-1 mt-1">
             <img src="https://api.iconify.design/heroicons/map-pin.svg?color=%2364748b" alt="location" class="w-4 h-4" />
@@ -197,7 +209,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </p>
           </div>
         </div>
-      </div>
+      </a>
 
     </div>
 
@@ -205,7 +217,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <div class="flex flex-col gap-8">
       
       <!-- Event Item (Repeat for each event) -->
-      <div class="flex gap-6 items-start">
+      <a href="eventdetails.html" class="flex gap-6 items-start group cursor-pointer">
         <!-- Date Box -->
         <div class="flex flex-col items-center w-[56px]">
           <span class="bg-[#A80C18] text-white text-[10px] font-bold py-1 w-full text-center rounded-t-[4px]">AUG</span>
@@ -217,12 +229,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
           <!-- Tags stacked vertically -->
           <div class="flex flex-col gap-2 items-start">
             <span class="px-3 py-0.5 bg-[#FBE9EB] text-[#A80C18] text-[10px] font-semibold uppercase rounded-[12px] border border-[#A80C1833]">In-Person</span>
-            <button class="px-4 py-0.5 bg-[#003054] text-white text-[10px] font-semibold uppercase rounded-[12px]">Register</button>
+            <span onclick="event.preventDefault(); window.location.href='eventdetails.html'" class="px-4 py-0.5 bg-[#003054] text-white text-[10px] font-semibold uppercase rounded-[12px] cursor-pointer">Register</span>
           </div>
-          
+
           <div class="mt-1">
             <p class="text-[11px] font-bold text-[#0E606B] uppercase tracking-[0.5px]">Seminar</p>
-            <h4 class="font-['Merriweather'] font-bold text-[15px] leading-[21.3px] text-[#0F172A] max-w-[411px]">Trade Facilitation & Customs Modernization: Perspectives from South Asia</h4>
+            <h4 class="font-['Merriweather'] font-bold text-[15px] leading-[21.3px] text-[#0F172A] max-w-[411px] group-hover:text-[#18909C] transition-colors duration-150">Trade Facilitation & Customs Modernization: Perspectives from South Asia</h4>
             <!-- Location Section Updated -->
             <p class="text-[13px] text-[#64748B] flex items-center gap-1 mt-1">
               <img src="https://api.iconify.design/heroicons/map-pin.svg?color=%2364748b" alt="location" class="w-4 h-4" />
@@ -230,7 +242,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </p>
           </div>
         </div>
-      </div>
+      </a>
 
     </div>
 
@@ -238,7 +250,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <div class="flex flex-col gap-8">
       
       <!-- Event Item (Repeat for each event) -->
-      <div class="flex gap-6 items-start">
+      <a href="eventdetails.html" class="flex gap-6 items-start group cursor-pointer">
         <!-- Date Box -->
         <div class="flex flex-col items-center w-[56px]">
           <span class="bg-[#A80C18] text-white text-[10px] font-bold py-1 w-full text-center rounded-t-[4px]">SEP</span>
@@ -250,20 +262,20 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
           <!-- Tags stacked vertically -->
           <div class="flex flex-col gap-2 items-start">
             <span class="px-3 py-0.5 bg-[#E8F6F7] text-[#0E606B] text-[10px] font-semibold uppercase rounded-[12px] border border-[#0E606B33]">Workshop</span>
-            <button class="px-4 py-0.5 bg-[#003054] text-white text-[10px] font-semibold uppercase rounded-[12px]">Register</button>
+            <span onclick="event.preventDefault(); window.location.href='eventdetails.html'" class="px-4 py-0.5 bg-[#003054] text-white text-[10px] font-semibold uppercase rounded-[12px] cursor-pointer">Register</span>
           </div>
-          
+
           <div class="mt-1">
             <p class="text-[11px] font-bold text-[#0E606B] uppercase tracking-[0.5px]">Workshop</p>
-            <h4 class="font-['Merriweather'] font-bold text-[15px] leading-[21.3px] text-[#0F172A] max-w-[411px]">Regulatory Impact Assessment: A Practitioner Workshop for Government Officials</h4>
-            <!-- Location Section Updated -->           
+            <h4 class="font-['Merriweather'] font-bold text-[15px] leading-[21.3px] text-[#0F172A] max-w-[411px] group-hover:text-[#18909C] transition-colors duration-150">Regulatory Impact Assessment: A Practitioner Workshop for Government Officials</h4>
+            <!-- Location Section Updated -->
             <p class="text-[13px] text-[#64748B] flex items-center gap-1 mt-1">
               <img src="https://api.iconify.design/heroicons/map-pin.svg?color=%2364748b" alt="location" class="w-4 h-4" />
               <span>BPATC, Savar, Dhaka · Limited to 40 participants</span>
             </p>
           </div>
         </div>
-      </div>
+      </a>
 
     </div>
 </section>
@@ -542,3 +554,4 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <script src="main.js"></script>
 </body>
 </html>
+
