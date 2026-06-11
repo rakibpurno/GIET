@@ -11,7 +11,7 @@
 </head>
 <body class="overflow-x-hidden">
 
-<nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between select-none">
+<nav class="sticky top-0 z-[1000] w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between select-none">
     
     <div class="w-full max-w-[1104px] h-[68px] flex items-center justify-between">
       
@@ -184,6 +184,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <div class="flex gap-8 border-b border-[#E4EAF0]">
       <button id="exp-tab-pub" onclick="expSwitchTab('pub')" class="pb-[10px] border-b-2 border-[#A80C18] text-[#0F172A] font-semibold text-[14px] transition-all">Publications</button>
       <button id="exp-tab-events" onclick="expSwitchTab('events')" class="pb-[10px] border-b-2 border-transparent text-[#64748B] font-medium text-[14px] transition-all">Speaking & Events</button>
+      <button id="exp-tab-projects" onclick="expSwitchTab('projects')" class="pb-[10px] border-b-2 border-transparent text-[#64748B] font-medium text-[14px] transition-all">Projects</button>
     </div>
 
     <!-- Publications List -->
@@ -304,20 +305,59 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
     </div>
 
+    <!-- Projects List -->
+    <div id="exp-content-projects" class="hidden flex flex-col gap-[20px]">
+
+      <a href="projectdetails.html" class="w-full flex flex-col md:flex-row gap-[20px] bg-white border border-[#EEF3F8] rounded-[14px] p-[20px] hover:border-[#18909C] transition-colors duration-200 group">
+        <div class="w-full md:w-[120px] h-[80px] md:h-auto rounded-[10px] overflow-hidden shrink-0">
+          <img src="images/Trade Facilitation.png" alt="Trade Facilitation" class="w-full h-full object-cover" />
+        </div>
+        <div class="flex flex-col gap-[6px] justify-center">
+          <p style="font-family:'Outfit',sans-serif;font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#0E606B;">Ongoing · Trade &amp; Logistics</p>
+          <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:21px;" class="text-[#0F172A] group-hover:text-[#003054] transition-colors">Trade Facilitation &amp; Single Window Implementation</h4>
+          <p style="font-family:'Outfit',sans-serif;font-weight:400;font-size:12.5px;line-height:1.5;color:#6B7280;">A reform programme supporting Bangladesh's transition to a paperless single-window trade system in partnership with NBR and ADB.</p>
+        </div>
+      </a>
+
+      <a href="projectdetails.html" class="w-full flex flex-col md:flex-row gap-[20px] bg-white border border-[#EEF3F8] rounded-[14px] p-[20px] hover:border-[#18909C] transition-colors duration-200 group">
+        <div class="w-full md:w-[120px] h-[80px] md:h-auto rounded-[10px] overflow-hidden shrink-0">
+          <img src="images/Workshop.png" alt="Regulatory Reform" class="w-full h-full object-cover" />
+        </div>
+        <div class="flex flex-col gap-[6px] justify-center">
+          <p style="font-family:'Outfit',sans-serif;font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#0E606B;">Completed · Regulatory Reform</p>
+          <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:21px;" class="text-[#0F172A] group-hover:text-[#003054] transition-colors">Regulatory Environment Assessment &amp; Reform Roadmap</h4>
+          <p style="font-family:'Outfit',sans-serif;font-weight:400;font-size:12.5px;line-height:1.5;color:#6B7280;">Comprehensive assessment of Bangladesh's regulatory landscape with actionable reform recommendations for key ministries.</p>
+        </div>
+      </a>
+
+      <a href="projectdetails.html" class="w-full flex flex-col md:flex-row gap-[20px] bg-white border border-[#EEF3F8] rounded-[14px] p-[20px] hover:border-[#18909C] transition-colors duration-200 group">
+        <div class="w-full md:w-[120px] h-[80px] md:h-auto rounded-[10px] overflow-hidden shrink-0">
+          <img src="images/Digital Governance (1).png" alt="Economic Policy" class="w-full h-full object-cover" />
+        </div>
+        <div class="flex flex-col gap-[6px] justify-center">
+          <p style="font-family:'Outfit',sans-serif;font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#0E606B;">Ongoing · Economic Policy</p>
+          <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:21px;" class="text-[#0F172A] group-hover:text-[#003054] transition-colors">Post-LDC Graduation Economic Policy Framework</h4>
+          <p style="font-family:'Outfit',sans-serif;font-weight:400;font-size:12.5px;line-height:1.5;color:#6B7280;">Research and policy advisory supporting Bangladesh's strategic planning for the transition beyond LDC status with World Bank support.</p>
+        </div>
+      </a>
+
+    </div>
+
   </div>
 
 <script>
 function expSwitchTab(tab) {
   document.getElementById('exp-content-pub').classList.add('hidden');
   document.getElementById('exp-content-events').classList.add('hidden');
+  document.getElementById('exp-content-projects').classList.add('hidden');
   document.getElementById('exp-tab-pub').className = 'pb-[10px] border-b-2 border-transparent text-[#64748B] font-medium text-[14px] transition-all';
   document.getElementById('exp-tab-events').className = 'pb-[10px] border-b-2 border-transparent text-[#64748B] font-medium text-[14px] transition-all';
+  document.getElementById('exp-tab-projects').className = 'pb-[10px] border-b-2 border-transparent text-[#64748B] font-medium text-[14px] transition-all';
 
   document.getElementById('exp-content-' + tab).classList.remove('hidden');
   document.getElementById('exp-tab-' + tab).className = 'pb-[10px] border-b-2 border-[#A80C18] text-[#0F172A] font-semibold text-[14px] transition-all';
 }
 </script>
-  </div>
 </section>
 
 <section class="w-full bg-[#F7F9FB] py-[40px] md:py-[72px] px-4 md:px-[408px] box-border">
@@ -327,10 +367,10 @@ function expSwitchTab(tab) {
     <div class="flex justify-between items-end">
       <div class="flex flex-col gap-[8px]">
         <span class="text-[#0E606B] text-[11px] font-semibold uppercase tracking-[1.5px]">More Experts</span>
-        <h3 class="font-['Merriweather'] font-extrabold text-[30px] leading-none text-[#0F172A]">Other GIET Fellows & Analysts</h3>
+        <h3 class="font-['Merriweather'] font-extrabold text-[30px] leading-none text-[#0F172A]">GIET Team Members</h3>
       </div>
       <div class="flex flex-col items-end gap-[4px]">
-        <a href="#" class="text-[#003054] font-semibold text-[14px]">View All Experts →</a>
+        <a href="#" class="text-[#003054] font-semibold text-[14px]">View All →</a>
         <div class="w-full h-[2px] bg-[#003054]"></div>
       </div>
     </div>

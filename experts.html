@@ -11,7 +11,7 @@
 </head>
 <body class="overflow-x-hidden">
 
-<nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between select-none">
+<nav class="sticky top-0 z-[1000] w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between select-none">
     
     <div class="w-full max-w-[1104px] h-[68px] flex items-center justify-between">
       
@@ -121,9 +121,9 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
       Our Experts
     </h1>
 
-    <p class="text-[17px] text-white/60 font-['Inter'] leading-[29.75px] max-w-[780px] m-0 text-justify">
+    <!-- <p class="text-[17px] text-white/60 font-['Inter'] leading-[29.75px] max-w-[780px] m-0 text-justify">
       GIET's team of researchers, policy analysts, and practitioners brings decades of combined experience in governance reform, economic transformation, trade policy, and digital development across South Asia.
-    </p>
+    </p> -->
 
   </div>
 </section>
@@ -292,8 +292,8 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
   <div class="max-w-[1200px] mx-auto flex flex-col gap-[32px] px-[48px]">
     
     <div class="flex flex-col gap-[12px]">
-      <span class="font-['Inter'] font-semibold text-[11px] leading-[18.15px] tracking-[1.54px] text-[#0E606B] uppercase">Research Team</span>
-      <h2 class="font-serif text-[38px] font-extrabold text-[#0F172A]">Fellows & Analysts</h2>
+      <span class="font-['Inter'] font-semibold text-[11px] leading-[18.15px] tracking-[1.54px] text-[#0E606B] uppercase">Core Team</span>
+      <h2 class="font-serif text-[38px] font-extrabold text-[#0F172A]">Policy & Research Team</h2>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-4 gap-[20px] w-full max-w-[1104px]">
@@ -467,62 +467,111 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
 <!-- ADVISORY BOARD SECTION -->
 <section class="w-full bg-[#F7F9FB] py-[48px] md:py-[88px] px-4 md:px-[360px] box-border">
-  
-  <!-- Container -->
-  <div class="w-full max-w-[1200px] mx-auto flex flex-col gap-[48px] px-4 md:px-[48px]">
-    
+
+  <div class="w-full max-w-[1200px] mx-auto flex flex-col gap-[56px] px-4 md:px-[48px]">
+
     <!-- Section Header -->
     <div class="flex flex-col gap-[12px]">
-      <h2 class="font-serif text-[38px] font-extrabold text-[#0F172A]">Advisory Council</h2>
+      <h2 class="font-serif text-[38px] font-extrabold text-[#003054]">Advisors &amp; Fellows</h2>
       <p class="font-sans text-[16px] text-[#1A1A1A] max-w-[500px]">
-        GIET's International Advisory Council brings global perspective to our work, connecting us with leading think tanks, universities, and policy institutions worldwide.
+        GIET's advisory panel brings together national and international experts, connecting us with leading think tanks, universities, and policy institutions.
       </p>
     </div>
 
-    <!-- Card Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-[20px] w-full max-w-[1104px]">
-      
-      <!-- Card Template -->
-      <!-- Prof. David Morrison -->
-      <div class="w-full bg-white border border-[#EEF3F8] rounded-[14px] p-[20px] md:p-[28px] flex gap-[18px] items-center">
-        <img src="images/Advisor.png" alt="Prof. David Morrison" class="w-[60px] h-[60px] rounded-full object-cover" />
-        <div class="flex flex-col gap-[4px]">
-          <h3 class="font-['Merriweather'] font-extrabold text-[15px] leading-[24.75px] text-[#0F172A]">Prof. David Morrison</h3>
-          <p class="text-[12px] text-[#64748B] leading-none">Professor of Public Policy, Oxford University</p>
-          <div class="flex gap-[8px] mt-1">
-            <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Governance</span>
-            <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">UK</span>
+    <!-- National Advisors -->
+    <div class="flex flex-col gap-[24px]">
+      <div class="flex items-center gap-[14px]">
+        <span class="font-['Inter'] font-bold text-[11px] tracking-[1.5px] uppercase text-[#0E606B]">National</span>
+        <div class="flex-grow h-[1px] bg-[#E4EAF0]"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-[20px] w-full max-w-[1104px]">
+
+        <div class="w-full bg-white border border-[#EEF3F8] rounded-[14px] p-[20px] md:p-[28px] flex gap-[18px] items-center">
+          <img src="images/Advisor.png" alt="Dr. Aminur Rahman" class="w-[60px] h-[60px] rounded-full object-cover shrink-0" />
+          <div class="flex flex-col gap-[4px]">
+            <h3 class="font-['Merriweather'] font-extrabold text-[15px] leading-[24.75px] text-[#0F172A]">Dr. Aminur Rahman</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Former Secretary, Ministry of Finance</p>
+            <div class="flex gap-[8px] mt-1">
+              <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Governance</span>
+              <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Bangladesh</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Dr. Priya Sharma -->
-      <div class="w-full bg-white border border-[#EEF3F8] rounded-[14px] p-[20px] md:p-[28px] flex gap-[18px] items-center">
-        <img src="images/Advisor (1).png" alt="Dr. Priya Sharma" class="w-[60px] h-[60px] rounded-full object-cover" />
-        <div class="flex flex-col gap-[4px]">
-          <h3 class="font-['Merriweather'] font-extrabold text-[15px] leading-[24.75px] text-[#0F172A]">Dr. Priya Sharma</h3>
-          <p class="text-[12px] text-[#64748B] leading-none">Senior Economist, Asian Development Bank</p>
-          <div class="flex gap-[8px] mt-1">
-            <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Economics</span>
-            <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Manila</span>
+        <div class="w-full bg-white border border-[#EEF3F8] rounded-[14px] p-[20px] md:p-[28px] flex gap-[18px] items-center">
+          <img src="images/Advisor (1).png" alt="Prof. Nasreen Akhter" class="w-[60px] h-[60px] rounded-full object-cover shrink-0" />
+          <div class="flex flex-col gap-[4px]">
+            <h3 class="font-['Merriweather'] font-extrabold text-[15px] leading-[24.75px] text-[#0F172A]">Prof. Nasreen Akhter</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Professor of Economics, University of Dhaka</p>
+            <div class="flex gap-[8px] mt-1">
+              <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Economics</span>
+              <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Bangladesh</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Mr. Thomas Brandt -->
-      <div class="w-full bg-white border border-[#EEF3F8] rounded-[14px] p-[20px] md:p-[28px] flex gap-[18px] items-center">
-        <img src="images/Advisor (2).png" alt="Mr. Thomas Brandt" class="w-[60px] h-[60px] rounded-full object-cover" />
-        <div class="flex flex-col gap-[4px]">
-          <h3 class="font-['Merriweather'] font-extrabold text-[15px] leading-[24.75px] text-[#0F172A]">Mr. Thomas Brandt</h3>
-          <p class="text-[12px] text-[#64748B] leading-none">Regional Director, GIZ South Asia</p>
-          <div class="flex gap-[8px] mt-1">
-            <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Development</span>
-            <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Germany</span>
+        <div class="w-full bg-white border border-[#EEF3F8] rounded-[14px] p-[20px] md:p-[28px] flex gap-[18px] items-center">
+          <img src="images/Advisor (2).png" alt="Mr. Kamal Hossain" class="w-[60px] h-[60px] rounded-full object-cover shrink-0" />
+          <div class="flex flex-col gap-[4px]">
+            <h3 class="font-['Merriweather'] font-extrabold text-[15px] leading-[24.75px] text-[#0F172A]">Mr. Kamal Hossain</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Executive Director, BIDS</p>
+            <div class="flex gap-[8px] mt-1">
+              <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Policy</span>
+              <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Bangladesh</span>
+            </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
+
+    <!-- International Advisors -->
+    <div class="flex flex-col gap-[24px]">
+      <div class="flex items-center gap-[14px]">
+        <span class="font-['Inter'] font-bold text-[11px] tracking-[1.5px] uppercase text-[#0E606B]">International</span>
+        <div class="flex-grow h-[1px] bg-[#E4EAF0]"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-[20px] w-full max-w-[1104px]">
+
+        <div class="w-full bg-white border border-[#EEF3F8] rounded-[14px] p-[20px] md:p-[28px] flex gap-[18px] items-center">
+          <img src="images/Advisor.png" alt="Prof. David Morrison" class="w-[60px] h-[60px] rounded-full object-cover shrink-0" />
+          <div class="flex flex-col gap-[4px]">
+            <h3 class="font-['Merriweather'] font-extrabold text-[15px] leading-[24.75px] text-[#0F172A]">Prof. David Morrison</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Professor of Public Policy, Oxford University</p>
+            <div class="flex gap-[8px] mt-1">
+              <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Governance</span>
+              <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">UK</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full bg-white border border-[#EEF3F8] rounded-[14px] p-[20px] md:p-[28px] flex gap-[18px] items-center">
+          <img src="images/Advisor (1).png" alt="Dr. Priya Sharma" class="w-[60px] h-[60px] rounded-full object-cover shrink-0" />
+          <div class="flex flex-col gap-[4px]">
+            <h3 class="font-['Merriweather'] font-extrabold text-[15px] leading-[24.75px] text-[#0F172A]">Dr. Priya Sharma</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Senior Economist, Asian Development Bank</p>
+            <div class="flex gap-[8px] mt-1">
+              <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Economics</span>
+              <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Manila</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full bg-white border border-[#EEF3F8] rounded-[14px] p-[20px] md:p-[28px] flex gap-[18px] items-center">
+          <img src="images/Advisor (2).png" alt="Mr. Thomas Brandt" class="w-[60px] h-[60px] rounded-full object-cover shrink-0" />
+          <div class="flex flex-col gap-[4px]">
+            <h3 class="font-['Merriweather'] font-extrabold text-[15px] leading-[24.75px] text-[#0F172A]">Mr. Thomas Brandt</h3>
+            <p class="text-[12px] text-[#64748B] leading-none">Regional Director, GIZ South Asia</p>
+            <div class="flex gap-[8px] mt-1">
+              <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Development</span>
+              <span class="px-2 py-0.5 bg-[#F0F7F7] text-[#0E606B] text-[10.5px] font-semibold rounded-full border border-[#D1E5E5]">Germany</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>
 

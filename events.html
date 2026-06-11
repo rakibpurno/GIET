@@ -11,7 +11,7 @@
 </head>
 <body class="overflow-x-hidden">
 
-<nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between select-none">
+<nav class="sticky top-0 z-[1000] w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between select-none">
     
     <div class="w-full max-w-[1104px] h-[68px] flex items-center justify-between">
       
@@ -144,7 +144,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <!-- Header -->
     <div class="flex flex-col gap-2">
       <h4 class="text-[11px] font-semibold text-[#0E606B] uppercase tracking-[1.5px]">Upcoming Events</h4>
-      <h2 class="font-serif text-[28px] md:text-[42px] font-extrabold text-[#0F172A]">Events Open for Registration</h2>
+      <h2 class="font-serif text-[28px] md:text-[42px] font-extrabold text-[#0F172A]">Open Events</h2>
     </div>
 
     <!-- Events List -->
@@ -371,12 +371,11 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 <!-- ========================================================================= -->
 <!-- HOST AN EVENT / SUBMIT PROPOSAL SECTION (Width: 1920px, Height: 562px)   -->
 <!-- ========================================================================= -->
-<section style="background-color: #083353;" 
-         class="w-full py-[48px] md:py-[80px] relative flex justify-center items-center text-white overflow-hidden select-none">
+<section style="background-color: #F1F5F9;" 
+         class="w-full py-[48px] md:py-[80px] relative flex justify-center items-center overflow-hidden select-none">
   
   <!-- RIGHT UPPER CORNER BACKGROUND DECORATION SHAPE -->
-  <!-- আপনার দেওয়া ম্যাট্রিক্স (Width: 300px, Height: 300px, Top: -60px, Left: 1680px, Background: #18909C14)  -->
-  <div class="hidden md:block" style="background-color:rgba(24,144,156,0.08);width:300px;height:300px;top:-60px;right:-60px;border-radius:150px;position:absolute;" 
+  <div class="hidden md:block" style="background-color:rgba(0,48,84,0.04);width:300px;height:300px;top:-60px;right:-60px;border-radius:150px;position:absolute;pointer-events:none;" 
        class="absolute z-0 pointer-events-none">
   </div>
 
@@ -388,31 +387,31 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
       
       <!-- Tiny Section Header Tracker -->
       <span style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: 11px;" 
-            class="text-[#18909C] uppercase tracking-wider">
+            class="text-[#0E606B] uppercase tracking-wider">
         Partner With Us
       </span>
 
       <!-- Main Catchy Title Heading -->
       <h2 style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 38px; line-height: 46px;" 
-          class="text-white tracking-tight">
+          class="text-[#003054] tracking-tight">
         Interested in Co-hosting an Event?
       </h2>
 
       <!-- Description Context Paragraph -->
       <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; line-height: 23px;" 
-         class="text-white/60 font-normal">
+         class="text-[#475569]">
         GIET welcomes co-hosting proposals from government agencies, development partners, universities, and civil society organizations. We manage logistics, speakers, and documentation.
       </p>
     </div>
 
     <!-- RIGHT SIDE: SEMI-TRANSPARENT FORM CONTAINER CARD -->
     <!-- Figma Config: Width 522px, Height: 473px, Background #4E4E4E1A (rgba) করা হয়েছে -->
-    <div style="background-color:rgba(78,78,78,0.1);border:1px solid rgba(255,255,255,0.12);border-radius:20px;" 
-         class="p-[36px] flex flex-col justify-between shadow-xl backdrop-blur-sm">
+    <div style="background-color:#FFFFFF;border:1px solid #E4EAF0;border-radius:20px;" 
+         class="p-[36px] flex flex-col justify-between shadow-sm">
       
       <!-- Form Headline Text -->
       <h3 style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 18px;" 
-          class="text-white tracking-tight">
+          class="text-[#003054] tracking-tight">
         Submit an Event Proposal
       </h3>
 
@@ -422,26 +421,26 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         <!-- Field 1: Name Input Wrapper -->
         <input type="text" 
                placeholder="Your name" 
-               style="font-family:'Inter',sans-serif;background-color:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.1);"
-               class="w-full h-[46px] rounded-[8px] px-[16px] text-[13px] text-white placeholder-white/40 focus:outline-none focus:border-[#18909C] focus:ring-1 focus:ring-[#18909C] transition-all border">
+               style="font-family:'Inter',sans-serif;background-color:#F8FAFC;border-color:#E4EAF0;"
+               class="w-full h-[46px] rounded-[8px] px-[16px] text-[13px] text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:border-[#18909C] focus:ring-1 focus:ring-[#18909C] transition-all border">
 
         <!-- Field 2: Email Input Wrapper -->
         <input type="email" 
                placeholder="Email address" 
-               style="font-family:'Inter',sans-serif;background-color:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.1);"
-               class="w-full h-[46px] rounded-[8px] px-[16px] text-[13px] text-white placeholder-white/40 focus:outline-none focus:border-[#18909C] focus:ring-1 focus:ring-[#18909C] transition-all border">
+               style="font-family:'Inter',sans-serif;background-color:#F8FAFC;border-color:#E4EAF0;"
+               class="w-full h-[46px] rounded-[8px] px-[16px] text-[13px] text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:border-[#18909C] focus:ring-1 focus:ring-[#18909C] transition-all border">
 
         <!-- Field 3: Organization Input Wrapper -->
         <input type="text" 
                placeholder="Organisation" 
-               style="font-family:'Inter',sans-serif;background-color:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.1);"
-               class="w-full h-[46px] rounded-[8px] px-[16px] text-[13px] text-white placeholder-white/40 focus:outline-none focus:border-[#18909C] focus:ring-1 focus:ring-[#18909C] transition-all border">
+               style="font-family:'Inter',sans-serif;background-color:#F8FAFC;border-color:#E4EAF0;"
+               class="w-full h-[46px] rounded-[8px] px-[16px] text-[13px] text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:border-[#18909C] focus:ring-1 focus:ring-[#18909C] transition-all border">
 
         <!-- Field 4: Description Box Area Component -->
         <textarea placeholder="Describe your event proposal..." 
                   rows="3"
-                  style="font-family: 'Inter', sans-serif; background-color: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.1); resize: none;"
-                  class="w-full h-[88px] rounded-[8px] p-[16px] text-[13px] text-white placeholder-white/40 focus:outline-none focus:border-[#18909C] focus:ring-1 focus:ring-[#18909C] transition-all border"></textarea>
+                  style="font-family: 'Inter', sans-serif; background-color: #F8FAFC; border-color: #E4EAF0; resize: none;"
+                  class="w-full h-[88px] rounded-[8px] p-[16px] text-[13px] text-[#0F172A] placeholder-[#94A3B8] focus:outline-none focus:border-[#18909C] focus:ring-1 focus:ring-[#18909C] transition-all border"></textarea>
 
         <!-- Field 5: Native Mock Attachment Custom Uploader -->
         <!-- <div style="background-color: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.1);"
@@ -456,8 +455,8 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
         <!-- Submit Event Button Component Trigger -->
         <button type="submit"
-                style="font-family: 'Inter', sans-serif; background-color: #A91D22;" 
-                class="w-full h-[44px] rounded-[8px] mt-[4px] text-white font-semibold text-[13px] flex items-center justify-center gap-[6px] hover:bg-[#8F161A] transition-colors shadow-md">
+                style="font-family: 'Inter', sans-serif; background-color: #003054;" 
+                class="w-full h-[44px] rounded-[8px] mt-[4px] text-white font-semibold text-[13px] flex items-center justify-center gap-[6px] hover:bg-[#002040] transition-colors shadow-sm">
           <span>Submit Proposal</span>
           <span class="text-[14px] font-normal">→</span>
         </button>

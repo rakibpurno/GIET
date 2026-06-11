@@ -11,7 +11,7 @@
 </head>
 <body class="overflow-x-hidden">
 
-<nav class="w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between mx-auto select-none">
+<nav class="sticky top-0 z-[1000] w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between select-none">
     
     <div class="w-full max-w-[1104px] h-[68px] flex items-center justify-between">
       
@@ -185,49 +185,48 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
         <div class="flex flex-col items-center justify-center gap-3">
             <span class="text-[#0E606B] font-['Inter'] font-semibold text-[11px] leading-[18.15px] tracking-[1.54px] uppercase block">Our Institution</span>
-            <h2 class="text-[#0F172A] font-['Merriweather'] font-extrabold text-[38px] leading-[44.84px] tracking-[-0.38px]">Mission, Vision & Mandate</h2>
+            <h2 class="text-[#0F172A] font-['Merriweather'] font-extrabold text-[38px] leading-[44.84px] tracking-[-0.38px]">Mission, Vision & Goals</h2>
         </div>
 
         <div class="w-full max-w-[1104px] grid grid-cols-1 md:grid-cols-3 gap-[20px] text-left">
 
             <!-- MISSION -->
-            <div class="bg-[#003054] rounded-[20px] pt-[40px] pr-[32px] pb-[42px] pl-[32px] min-h-[298px] flex flex-col justify-start items-start gap-[14px] text-white shadow-sm relative overflow-hidden">
-                <div class="absolute -top-12 -right-12 w-32 h-32 bg-white/5 rounded-full pointer-events-none"></div>
-                <div class="w-[42px] h-[42px] bg-white/10 rounded-[8px] flex items-center justify-center z-10">
+            <div class="group bg-white rounded-[20px] pt-[40px] pr-[32px] pb-[42px] pl-[32px] min-h-[298px] flex flex-col justify-start items-start gap-[14px] border border-gray-100 shadow-sm hover:bg-[#F1F5F9] transition-colors duration-300 cursor-default">
+                <div class="w-[42px] h-[42px] bg-[#EEF9FA] group-hover:bg-white rounded-[8px] flex items-center justify-center transition-colors duration-300">
                     <svg class="w-5 h-5 text-[#18909C]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                 </div>
-                <span class="text-[#18909C] font-['Inter'] font-bold text-[10px] leading-[14px] tracking-[1.54px] uppercase block z-10">Mission</span>
-                <p class="text-white font-['Merriweather'] font-bold text-[15px] leading-[24px] text-justify">
+                <span class="text-[#18909C] font-['Inter'] font-bold text-[10px] leading-[14px] tracking-[1.54px] uppercase block">Mission</span>
+                <p class="text-[#0F172A] group-hover:text-[#0F172A] font-['Merriweather'] font-bold text-[15px] leading-[24px] text-justify transition-colors duration-300">
                     To advance transparent, accountable governance and sustainable economic transformation through rigorous research, policy advocacy, and implementation support.
                 </p>
             </div>
 
             <!-- VISION -->
-            <div class="bg-white rounded-[20px] pt-[40px] pr-[32px] pb-[42px] pl-[32px] min-h-[298px] flex flex-col justify-start items-start gap-[14px] border border-gray-100 shadow-sm">
-                <div class="w-[42px] h-[42px] bg-[#EEF9FA] rounded-[8px] flex items-center justify-center">
+            <div class="group bg-white rounded-[20px] pt-[40px] pr-[32px] pb-[42px] pl-[32px] min-h-[298px] flex flex-col justify-start items-start gap-[14px] border border-gray-100 shadow-sm hover:bg-[#F1F5F9] transition-colors duration-300 cursor-default">
+                <div class="w-[42px] h-[42px] bg-[#EEF9FA] group-hover:bg-white rounded-[8px] flex items-center justify-center transition-colors duration-300">
                     <svg class="w-5 h-5 text-[#0E606B]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                     </svg>
                 </div>
                 <span class="text-[#0E606B] font-['Inter'] font-bold text-[10px] leading-[14px] tracking-[1.54px] uppercase block">Vision</span>
-                <p class="text-[#0F172A] font-['Merriweather'] font-bold text-[15px] leading-[24px] text-justify">
+                <p class="text-[#0F172A] group-hover:text-[#0F172A] font-['Merriweather'] font-bold text-[15px] leading-[24px] text-justify transition-colors duration-300">
                     A Bangladesh where institutions are transparent, economies are competitive, and citizens are empowered through evidence-based policy and good governance.
                 </p>
             </div>
 
-            <!-- MANDATE -->
-            <div class="bg-white rounded-[20px] pt-[40px] pr-[32px] pb-[42px] pl-[32px] min-h-[298px] flex flex-col justify-start items-start gap-[14px] border border-gray-100 shadow-sm">
-                <div class="w-[42px] h-[42px] bg-[#FFF5F5] rounded-[8px] flex items-center justify-center">
+            <!-- GOALS -->
+            <div class="group bg-white rounded-[20px] pt-[40px] pr-[32px] pb-[42px] pl-[32px] min-h-[298px] flex flex-col justify-start items-start gap-[14px] border border-gray-100 shadow-sm hover:bg-[#F1F5F9] transition-colors duration-300 cursor-default">
+                <div class="w-[42px] h-[42px] bg-[#FFF5F5] group-hover:bg-white rounded-[8px] flex items-center justify-center transition-colors duration-300">
                     <svg class="w-5 h-5 text-[#A80C18]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
                     </svg>
                 </div>
-                <span class="text-[#A80C18] font-['Inter'] font-bold text-[10px] leading-[14px] tracking-[1.54px] uppercase block">Mandate</span>
-                <p class="text-[#0F172A] font-['Merriweather'] font-bold text-[15px] leading-[24px] text-justify">
-                    A non-political, non-profit, voluntary and charitable organization operating across Bangladesh irrespective of nation, religion, caste, or creed.
+                <span class="text-[#A80C18] font-['Inter'] font-bold text-[10px] leading-[14px] tracking-[1.54px] uppercase block">Goals</span>
+                <p class="text-[#0F172A] group-hover:text-[#0F172A] font-['Merriweather'] font-bold text-[15px] leading-[24px] text-justify transition-colors duration-300">
+                    To produce actionable research, influence policy, build institutional capacity, and foster partnerships that drive lasting governance and economic reform in Bangladesh.
                 </p>
             </div>
 
@@ -355,10 +354,10 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 What Sets GIET Apart
             </h2>
             <!-- SUB-TEXT DESCRIPTION (Inter Regular, Color #1A1A1A, Line Height 28px) -->
-            <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; line-height: 28px;" 
+            <!-- <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 16px; line-height: 28px;" 
                class="text-[#1A1A1A] max-w-[680px]">
                 We integrate policy expertise, institutional knowledge, and practical implementation support to create lasting change.
-            </p>
+            </p> -->
         </div>
 
         <!-- 3-COLUMN INTEGRATED GRID BLOCK (Width: 1104px, Separator Border Look: 1px Solid #EEF3F8) -->
@@ -369,13 +368,13 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div style="background-color: #FFFFFF;" 
                  class="w-full pt-[35px] pr-[32px] pb-[36px] pl-[32px] flex flex-col justify-start items-start gap-[10.9px]">
                 <!-- Numeric Tag (Merriweather Bold, Color #9CA3AF) -->
-                <span style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 13px; line-height: 21.45px; letter-spacing: 1.04px;" 
+                <!-- <span style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 13px; line-height: 21.45px; letter-spacing: 1.04px;" 
                       class="text-[#9CA3AF] block">
                     01
-                </span>
+                </span> -->
                 <!-- Card Title -->
                 <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" 
-                    class="text-[#0F172A]">
+                    class="text-[#0E606B]">
                     Evidence-Based Research
                 </h4>
                 <!-- Image Text Body Content (Justified, Inter Regular) -->
@@ -389,13 +388,13 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div style="background-color: #FFFFFF;" 
                  class="w-full pt-[35px] pr-[32px] pb-[36px] pl-[32px] flex flex-col justify-start items-start gap-[10.9px]">
                 <!-- Numeric Tag -->
-                <span style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 13px; line-height: 21.45px; letter-spacing: 1.04px;" 
+                <!-- <span style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 13px; line-height: 21.45px; letter-spacing: 1.04px;" 
                       class="text-[#9CA3AF] block">
                     02
-                </span>
+                </span> -->
                 <!-- Card Title -->
                 <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" 
-                    class="text-[#0F172A]">
+                    class="text-[#0E606B]">
                     Multi-Stakeholder Dialogue
                 </h4>
                 <!-- Image Text Body Content (Justified, Inter Regular) -->
@@ -409,13 +408,13 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div style="background-color: #FFFFFF;" 
                  class="w-full pt-[35px] pr-[32px] pb-[36px] pl-[32px] flex flex-col justify-start items-start gap-[10.9px]">
                 <!-- Numeric Tag -->
-                <span style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 13px; line-height: 21.45px; letter-spacing: 1.04px;" 
+                <!-- <span style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 13px; line-height: 21.45px; letter-spacing: 1.04px;" 
                       class="text-[#9CA3AF] block">
                     03
-                </span>
+                </span> -->
                 <!-- Card Title -->
                 <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" 
-                    class="text-[#0F172A]">
+                    class="text-[#0E606B]">
                     Integrated Implementation Support
                 </h4>
                 <!-- Image Text Body Content (Justified, Inter Regular) -->
@@ -465,7 +464,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 </div>
                 <!-- Content Engine Box -->
                 <div class="flex flex-col gap-1.5">
-                    <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" class="text-[#0F172A]">
+                    <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" class="text-[#0E606B]">
                         Integrity
                     </h4>
                     <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; line-height: 23.8px;" class="text-[#1A1A1A] text-justify">
@@ -487,7 +486,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 </div>
                 <!-- Content Engine Box -->
                 <div class="flex flex-col gap-1.5">
-                    <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" class="text-[#0F172A]">
+                    <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" class="text-[#0E606B]">
                         Independence
                     </h4>
                     <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; line-height: 23.8px;" class="text-[#1A1A1A] text-justify">
@@ -508,7 +507,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 </div>
                 <!-- Content Engine Box -->
                 <div class="flex flex-col gap-1.5">
-                    <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" class="text-[#0F172A]">
+                    <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" class="text-[#0E606B]">
                         Inclusion
                     </h4>
                     <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; line-height: 23.8px;" class="text-[#1A1A1A] text-justify">
@@ -529,7 +528,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 </div>
                 <!-- Content Engine Box -->
                 <div class="flex flex-col gap-1.5">
-                    <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" class="text-[#0F172A]">
+                    <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" class="text-[#0E606B]">
                         Impact
                     </h4>
                     <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; line-height: 23.8px;" class="text-[#1A1A1A] text-justify">
@@ -680,4 +679,5 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <script src="main.js"></script>
 </body>
 </html>
+
 
