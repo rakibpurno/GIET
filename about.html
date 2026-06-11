@@ -138,7 +138,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <div class="w-full max-w-[1104px] flex flex-col md:flex-row justify-between items-center gap-10 md:gap-[80px]">
         
         <!-- LEFT BRAND IMAGE NODE (Width: 512px, Height: 440px, Border-Radius: 20px) -->
-        <div class="w-full md:w-[512px] h-[280px] md:h-[440px] rounded-[20px] overflow-hidden shrink-0 shadow-sm md:relative md:top-[35.05px]">
+        <div class="w-full md:w-[512px] h-[280px] md:h-[440px] rounded-[20px] overflow-hidden shrink-0 shadow-sm md:relative md:top-[10px]">
             <img src="images/Image.png" alt="Governance Parliament Hall Assembly" class="w-full h-full object-cover">
         </div>
         
@@ -159,18 +159,16 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             
             <!-- PARAGRAPH ONE TEXT LAYER (#1A1A1A, 16px, Exact Line-Height 28.8px) -->
             <p class="text-[#1A1A1A] text-[16px] leading-[28.8px] font-normal tracking-normal font-['Inter'] text-justify">
-                Through structured empirical investigations and systematic multi-sectoral stakeholder consultations, GIET directly addresses the systemic complexities surrounding public policy architecture and governance frameworks.
+                Morbi vestibulum tempor mauris tempor consequat. Etiam vitae pulvinar  leo. Vivamus varius tortor sed erat venenatis pretium. Sed sollicitudin  posuere leo, at tristique elit tempor non. Mauris porttitor, lectus ut  sollicitudin pulvinar, ex est rhoncus metus, 
             </p>
 
             <p class="text-[#1A1A1A] text-[16px] leading-[28.8px] font-normal tracking-normal font-['Inter'] mb-[2px] text-justify">
-                We deliver data-driven diagnostic blueprints that enable government agencies, international development institutions, and regulatory councils to design and execute structural changes.
+                Ut auctor lectus est ac  mauris. Aliquam vitae ligula quis metus faucibus convallis id eget enim. Nulla pharetra risus at turpis convallis mollis. Mauris semper molestie velit,
             </p>
             
-            <!-- FIGMA SPECIFIED BUTTON (Width: 197px, Height: 49.09px, Border-Radius: 6px, Precise Padding) -->
-            <button style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 14px; background-color: #A80C18;" 
-                    class="w-[197px] h-[49.09px] pt-[12px] pr-[28px] pb-[13.09px] pl-[28px] rounded-[6px] text-white flex items-center justify-center gap-1.5 hover:bg-[#8F0A14] transition-all cursor-pointer">
-                <span>Our Team Matrix</span>
-                <span class="text-[12px] font-sans font-normal pt-[0.5px]">➔</span>
+            <button class="mt-6 w-[197px] h-[49.09px] pt-[12px] pr-[28px] pb-[13.09px] pl-[28px] rounded-[6px] bg-[#A80C18] hover:bg-[#8F0A14] text-white font-['Inter'] font-semibold text-[13px] flex items-center justify-center gap-1.5 transition-colors cursor-pointer">
+                <span>Our Areas of Work</span>
+                <span class="text-[13px] font-normal pt-[0.5px]">↗</span>
             </button>
             
         </div>
@@ -360,67 +358,69 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </p> -->
         </div>
 
-        <!-- 3-COLUMN INTEGRATED GRID BLOCK (Width: 1104px, Separator Border Look: 1px Solid #EEF3F8) -->
-        <div style="background-color: #EEF3F8; border: 1px solid #EEF3F8;" 
-             class="w-full max-w-[1104px] grid grid-cols-1 md:grid-cols-3 gap-[1px] text-left overflow-hidden rounded-[4px]">
-            
+        <!-- 3-COLUMN CARD GRID -->
+        <div class="w-full max-w-[1104px] grid grid-cols-1 md:grid-cols-3 gap-[24px] text-left">
+
             <!-- CARD 01: EVIDENCE-BASED RESEARCH -->
-            <div style="background-color: #FFFFFF;" 
-                 class="w-full pt-[35px] pr-[32px] pb-[36px] pl-[32px] flex flex-col justify-start items-start gap-[10.9px]">
-                <!-- Numeric Tag (Merriweather Bold, Color #9CA3AF) -->
-                <!-- <span style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 13px; line-height: 21.45px; letter-spacing: 1.04px;" 
-                      class="text-[#9CA3AF] block">
-                    01
-                </span> -->
-                <!-- Card Title -->
-                <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" 
-                    class="text-[#0E606B]">
-                    Evidence-Based Research
-                </h4>
-                <!-- Image Text Body Content (Justified, Inter Regular) -->
-                <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; line-height: 23.8px;" 
-                   class="text-[#1A1A1A] text-justify">
-                    Morbi vestibulum tempor mauris tempor consequat. Etiam vitae pulvinar leo. Vivamus varius tortor sed erat venenatis pretium. Sed sollicitudin posuere leo, at tristique elit tempor non. Mauris porttitor, lectus ut sollicitudin pulvinar, ex est rhoncus metus, ut auctor lectus est ac mauris. Aliquam vitae ligula quis metus faucibus convallis id eget.
+            <div class="bg-white rounded-[16px] border border-[#E8EEF4] p-[32px] flex flex-col gap-[16px] hover:shadow-md transition-shadow duration-300">
+                <!-- Icon -->
+                <!-- <div class="w-[48px] h-[48px] rounded-[12px] bg-[#E8F6F7] flex items-center justify-center shrink-0">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E606B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                    </svg>
+                </div> -->
+                <!-- Number + Title -->
+                <div class="flex flex-col gap-[4px]">
+                    <!-- <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;" class="text-[#0E606B]">01</span> -->
+                    <h4 style="font-family:'Merriweather',serif;font-weight:800;font-size:18px;line-height:26px;" class="text-[#003054]">Evidence-Based Research</h4>
+                </div>
+                <!-- Divider -->
+                <div class="w-[40px] h-[2px] bg-[#18909C] rounded-full"></div>
+                <!-- Body -->
+                <p style="font-family:'Inter',sans-serif;font-weight:400;font-size:14px;line-height:24px;" class="text-[#475569]">
+                    Morbi vestibulum tempor mauris tempor consequat. Etiam vitae pulvinar leo. Vivamus varius tortor sed erat venenatis pretium. Sed sollicitudin posuere leo, at tristique elit tempor non.
                 </p>
             </div>
 
             <!-- CARD 02: MULTI-STAKEHOLDER DIALOGUE -->
-            <div style="background-color: #FFFFFF;" 
-                 class="w-full pt-[35px] pr-[32px] pb-[36px] pl-[32px] flex flex-col justify-start items-start gap-[10.9px]">
-                <!-- Numeric Tag -->
-                <!-- <span style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 13px; line-height: 21.45px; letter-spacing: 1.04px;" 
-                      class="text-[#9CA3AF] block">
-                    02
-                </span> -->
-                <!-- Card Title -->
-                <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" 
-                    class="text-[#0E606B]">
-                    Multi-Stakeholder Dialogue
-                </h4>
-                <!-- Image Text Body Content (Justified, Inter Regular) -->
-                <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; line-height: 23.8px;" 
-                   class="text-[#1A1A1A] text-justify">
-                    Morbi vestibulum tempor mauris tempor consequat. Etiam vitae pulvinar leo. Vivamus varius tortor sed erat venenatis pretium. Sed sollicitudin posuere leo, at tristique elit tempor non. Mauris porttitor, lectus ut sollicitudin pulvinar, ex est rhoncus metus, ut auctor lectus est ac mauris. Aliquam vitae ligula quis metus faucibus convallis id eget.
+            <div class="bg-white rounded-[16px] border border-[#E8EEF4] p-[32px] flex flex-col gap-[16px] hover:shadow-md transition-shadow duration-300">
+                <!-- Icon -->
+                <!-- <div class="w-[48px] h-[48px] rounded-[12px] bg-[#E8F6F7] flex items-center justify-center shrink-0">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E606B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div> -->
+                <!-- Number + Title -->
+                <div class="flex flex-col gap-[4px]">
+                    <!-- <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;" class="text-[#0E606B]">02</span> -->
+                    <h4 style="font-family:'Merriweather',serif;font-weight:800;font-size:18px;line-height:26px;" class="text-[#003054]">Multi-Stakeholder Dialogue</h4>
+                </div>
+                <!-- Divider -->
+                <div class="w-[40px] h-[2px] bg-[#18909C] rounded-full"></div>
+                <!-- Body -->
+                <p style="font-family:'Inter',sans-serif;font-weight:400;font-size:14px;line-height:24px;" class="text-[#475569]">
+                    Morbi vestibulum tempor mauris tempor consequat. Etiam vitae pulvinar leo. Vivamus varius tortor sed erat venenatis pretium. Sed sollicitudin posuere leo, at tristique elit tempor non.
                 </p>
             </div>
 
             <!-- CARD 03: INTEGRATED IMPLEMENTATION SUPPORT -->
-            <div style="background-color: #FFFFFF;" 
-                 class="w-full pt-[35px] pr-[32px] pb-[36px] pl-[32px] flex flex-col justify-start items-start gap-[10.9px]">
-                <!-- Numeric Tag -->
-                <!-- <span style="font-family: 'Merriweather', serif; font-weight: 700; font-size: 13px; line-height: 21.45px; letter-spacing: 1.04px;" 
-                      class="text-[#9CA3AF] block">
-                    03
-                </span> -->
-                <!-- Card Title -->
-                <h4 style="font-family: 'Merriweather', serif; font-weight: 800; font-size: 18px; line-height: 23.4px;" 
-                    class="text-[#0E606B]">
-                    Integrated Implementation Support
-                </h4>
-                <!-- Image Text Body Content (Justified, Inter Regular) -->
-                <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; line-height: 23.8px;" 
-                   class="text-[#1A1A1A] text-justify">
-                    Morbi vestibulum tempor mauris tempor consequat. Etiam vitae pulvinar leo. Vivamus varius tortor sed erat venenatis pretium. Sed sollicitudin posuere leo, at tristique elit tempor non. Mauris porttitor, lectus ut sollicitudin pulvinar, ex est rhoncus metus, ut auctor lectus est ac mauris. Aliquam vitae ligula quis metus faucibus convallis id eget.
+            <div class="bg-white rounded-[16px] border border-[#E8EEF4] p-[32px] flex flex-col gap-[16px] hover:shadow-md transition-shadow duration-300">
+                <!-- Icon -->
+                <!-- <div class="w-[48px] h-[48px] rounded-[12px] bg-[#E8F6F7] flex items-center justify-center shrink-0">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E606B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
+                </div> -->
+                <!-- Number + Title -->
+                <div class="flex flex-col gap-[4px]">
+                    <!-- <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;" class="text-[#0E606B]">03</span> -->
+                    <h4 style="font-family:'Merriweather',serif;font-weight:800;font-size:18px;line-height:26px;" class="text-[#003054]">Integrated Implementation Support</h4>
+                </div>
+                <!-- Divider -->
+                <div class="w-[40px] h-[2px] bg-[#18909C] rounded-full"></div>
+                <!-- Body -->
+                <p style="font-family:'Inter',sans-serif;font-weight:400;font-size:14px;line-height:24px;" class="text-[#475569]">
+                    Morbi vestibulum tempor mauris tempor consequat. Etiam vitae pulvinar leo. Vivamus varius tortor sed erat venenatis pretium. Sed sollicitudin posuere leo, at tristique elit tempor non.
                 </p>
             </div>
 
@@ -457,7 +457,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                  class="w-full p-[28px] rounded-[14px] flex gap-[18px] items-start hover:shadow-sm transition-all bg-[#FFFFFF]">
                 <!-- Icon Frame Slot Container -->
                 <div class="w-[42px] h-[42px] bg-[#EEF9FA] rounded-[8px] flex items-center justify-center shrink-0 text-[#18909C] overflow-hidden">
-                    <img src="images/icons/integrity.svg" alt="Integrity Asset Icon" class="w-5 h-5 object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="icons/SVG (29).png" alt="Integrity Asset Icon" class="w-5 h-5 object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <svg class="w-5 h-5 text-[#18909C] hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
                     </svg>
@@ -478,7 +478,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                  class="w-full p-[28px] rounded-[14px] flex gap-[18px] items-start hover:shadow-sm transition-all bg-[#FFFFFF]">
                 <!-- Icon Frame Slot Container -->
                 <div class="w-[42px] h-[42px] bg-[#EEF9FA] rounded-[8px] flex items-center justify-center shrink-0 text-[#18909C] overflow-hidden">
-                    <img src="images/icons/independence.svg" alt="Independence Asset Icon" class="w-5 h-5 object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="icons/SVG (59).png" alt="Independence Asset Icon" class="w-5 h-5 object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <svg class="w-5 h-5 text-[#18909C] hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8"></path>
@@ -500,7 +500,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                  class="w-full p-[28px] rounded-[14px] flex gap-[18px] items-start hover:shadow-sm transition-all bg-[#FFFFFF]">
                 <!-- Icon Frame Slot Container -->
                 <div class="w-[42px] h-[42px] bg-[#EEF9FA] rounded-[8px] flex items-center justify-center shrink-0 text-[#18909C] overflow-hidden">
-                    <img src="images/icons/inclusion.svg" alt="Inclusion Asset Icon" class="w-5 h-5 object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="icons/SVG (30).png" alt="Inclusion Asset Icon" class="w-5 h-5 object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <svg class="w-5 h-5 text-[#18909C] hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
                     </svg>
@@ -521,7 +521,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                  class="w-full p-[28px] rounded-[14px] flex gap-[18px] items-start hover:shadow-sm transition-all bg-[#FFFFFF]">
                 <!-- Icon Frame Slot Container -->
                 <div class="w-[42px] h-[42px] bg-[#EEF9FA] rounded-[8px] flex items-center justify-center shrink-0 text-[#18909C] overflow-hidden">
-                    <img src="images/icons/impact.svg" alt="Impact Asset Icon" class="w-5 h-5 object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="icons/SVG (31).png" alt="Impact Asset Icon" class="w-5 h-5 object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <svg class="w-5 h-5 text-[#18909C] hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                     </svg>

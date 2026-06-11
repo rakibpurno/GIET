@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="font-sans text-gray-800 bg-white m-0 p-0 antialiased">
@@ -236,13 +236,13 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 Transforming Challenges <br>Into Strategic Opportunities
             </h2>
             
-            <p class="text-[#1A1A1A] font-inter font-normal text-[17px] leading-[28.9px] tracking-[0%] align-middle mb-[3.2px]">
+            <p style="font-family:'Newsreader',serif;font-weight:400;font-size:17px;line-height:28.9px;" class="text-[#1A1A1A] mb-[3.2px]">
                 GIET is a lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum non ligula non pulvinar. Proin auctor lobortis ipsum, a malesuada ante molestie eu. Maecenas auctor egestas tortor non dapibus. Praesent nulla sapien, consequat non congue nec, commodo sed enim.
             </p>
             
-            <button class="w-[159px] h-[43.44px] pt-[9px] pr-[22px] pb-[10.44px] pl-[22px] border border-[#003054] text-[#003054] font-inter font-medium text-[14px] rounded-[6px] bg-transparent flex items-center justify-center gap-2 hover:bg-[#003054]/5 transition-all duration-150 whitespace-nowrap">
+            <button class="w-[159px] h-[43.44px] pt-[9px] pr-[22px] pb-[10.44px] pl-[22px] border border-[#003054] text-[#003054] font-['Inter'] font-semibold text-[13px] leading-[21.45px] rounded-[6px] bg-transparent flex items-center justify-center gap-2 hover:bg-[#003054]/5 transition-all duration-150 whitespace-nowrap">
                 <span>Learn About Us</span>
-                <span class="text-[15px] font-normal font-sans">→</span>
+                <span class="text-[15px] font-normal">→</span>
             </button>
         </div>
         
@@ -534,105 +534,99 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <div class="w-full max-w-[1104px] grid grid-cols-1 md:grid-cols-3 gap-[20px] mt-10">
-            
-            <div class="shadow-[0px_8px_36px_0px_rgba(0,48,84,0.13)] w-full bg-white border border-[#EEF3F8] rounded-[14px] overflow-hidden flex flex-col transition-all duration-300 hover:scale-[1.01]">
-                <div class="w-full h-[150px] overflow-hidden bg-slate-900">
-                    <img class="w-full h-full object-cover opacity-95" src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=400" alt="Gavel scale representation">
+
+            <!-- Card 1 -->
+            <div class="w-full bg-white border border-[#EEF3F8] rounded-[16px] overflow-hidden flex flex-col shadow-[0px_8px_36px_0px_#00305421] hover:shadow-[0px_8px_36px_0px_#00305421] transition-shadow duration-300">
+                <div class="w-full h-[160px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=400" alt="Governance Reform">
                 </div>
-                <div class="p-[22px] flex flex-col flex-grow text-left justify-between">
-                    <div>
-                        <span class="font-['Inter'] font-semibold text-[10px] leading-[16.5px] tracking-[1px] text-[#0E606B] uppercase block mb-2">Governance Reform</span>
-                        <h4 class="font-['Merriweather'] font-bold text-[15.5px] leading-[21.7px] text-[#0F172A] line-clamp-2 mb-2">Strengthening Citizen-Centric Public Service Delivery in Bangladesh</h4>
-                        <p class="font-['Inter'] font-normal text-[13px] leading-[20.8px] text-[#1A1A1A] opacity-80 line-clamp-3">A multi-district diagnostic of service delivery bottlenecks, resulting in actionable grievance redress and digital service recommendations for six ministries.</p>
-                    </div>
-                    <div class="flex justify-between items-center pt-2 mt-auto">
-                        <span class="text-[12px] text-slate-400 font-normal">2024-2025 &bull; World Bank</span>
-                        <a href="#" class="font-['Inter'] font-semibold text-[13px] leading-[21.45px] tracking-[0.13px] text-[#A80C18] flex items-center gap-1 hover:opacity-80">View Project &rarr;</a>
+                <div class="p-[22px] flex flex-col flex-grow text-left gap-[10px]">
+                    <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;" class="text-[#0E606B]">Governance Reform</span>
+                    <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:22px;" class="text-[#0F172A]">Strengthening Citizen-Centric Public Service Delivery in Bangladesh</h4>
+                    <p style="font-family:'Inter',sans-serif;font-weight:400;font-size:13px;line-height:21px;" class="text-[#475569] line-clamp-3">A multi-district diagnostic of service delivery bottlenecks, resulting in actionable grievance redress and digital service recommendations for six ministries.</p>
+                    <div class="mt-auto pt-[14px] border-t border-[#EEF3F8] flex justify-between items-center">
+                        <span style="font-family:'Inter',sans-serif;font-weight:400;font-size:12px;" class="text-[#94A3B8]">2024–2025 · World Bank</span>
+                        <a href="projectdetails.html" style="font-family:'Inter',sans-serif;font-weight:600;font-size:13px;" class="text-[#A80C18] hover:opacity-75 flex items-center gap-1">View Project →</a>
                     </div>
                 </div>
             </div>
 
-            <div class="shadow-[0px_8px_36px_0px_rgba(0,48,84,0.13)] w-full bg-white border border-[#EEF3F8] rounded-[14px] overflow-hidden flex flex-col transition-all duration-300 hover:scale-[1.01]">
-                <div class="w-full h-[150px] overflow-hidden bg-slate-900">
-                    <img class="w-full h-full object-cover opacity-95" src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=400" alt="Signing registry document">
+            <!-- Card 2 -->
+            <div class="w-full bg-white border border-[#EEF3F8] rounded-[16px] overflow-hidden flex flex-col shadow-[0px_8px_36px_0px_#00305421] hover:shadow-[0px_8px_36px_0px_#00305421] transition-shadow duration-300">
+                <div class="w-full h-[160px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=400" alt="Regulatory Modernization">
                 </div>
-                <div class="p-[22px] flex flex-col flex-grow text-left justify-between">
-                    <div>
-                        <span class="font-['Inter'] font-semibold text-[10px] leading-[16.5px] tracking-[1px] text-[#0E606B] uppercase block mb-2">Regulatory Modernization</span>
-                        <h4 class="font-['Merriweather'] font-bold text-[15.5px] leading-[21.7px] text-[#0F172A] line-clamp-2 mb-2">National Regulatory Reform Initiative: Reducing Business Compliance Burden</h4>
-                        <p class="font-['Inter'] font-normal text-[13px] leading-[20.8px] text-[#1A1A1A] opacity-80 line-clamp-3">Mapping and streamlining 200+ business licensing procedures, delivering a Regulatory Impact Assessment framework adopted by the Bangladesh Investment Development Authority.</p>
-                    </div>
-                    <div class="flex justify-between items-center pt-2 mt-auto">
-                        <span class="text-[12px] text-slate-400 font-normal">2023-2024 &bull; BIDA / IFC</span>
-                        <a href="#" class="font-['Inter'] font-semibold text-[13px] leading-[21.45px] tracking-[0.13px] text-[#A80C18] flex items-center gap-1 hover:opacity-80">View Project &rarr;</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="shadow-[0px_8px_36px_0px_rgba(0,48,84,0.13)] w-full bg-white border border-[#EEF3F8] rounded-[14px] overflow-hidden flex flex-col transition-all duration-300 hover:scale-[1.01]">
-                <div class="w-full h-[150px] overflow-hidden bg-slate-900">
-                    <img class="w-full h-full object-cover opacity-95" src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&q=80&w=400" alt="Parliament hall infrastructure">
-                </div>
-                <div class="p-[22px] flex flex-col flex-grow text-left justify-between">
-                    <div>
-                        <span class="font-['Inter'] font-semibold text-[10px] leading-[16.5px] tracking-[1px] text-[#0E606B] uppercase block mb-2">Transparency & Accountability</span>
-                        <h4 class="font-['Merriweather'] font-bold text-[15.5px] leading-[21.7px] text-[#0F172A] line-clamp-2 mb-2">Anti-Corruption Diagnostic & Integrity Framework for Public Procurement</h4>
-                        <p class="font-['Inter'] font-normal text-[13px] leading-[20.8px] text-[#1A1A1A] opacity-80 line-clamp-3">Comprehensive review of procurement vulnerabilities in three key government agencies, with an institutional integrity improvement roadmap endorsed by the Cabinet Division.</p>
-                    </div>
-                    <div class="flex justify-between items-center pt-2 mt-auto">
-                        <span class="text-[12px] text-slate-400 font-normal">2024 &bull; UNDP Bangladesh</span>
-                        <a href="#" class="font-['Inter'] font-semibold text-[13px] leading-[21.45px] tracking-[0.13px] text-[#A80C18] flex items-center gap-1 hover:opacity-80">View Project &rarr;</a>
+                <div class="p-[22px] flex flex-col flex-grow text-left gap-[10px]">
+                    <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;" class="text-[#0E606B]">Regulatory Modernization</span>
+                    <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:22px;" class="text-[#0F172A]">National Regulatory Reform Initiative: Reducing Business Compliance Burden</h4>
+                    <p style="font-family:'Inter',sans-serif;font-weight:400;font-size:13px;line-height:21px;" class="text-[#475569] line-clamp-3">Mapping and streamlining 200+ business licensing procedures, delivering a Regulatory Impact Assessment framework adopted by BIDA.</p>
+                    <div class="mt-auto pt-[14px] border-t border-[#EEF3F8] flex justify-between items-center">
+                        <span style="font-family:'Inter',sans-serif;font-weight:400;font-size:12px;" class="text-[#94A3B8]">2023–2024 · BIDA / IFC</span>
+                        <a href="projectdetails.html" style="font-family:'Inter',sans-serif;font-weight:600;font-size:13px;" class="text-[#A80C18] hover:opacity-75 flex items-center gap-1">View Project →</a>
                     </div>
                 </div>
             </div>
 
-            <div class="shadow-[0px_8px_36px_0px_rgba(0,48,84,0.13)] w-full bg-white border border-[#EEF3F8] rounded-[14px] overflow-hidden flex flex-col transition-all duration-300 hover:scale-[1.01]">
-                <div class="w-full h-[150px] overflow-hidden bg-slate-900">
-                    <img class="w-full h-full object-cover opacity-95" src="images/Economic Transformation.png" alt="Economic Transformation">
+            <!-- Card 3 -->
+            <div class="w-full bg-white border border-[#EEF3F8] rounded-[16px] overflow-hidden flex flex-col shadow-[0px_8px_36px_0px_#00305421] hover:shadow-[0px_8px_36px_0px_#00305421] transition-shadow duration-300">
+                <div class="w-full h-[160px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&q=80&w=400" alt="Transparency">
                 </div>
-                <div class="p-[22px] flex flex-col flex-grow text-left justify-between">
-                    <div>
-                        <span class="font-['Inter'] font-semibold text-[10px] leading-[16.5px] tracking-[1px] text-[#0E606B] uppercase block mb-2">Economic Policy</span>
-                        <h4 class="font-['Merriweather'] font-bold text-[15.5px] leading-[21.7px] text-[#0F172A] line-clamp-2 mb-2">Trade Facilitation Reform: Single Window Implementation Roadmap</h4>
-                        <p class="font-['Inter'] font-normal text-[13px] leading-[20.8px] text-[#1A1A1A] opacity-80 line-clamp-3">Designing a phased single window system to reduce border clearance times by 40% and streamline import-export procedures for Bangladesh Customs.</p>
-                    </div>
-                    <div class="flex justify-between items-center pt-2 mt-auto">
-                        <span class="text-[12px] text-slate-400 font-normal">2024-2025 &bull; NBR / ADB</span>
-                        <a href="#" class="font-['Inter'] font-semibold text-[13px] leading-[21.45px] tracking-[0.13px] text-[#A80C18] flex items-center gap-1 hover:opacity-80">View Project &rarr;</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="shadow-[0px_8px_36px_0px_rgba(0,48,84,0.13)] w-full bg-white border border-[#EEF3F8] rounded-[14px] overflow-hidden flex flex-col transition-all duration-300 hover:scale-[1.01]">
-                <div class="w-full h-[150px] overflow-hidden bg-slate-900">
-                    <img class="w-full h-full object-cover opacity-95" src="images/Institutional Reform.png" alt="Institutional Reform">
-                </div>
-                <div class="p-[22px] flex flex-col flex-grow text-left justify-between">
-                    <div>
-                        <span class="font-['Inter'] font-semibold text-[10px] leading-[16.5px] tracking-[1px] text-[#0E606B] uppercase block mb-2">Institutional Reform</span>
-                        <h4 class="font-['Merriweather'] font-bold text-[15.5px] leading-[21.7px] text-[#0F172A] line-clamp-2 mb-2">Local Government Capacity Development Programme</h4>
-                        <p class="font-['Inter'] font-normal text-[13px] leading-[20.8px] text-[#1A1A1A] opacity-80 line-clamp-3">Building financial management and planning capacity in 64 district councils through structured training, mentoring, and digital tools for budgeting and reporting.</p>
-                    </div>
-                    <div class="flex justify-between items-center pt-2 mt-auto">
-                        <span class="text-[12px] text-slate-400 font-normal">2023-2025 &bull; EU / MoLGRD</span>
-                        <a href="#" class="font-['Inter'] font-semibold text-[13px] leading-[21.45px] tracking-[0.13px] text-[#A80C18] flex items-center gap-1 hover:opacity-80">View Project &rarr;</a>
+                <div class="p-[22px] flex flex-col flex-grow text-left gap-[10px]">
+                    <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;" class="text-[#0E606B]">Transparency & Accountability</span>
+                    <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:22px;" class="text-[#0F172A]">Anti-Corruption Diagnostic & Integrity Framework for Public Procurement</h4>
+                    <p style="font-family:'Inter',sans-serif;font-weight:400;font-size:13px;line-height:21px;" class="text-[#475569] line-clamp-3">Comprehensive review of procurement vulnerabilities in three key government agencies, with an integrity improvement roadmap endorsed by the Cabinet Division.</p>
+                    <div class="mt-auto pt-[14px] border-t border-[#EEF3F8] flex justify-between items-center">
+                        <span style="font-family:'Inter',sans-serif;font-weight:400;font-size:12px;" class="text-[#94A3B8]">2024 · UNDP Bangladesh</span>
+                        <a href="projectdetails.html" style="font-family:'Inter',sans-serif;font-weight:600;font-size:13px;" class="text-[#A80C18] hover:opacity-75 flex items-center gap-1">View Project →</a>
                     </div>
                 </div>
             </div>
 
-            <div class="shadow-[0px_8px_36px_0px_rgba(0,48,84,0.13)] w-full bg-white border border-[#EEF3F8] rounded-[14px] overflow-hidden flex flex-col transition-all duration-300 hover:scale-[1.01]">
-                <div class="w-full h-[150px] overflow-hidden bg-slate-900">
-                    <img class="w-full h-full object-cover opacity-95" src="images/Seminar.png" alt="Digital Governance">
+            <!-- Card 4 -->
+            <div class="w-full bg-white border border-[#EEF3F8] rounded-[16px] overflow-hidden flex flex-col shadow-[0px_8px_36px_0px_#00305421] hover:shadow-[0px_8px_36px_0px_#00305421] transition-shadow duration-300">
+                <div class="w-full h-[160px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="images/Economic Transformation.png" alt="Economic Policy">
                 </div>
-                <div class="p-[22px] flex flex-col flex-grow text-left justify-between">
-                    <div>
-                        <span class="font-['Inter'] font-semibold text-[10px] leading-[16.5px] tracking-[1px] text-[#0E606B] uppercase block mb-2">Digital Governance</span>
-                        <h4 class="font-['Merriweather'] font-bold text-[15.5px] leading-[21.7px] text-[#0F172A] line-clamp-2 mb-2">e-Government Services Integration for Ministry of Finance</h4>
-                        <p class="font-['Inter'] font-normal text-[13px] leading-[20.8px] text-[#1A1A1A] opacity-80 line-clamp-3">Designing interoperability frameworks and digital service blueprints to integrate 12 financial management systems under a unified citizen-facing portal.</p>
+                <div class="p-[22px] flex flex-col flex-grow text-left gap-[10px]">
+                    <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;" class="text-[#0E606B]">Economic Policy</span>
+                    <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:22px;" class="text-[#0F172A]">Trade Facilitation Reform: Single Window Implementation Roadmap</h4>
+                    <p style="font-family:'Inter',sans-serif;font-weight:400;font-size:13px;line-height:21px;" class="text-[#475569] line-clamp-3">Designing a phased single window system to reduce border clearance times by 40% and streamline import-export procedures for Bangladesh Customs.</p>
+                    <div class="mt-auto pt-[14px] border-t border-[#EEF3F8] flex justify-between items-center">
+                        <span style="font-family:'Inter',sans-serif;font-weight:400;font-size:12px;" class="text-[#94A3B8]">2024–2025 · NBR / ADB</span>
+                        <a href="projectdetails.html" style="font-family:'Inter',sans-serif;font-weight:600;font-size:13px;" class="text-[#A80C18] hover:opacity-75 flex items-center gap-1">View Project →</a>
                     </div>
-                    <div class="flex justify-between items-center pt-2 mt-auto">
-                        <span class="text-[12px] text-slate-400 font-normal">2024 &bull; MoF / World Bank</span>
-                        <a href="#" class="font-['Inter'] font-semibold text-[13px] leading-[21.45px] tracking-[0.13px] text-[#A80C18] flex items-center gap-1 hover:opacity-80">View Project &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="w-full bg-white border border-[#EEF3F8] rounded-[16px] overflow-hidden flex flex-col shadow-[0px_8px_36px_0px_#00305421] hover:shadow-[0px_8px_36px_0px_#00305421] transition-shadow duration-300">
+                <div class="w-full h-[160px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="images/Institutional Reform.png" alt="Institutional Reform">
+                </div>
+                <div class="p-[22px] flex flex-col flex-grow text-left gap-[10px]">
+                    <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;" class="text-[#0E606B]">Institutional Reform</span>
+                    <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:22px;" class="text-[#0F172A]">Local Government Capacity Development Programme</h4>
+                    <p style="font-family:'Inter',sans-serif;font-weight:400;font-size:13px;line-height:21px;" class="text-[#475569] line-clamp-3">Building financial management and planning capacity in 64 district councils through structured training, mentoring, and digital tools for budgeting and reporting.</p>
+                    <div class="mt-auto pt-[14px] border-t border-[#EEF3F8] flex justify-between items-center">
+                        <span style="font-family:'Inter',sans-serif;font-weight:400;font-size:12px;" class="text-[#94A3B8]">2023–2025 · EU / MoLGRD</span>
+                        <a href="projectdetails.html" style="font-family:'Inter',sans-serif;font-weight:600;font-size:13px;" class="text-[#A80C18] hover:opacity-75 flex items-center gap-1">View Project →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="w-full bg-white border border-[#EEF3F8] rounded-[16px] overflow-hidden flex flex-col shadow-[0px_8px_36px_0px_#00305421] hover:shadow-[0px_8px_36px_0px_#00305421] transition-shadow duration-300">
+                <div class="w-full h-[160px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="images/Seminar.png" alt="Digital Governance">
+                </div>
+                <div class="p-[22px] flex flex-col flex-grow text-left gap-[10px]">
+                    <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;" class="text-[#0E606B]">Digital Governance</span>
+                    <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:15px;line-height:22px;" class="text-[#0F172A]">e-Government Services Integration for Ministry of Finance</h4>
+                    <p style="font-family:'Inter',sans-serif;font-weight:400;font-size:13px;line-height:21px;" class="text-[#475569] line-clamp-3">Designing interoperability frameworks and digital service blueprints to integrate 12 financial management systems under a unified citizen-facing portal.</p>
+                    <div class="mt-auto pt-[14px] border-t border-[#EEF3F8] flex justify-between items-center">
+                        <span style="font-family:'Inter',sans-serif;font-weight:400;font-size:12px;" class="text-[#94A3B8]">2024 · MoF / World Bank</span>
+                        <a href="projectdetails.html" style="font-family:'Inter',sans-serif;font-weight:600;font-size:13px;" class="text-[#A80C18] hover:opacity-75 flex items-center gap-1">View Project →</a>
                     </div>
                 </div>
             </div>
@@ -669,23 +663,23 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div class="w-full grid grid-cols-2 md:grid-cols-5 gap-[12px] items-center">
 
                 <div class="w-full h-[100px] bg-white border border-[#E4EAF0] rounded-[10px] flex items-center justify-center p-5 transition-all duration-200 hover:shadow-md">
-                    <span class="font-sans font-bold text-[22px] text-black tracking-tight">OpenAI</span>
+                    <img class="max-h-[56px] object-contain opacity-90" src="images/Container (13).png" alt="OpenAI Logo" />
                 </div>
 
                 <div class="w-full h-[100px] bg-white border border-[#E4EAF0] rounded-[10px] flex items-center justify-center p-5 transition-all duration-200 hover:shadow-md">
-                    <img class="max-h-[36px] object-contain opacity-90" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+                    <img class="max-h-[52px] object-contain opacity-90" src="images/Link.png" alt="Amazon Logo">
                 </div>
 
                 <div class="w-full h-[100px] bg-white border border-[#E4EAF0] rounded-[10px] flex items-center justify-center p-5 transition-all duration-200 hover:shadow-md">
-                    <img class="max-h-[32px] object-contain opacity-95" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg" alt="NVIDIA Logo">
+                    <img class="max-h-[52px] object-contain opacity-95" src="images/Container (12).png" alt="NVIDIA Logo">
                 </div>
 
                 <div class="w-full h-[100px] bg-white border border-[#E4EAF0] rounded-[10px] flex items-center justify-center p-5 transition-all duration-200 hover:shadow-md">
-                    <img class="max-h-[40px] object-contain opacity-95" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Ford_Motor_Company_Logo.svg" alt="Ford Logo">
+                    <img class="max-h-[56px] object-contain opacity-95" src="images/Container (14).png" alt="Ford Logo">
                 </div>
 
                 <div class="w-full h-[100px] bg-white border border-[#E4EAF0] rounded-[10px] flex items-center justify-center p-5 transition-all duration-200 hover:shadow-md">
-                    <span class="font-sans font-extrabold text-[22px] text-[#0052FF] tracking-tight">coinbase</span>
+                    <img class="max-h-[56px] object-contain opacity-90" src="images/Container (15).png" alt="Coinbase Logo" />
                 </div>
 
             </div>
