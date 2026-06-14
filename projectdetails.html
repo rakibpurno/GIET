@@ -106,8 +106,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
    <!-- ========================================================================= -->
 <!-- 1. HERO SECTION (Width: 1920px, Height: 607.78px, Consolidated Structure) -->
 <!-- ========================================================================= -->
-<section style="background: linear-gradient(0deg, rgba(0, 20, 48, 0.96) 0%, rgba(0, 20, 48, 0.65) 55%, rgba(0, 20, 48, 0.15) 100%), url('images/Governance Innovation.png') center/cover no-repeat;"
-         class="w-full min-h-[400px] md:h-[607.78px] relative select-none flex flex-col justify-between overflow-hidden text-white px-4 md:px-8">
+<section class="w-full min-h-[400px] md:h-[342.78px] relative select-none flex flex-col justify-between overflow-hidden text-white px-4 md:px-8 bg-cover bg-center" style="background-image: linear-gradient(0deg, rgba(0,20,48,0.96) 0%, rgba(0,20,48,0.65) 55%, rgba(0,20,48,0.15) 100%), url('images/Governance Innovation.png');">
   
   <!-- RIGHT UPPER CORNER BACKGROUND DECORATION SHAPE -->
   <div class="absolute -top-[100px] -right-[100px] pointer-events-none bg-[rgba(24,144,156,0.07)] w-[400px] h-[400px] rounded-full z-0"></div>
@@ -150,19 +149,19 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     </div>
   </div>
 
- <!-- BOTTOM 5 COLUMNS PROJECT META DATA MATRIX (Height: 151.78px, Width: 1920px) -->
-<div style="background:rgba(0,32,63,0.85);backdrop-filter:blur(4px);border-top:1px solid rgba(255,255,255,0.12);" 
-     class="w-full h-auto md:h-[151.78px] py-4 md:py-0 px-4 md:px-8 flex items-center justify-center select-none z-10 shrink-0">
+</section>
+
+<!-- PROJECT META BAR SECTION -->
+<section class="w-full bg-[#003054] border-b border-[#FFFFFF14] py-4 md:h-[115px] md:py-0 flex items-center justify-center px-4 md:px-8 select-none">
     
-    <!-- Inner Grid Frame: Exactly 5 Columns for Pixel-Perfect Layout Match -->
     <div class="w-full max-w-[1204px] mx-auto grid grid-cols-2 md:grid-cols-5 h-full items-center gap-y-4 md:gap-y-0">
         
         <!-- ITEM 1: CLIENT -->
-        <div class="h-full pt-[32px] pb-[32px] pl-[16px] pr-[16px] flex items-center gap-[14px] border-r border-white/[0.08]">
-            <div class="bg-[rgba(24,144,156,0.12)] w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
+        <div class="h-full pt-[32px] pb-[32px] pl-[20px] pr-[16px] flex items-start gap-[14px] border-r border-white/[0.08]">
+            <div class="bg-[rgba(24,144,156,0.12)] w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden mt-[12px]">
                 <img src="icons/SVG (50).png" alt="Client Icon" class="w-[20px] h-[20px] object-contain">
             </div>
-            <div class="text-left flex flex-col gap-[6px]">
+            <div class="text-left flex flex-col gap-[4px]">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; line-height: 100%; letter-spacing: 0.8px;" class="text-white/45 uppercase">
                     Client
                 </span>
@@ -174,12 +173,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- ITEM 2: DURATION -->
-        <div class="h-full pt-[32px] pb-[32px] pl-[20px] pr-[16px] flex items-center gap-[14px] border-r border-white/[0.08]">
-            <div class="bg-[rgba(24,144,156,0.12)] w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
+        <div class="h-full pt-[32px] pb-[32px] pl-[20px] pr-[16px] flex items-start gap-[14px] border-r border-white/[0.08]">
+            <div class="bg-[rgba(24,144,156,0.12)] w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden mt-[12px]">
                 <!-- DURATION ICON IMAGE SLOT -->
                 <img src="icons/SVG (51).png" alt="Duration Icon" class="w-[20px] h-[20px] object-contain">
             </div>
-            <div class="text-left flex flex-col gap-[2px]">
+            <div class="text-left flex flex-col gap-[4px]">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; line-height: 100%; letter-spacing: 0.8px;" class="text-white/45 uppercase">
                     Duration
                 </span>
@@ -190,12 +189,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- ITEM 3: LOCATION -->
-        <div class="h-full pt-[32px] pb-[32px] pl-[20px] pr-[16px] flex items-center gap-[14px] border-r border-white/[0.08]">
-            <div class="bg-[rgba(24,144,156,0.12)] w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
+        <div class="h-full pt-[32px] pb-[32px] pl-[20px] pr-[16px] flex items-start gap-[14px] border-r border-white/[0.08]">
+            <div class="bg-[rgba(24,144,156,0.12)] w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden mt-[12px]">
                 <!-- LOCATION ICON IMAGE SLOT -->
                 <img src="icons/SVG (52).png" alt="Location Icon" class="w-[20px] h-[20px] object-contain">
             </div>
-            <div class="text-left flex flex-col gap-[2px]">
+            <div class="text-left flex flex-col gap-[4px]">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; line-height: 100%; letter-spacing: 0.8px;" class="text-white/45 uppercase">
                     Location
                 </span>
@@ -206,11 +205,11 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- ITEM 4: SECTOR -->
-        <div class="h-full pt-[32px] pb-[32px] pl-[20px] pr-[16px] flex items-center gap-[14px] border-r border-white/[0.08]">
-            <div class="bg-[rgba(24,144,156,0.12)] w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
+        <div class="h-full pt-[32px] pb-[32px] pl-[20px] pr-[16px] flex items-start gap-[14px] border-r border-white/[0.08]">
+            <div class="bg-[rgba(24,144,156,0.12)] w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden mt-[12px]">
                 <img src="icons/SVG (53).png" alt="Sector Icon" class="w-[20px] h-[20px] object-contain">
             </div>
-            <div class="text-left flex flex-col gap-[6px]">
+            <div class="text-left flex flex-col gap-[4px]">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; line-height: 100%; letter-spacing: 0.8px;" class="text-white/45 uppercase">
                     Sector
                 </span>
@@ -222,12 +221,12 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <!-- ITEM 5: STATUS -->
-        <div class="h-full pt-[32px] pb-[32px] pl-[20px] pr-[16px] flex items-center gap-[14px]">
-            <div class="bg-[rgba(24,144,156,0.12)] w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden">
+        <div class="h-full pt-[32px] pb-[32px] pl-[20px] pr-[16px] flex items-start gap-[14px]">
+            <div class="bg-[rgba(24,144,156,0.12)] w-[44px] h-[44px] rounded-[8px] flex items-center justify-center shrink-0 border border-white/[0.05] overflow-hidden mt-[12px]">
                 <!-- STATUS ICON IMAGE SLOT -->
                 <img src="icons/SVG (54).png" alt="Status Icon" class="w-[20px] h-[20px] object-contain">
             </div>
-            <div class="text-left flex flex-col gap-[2px]">
+            <div class="text-left flex flex-col gap-[4px]">
                 <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 11px; line-height: 100%; letter-spacing: 0.8px;" class="text-white/45 uppercase">
                     Status
                 </span>
@@ -241,7 +240,6 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
     </div>
-</div>
 </section>
 
  <section class="w-full py-[48px] md:py-[72px] px-4 md:px-8 bg-white select-none flex items-start justify-center">
@@ -423,7 +421,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                     <span class="font-['Newsreader'] font-bold text-[10px] tracking-[1px] uppercase text-[#02D9EF]">
                         Work With Us
                     </span>
-                    <p class="font-['Newsreader']" style="font-family: 'Newsreader',serif; font-weight: 400; font-size: 13px; line-height: 19px;" class="text-white/85">
+                    <p class="font-['Newsreader'] text-white/85" style="font-family: 'Newsreader',serif; font-weight: 400; font-size: 13px; line-height: 19px;">
                         Get in touch and our team will walk you through our solutions.
                     </p>
                 </div>
@@ -517,7 +515,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 <div class="p-[16px] flex flex-col gap-[4px] flex-grow">
                     <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;" class="text-[#0E606B]">Project Lead</span>
                     <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:14px;line-height:20px;" class="text-[#0F172A]">Dr. Aminur Rahman</h4>
-                    <p class="font-['Newsreader']" style="font-family:'Newsreader',serif;font-weight:400;font-size:12px;line-height:18px;" class="text-[#64748B]">University of Dhaka</p>
+                    <p class="font-['Newsreader'] text-[#64748B]" style="font-family:'Newsreader',serif;font-weight:400;font-size:12px;line-height:18px;">University of Dhaka</p>
                     <div class="mt-auto pt-[10px] border-t border-[#EEF3F8] flex justify-between items-center">
                         <span style="font-family:'Inter',sans-serif;font-weight:500;font-size:11px;" class="text-[#94A3B8]">Governance · Policy</span>
                         <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:12px;" class="text-[#A80C18] group-hover:opacity-75">View →</span>
@@ -536,7 +534,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 <div class="p-[16px] flex flex-col gap-[4px] flex-grow">
                     <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;" class="text-[#0E606B]">Senior Researcher</span>
                     <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:14px;line-height:20px;" class="text-[#0F172A]">Ms. Fatema Begum</h4>
-                    <p class="font-['Newsreader']" style="font-family:'Newsreader',serif;font-weight:400;font-size:12px;line-height:18px;" class="text-[#64748B]">University of Dhaka</p>
+                    <p class="font-['Newsreader'] text-[#64748B]" style="font-family:'Newsreader',serif;font-weight:400;font-size:12px;line-height:18px;">University of Dhaka</p>
                     <div class="mt-auto pt-[10px] border-t border-[#EEF3F8] flex justify-between items-center">
                         <span style="font-family:'Inter',sans-serif;font-weight:500;font-size:11px;" class="text-[#94A3B8]">Public Admin · M&E</span>
                         <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:12px;" class="text-[#A80C18] group-hover:opacity-75">View →</span>
@@ -555,7 +553,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 <div class="p-[16px] flex flex-col gap-[4px] flex-grow">
                     <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;" class="text-[#0E606B]">Policy Analyst</span>
                     <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:14px;line-height:20px;" class="text-[#0F172A]">Mr. Kamal Hossain</h4>
-                    <p class="font-['Newsreader']" style="font-family:'Newsreader',serif;font-weight:400;font-size:12px;line-height:18px;" class="text-[#64748B]">BIDS</p>
+                    <p class="font-['Newsreader'] text-[#64748B]" style="font-family:'Newsreader',serif;font-weight:400;font-size:12px;line-height:18px;">BIDS</p>
                     <div class="mt-auto pt-[10px] border-t border-[#EEF3F8] flex justify-between items-center">
                         <span style="font-family:'Inter',sans-serif;font-weight:500;font-size:11px;" class="text-[#94A3B8]">Economics · Reform</span>
                         <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:12px;" class="text-[#A80C18] group-hover:opacity-75">View →</span>
@@ -574,7 +572,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 <div class="p-[16px] flex flex-col gap-[4px] flex-grow">
                     <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:1px;text-transform:uppercase;" class="text-[#0E606B]">International Advisor</span>
                     <h4 style="font-family:'Merriweather',serif;font-weight:700;font-size:14px;line-height:20px;" class="text-[#0F172A]">Prof. David Morrison</h4>
-                    <p class="font-['Newsreader']" style="font-family:'Newsreader',serif;font-weight:400;font-size:12px;line-height:18px;" class="text-[#64748B]">University of Oxford</p>
+                    <p class="font-['Newsreader'] text-[#64748B]" style="font-family:'Newsreader',serif;font-weight:400;font-size:12px;line-height:18px;">University of Oxford</p>
                     <div class="mt-auto pt-[10px] border-t border-[#EEF3F8] flex justify-between items-center">
                         <span style="font-family:'Inter',sans-serif;font-weight:500;font-size:11px;" class="text-[#94A3B8]">Institutions · Law</span>
                         <span style="font-family:'Inter',sans-serif;font-weight:600;font-size:12px;" class="text-[#A80C18] group-hover:opacity-75">View →</span>
@@ -600,8 +598,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     Foundation for Governance Innovation &<br>Economic Transformation
 </h3>
             
-<p class="font-['Newsreader']" style="font-family: 'Newsreader',serif; font-weight: 400; font-size: 13px; line-height: 23.4px; color: #FFFFFFCC; letter-spacing: 0%;" 
-   class="mb-6 max-w-[440px] align-middle">
+<p class="font-['Newsreader'] mb-6 max-w-[440px] align-middle" style="font-family: 'Newsreader',serif; font-weight: 400; font-size: 13px; line-height: 23.4px; color: #FFFFFFCC; letter-spacing: 0%;">
     A non-partisan, non-profit think tank advancing evidence-based governance reform and economic transformation in Bangladesh and beyond.
 </p>
             
@@ -672,5 +669,9 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <script src="main.js"></script>
 </body>
 </html>
+
+
+
+
 
 
