@@ -13,9 +13,9 @@
 </head>
 <body class="bg-[#FFFFFF] text-[#0F172A] antialiased overflow-x-hidden">
 
-<nav class="sticky top-0 z-[1000] w-full h-[100px] bg-white border-b border-gray-100 px-4 md:pl-[408px] md:pr-[408px] flex items-center justify-between select-none">
+<nav class="sticky top-0 z-[1000] w-full h-[100px] bg-white border-b border-gray-100 px-4 md:px-8 flex items-center justify-between select-none">
     
-    <div class="w-full max-w-[1104px] h-[68px] flex items-center justify-between">
+    <div class="w-full max-w-[1204px] mx-auto h-[68px] flex items-center justify-between">
       
         <div class="w-[78.66px] h-[67.17px] flex flex-col items-center justify-center">
             <img src="images/Frame 26.png" alt="GIET Logo" class="w-[46px] h-[42px] mb-0.5" />
@@ -107,14 +107,13 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 <!-- ========================================================================= -->
 <!-- 1. HERO SECTION (Width: 1920px, Height: 607.78px, Background: #003054)   -->
 <!-- ========================================================================= -->
-<section style="background: linear-gradient(rgba(0, 48, 84, 0.85), rgba(0, 48, 84, 0.95)), url('images/Image.png') center/cover no-repeat;" 
-             class="w-full h-auto md:h-[420px] relative select-none flex flex-col justify-between pt-[50px]">
-        
-    <!-- HERO CORE CONTAINER (Width: 1200px, Max-Width: 1200px, Padding Horizontal: 48px) -->
-<div class="w-full max-w-[1200px] mx-auto px-4 md:px-[48px] text-left flex flex-col gap-[11px] mt-4">
+<section class="w-full h-auto md:h-[320px] relative select-none flex flex-col justify-between pt-[50px] px-4 md:px-8 bg-[#003054] bg-[url('images/Image.png')] bg-cover bg-center" style="background-image:linear-gradient(rgba(0,48,84,0.85),rgba(0,48,84,0.95)),url('images/Image.png');">
+
+    <!-- HERO CORE CONTAINER -->
+<div class="w-full max-w-[1204px] mx-auto text-left flex flex-col gap-[11px] mt-4 pb-8 md:pb-0">
     
     <!-- 1. BREADCRUMB LAYER (Inter Regular, Size: 12px, Line Height: 100%) -->
-    <div class="font-['Inter'] text-[12px] leading-none text-[#FFFFFF]/[0.56] tracking-normal">
+    <div class="font-['Newsreader'] text-[12px] leading-none text-[#FFFFFF]/[0.56] tracking-normal">
         Home / Areas of Work / <span class="text-[#FFFFFF]/[0.38]">Governance Innovation</span>
     </div>
 
@@ -129,91 +128,66 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <!-- <div class="bg-[#18909C] w-[40px] h-[3px] rounded-[2px] my-1"></div> -->
 
     <!-- 4. DESCRIPTION (Inter Medium, Size: 17px, Line Height: 28px, Color: #FFFFFFB8) -->
-    <!-- <p class="font-['Inter'] font-medium text-[17px] leading-[28px] text-[#FFFFFF]/[0.72] max-w-[540px]">
+    <!-- <p class="font-['Newsreader'] font-medium text-[17px] leading-[28px] text-[#FFFFFF]/[0.72] max-w-[540px]">
         Advancing transparent, accountable, and citizen-centric public institutions.<br>
         Building governance systems that deliver and endure.
     </p> -->
 </div>
+</section>
 
-        <!-- BOTTOM 4 CATEGORY BLUR BOX MATRIX (Height: 151.78px, Background: #001430B2) -->
-<div style="background: rgba(0, 20, 48, 0.7); backdrop-filter: blur(4px); border-top: 1px solid rgba(255, 255, 255, 0.16);" 
-     class="w-full h-auto md:h-[151.78px] py-4 md:py-0 px-4 md:px-[360px] flex items-center justify-center select-none">
-    
-    <div class="w-full max-w-[1200px] grid grid-cols-2 md:grid-cols-4 h-full items-center">
-        
-        <!-- CAT ITEM 1 -->
-        <div class="h-full pt-[28px] pr-[24px] pb-[28px] pl-[24px] flex items-start gap-4 border-r border-white/[0.09]">
-            <!-- Dynamic Icon Slot (Width: 48px, Height: 48px, Background: #18909C26, Border: #18909C8C) -->
-            <div style="background-color: rgba(24, 144, 156, 0.15); border: 2px solid rgba(24, 144, 156, 0.55);" 
-                 class="w-[48px] h-[48px] rounded-[24px] flex items-center justify-center shrink-0 overflow-hidden">
-                <img src="icons/SVG (29).png" alt="Better Governance Icon" class="w-[20px] h-[20px] object-contain">
-            </div>
-            <div class="text-left">
-                <!-- Title: Manrope 800, Size: 12.5px, Color: #FFFFFF -->
-                <h5 class="font-['Manrope'] font-extrabold text-[12.5px] leading-none tracking-[0.5px] text-white uppercase mb-1.5">
-                    Better Governance
-                </h5>
-                <!-- Desc: Inter 400, Size: 12px, Line Height: 18.6px, Color: #FFFFFF80 -->
-                <p class="font-['Inter'] text-[12px] leading-[18.6px] text-white/50">
-                    Evidence-based, transparent, and citizen-centered public services.
-                </p>
-            </div>
-        </div>
+<!-- CAT STRIP SECTION -->
+<section class="w-full bg-[#003054] border-b border-[#FFFFFF14] py-4 md:h-[115px] md:py-0 flex items-center justify-center px-4 md:px-8">
+  <div class="w-full max-w-[1204px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-4 md:gap-y-0 items-start md:items-center">
 
-        <!-- CAT ITEM 2 -->
-        <div class="h-full pt-[28px] pr-[24px] pb-[28px] pl-[24px] flex items-start gap-4 border-r border-white/[0.09]">
-            <div style="background-color: rgba(24, 144, 156, 0.15); border: 2px solid rgba(24, 144, 156, 0.55);" 
-                 class="w-[48px] h-[48px] rounded-[24px] flex items-center justify-center shrink-0 overflow-hidden">
-                <img src="icons/SVG (30).png" alt="Stronger Institutions Icon" class="w-[20px] h-[20px] object-contain">
-            </div>
-            <div class="text-left">
-                <h5 class="font-['Manrope'] font-extrabold text-[12.5px] leading-none tracking-[0.5px] text-white uppercase mb-1.5">
-                    Stronger Institutions
-                </h5>
-                <p class="font-['Inter'] text-[12px] leading-[18.6px] text-white/50">
-                    Reform assistance government, regulatory bodies and public agencies.
-                </p>
-            </div>
-        </div>
-
-        <!-- CAT ITEM 3 -->
-        <div class="h-full pt-[28px] pr-[24px] pb-[28px] pl-[24px] flex items-start gap-4 border-r border-white/[0.09]">
-            <div style="background-color: rgba(24, 144, 156, 0.15); border: 2px solid rgba(24, 144, 156, 0.55);" 
-                 class="w-[48px] h-[48px] rounded-[24px] flex items-center justify-center shrink-0 overflow-hidden">
-                <img src="icons/SVG (31).png" alt="Sustainable Impact Icon" class="w-[20px] h-[20px] object-contain">
-            </div>
-            <div class="text-left">
-                <h5 class="font-['Manrope'] font-extrabold text-[12.5px] leading-none tracking-[0.5px] text-white uppercase mb-1.5">
-                    Sustainable Impact
-                </h5>
-                <p class="font-['Inter'] text-[12px] leading-[18.6px] text-white/50">
-                    Reforms that outlast any individual project or politics cycle.
-                </p>
-            </div>
-        </div>
-
-        <!-- CAT ITEM 4 -->
-        <div class="h-full pt-[28px] pr-[24px] pb-[28px] pl-[24px] flex items-start gap-4">
-            <div style="background-color: rgba(24, 144, 156, 0.15); border: 2px solid rgba(24, 144, 156, 0.55);" 
-                 class="w-[48px] h-[48px] rounded-[24px] flex items-center justify-center shrink-0 overflow-hidden">
-                <img src="icons/SVG (32).png" alt="Accountability Icon" class="w-[20px] h-[20px] object-contain">
-            </div>
-            <div class="text-left">
-                <h5 class="font-['Manrope'] font-extrabold text-[12.5px] leading-none tracking-[0.5px] text-white uppercase mb-1.5">
-                    Accountability & Integrity
-                </h5>
-                <p class="font-['Inter'] text-[12px] leading-[18.6px] text-white/50">
-                    Building trust between citizens, institutions, and the state.
-                </p>
-            </div>
-        </div>
-
+    <div class="flex-1 flex items-start gap-3 px-3 md:px-6 border-r border-[#FFFFFF14] py-2 md:py-0">
+      <div class="w-[30px] h-[30px] md:w-[36px] md:h-[36px] rounded-[8px] bg-[#FFFFFF14] flex items-center justify-center shrink-0">
+        <img src="icons/SVG (29).png" alt="Better Governance" class="w-4 h-4 md:w-5 md:h-5 object-contain">
+      </div>
+      <div class="flex flex-col">
+        <span class="text-[9px] md:text-[11px] font-semibold text-[#8FB2C9] uppercase tracking-[0.5px]">Focus Area</span>
+        <span class="text-[12px] md:text-[15px] font-bold text-white leading-snug">Better Governance</span>
+        <span class="text-[11px] text-white/50 hidden md:block">Evidence-based, citizen-centered services.</span>
+      </div>
     </div>
-</div>
-    </section>
 
-   <section class="w-full py-[48px] md:py-[72px] px-4 md:px-[360px] bg-white select-none flex items-center justify-center">
-    <div class="w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-[40px] md:gap-[72px]">
+    <div class="flex-1 flex items-start gap-3 px-3 md:px-6 border-r border-[#FFFFFF14] py-2 md:py-0">
+      <div class="w-[30px] h-[30px] md:w-[36px] md:h-[36px] rounded-[8px] bg-[#FFFFFF14] flex items-center justify-center shrink-0">
+        <img src="icons/SVG (30).png" alt="Stronger Institutions" class="w-4 h-4 md:w-5 md:h-5 object-contain">
+      </div>
+      <div class="flex flex-col">
+        <span class="text-[9px] md:text-[11px] font-semibold text-[#8FB2C9] uppercase tracking-[0.5px]">Focus Area</span>
+        <span class="text-[12px] md:text-[15px] font-bold text-white leading-snug">Stronger Institutions</span>
+        <span class="text-[11px] text-white/50 hidden md:block">Reform for regulatory bodies & agencies.</span>
+      </div>
+    </div>
+
+    <div class="flex-1 flex items-start gap-3 px-3 md:px-6 border-r border-[#FFFFFF14] py-2 md:py-0">
+      <div class="w-[30px] h-[30px] md:w-[36px] md:h-[36px] rounded-[8px] bg-[#FFFFFF14] flex items-center justify-center shrink-0">
+        <img src="icons/SVG (31).png" alt="Sustainable Impact" class="w-4 h-4 md:w-5 md:h-5 object-contain">
+      </div>
+      <div class="flex flex-col">
+        <span class="text-[9px] md:text-[11px] font-semibold text-[#8FB2C9] uppercase tracking-[0.5px]">Focus Area</span>
+        <span class="text-[12px] md:text-[15px] font-bold text-white leading-snug">Sustainable Impact</span>
+        <span class="text-[11px] text-white/50 hidden md:block">Reforms that outlast any project cycle.</span>
+      </div>
+    </div>
+
+    <div class="flex-1 flex items-start gap-3 px-3 md:px-6 py-2 md:py-0">
+      <div class="w-[30px] h-[30px] md:w-[36px] md:h-[36px] rounded-[8px] bg-[#FFFFFF14] flex items-center justify-center shrink-0">
+        <img src="icons/SVG (32).png" alt="Accountability" class="w-4 h-4 md:w-5 md:h-5 object-contain">
+      </div>
+      <div class="flex flex-col">
+        <span class="text-[9px] md:text-[11px] font-semibold text-[#8FB2C9] uppercase tracking-[0.5px]">Focus Area</span>
+        <span class="text-[12px] md:text-[15px] font-bold text-white leading-snug">Accountability & Integrity</span>
+        <span class="text-[11px] text-white/50 hidden md:block">Building trust between citizens & state.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+   <section class="w-full py-[48px] md:py-[72px] px-4 md:px-8 bg-white select-none flex items-center justify-center">
+    <div class="w-full max-w-[1204px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[40px] md:gap-[72px]">
         
         <div class="w-full flex flex-col text-left">
             <h3 class="font-['Manrope'] font-extrabold text-[22px] leading-none tracking-[0.88px] text-[#003054] uppercase mb-[12px]">
@@ -221,7 +195,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             </h3>
             <div class="bg-[#18909C] w-full h-[2px] mb-[24px]"></div>
             
-            <div class="font-['Inter'] text-[15px] leading-[27.3px] text-[#4B5563] flex flex-col gap-5 text-justify">
+            <div class="font-['Newsreader'] text-[15px] leading-[27.3px] text-[#4B5563] flex flex-col gap-5 text-justify">
                 <p>
                     GIET advances governance innovation and public service reform to enable transparent, accountable, and citizen-responsive institutions across Bangladesh. We partner with governments, development partners, and civil society to identify governance gaps, modernize service delivery frameworks, and align national systems with international best practices — fostering an environment grounded in integrity, accountability, and performance.
                 </p>
@@ -249,7 +223,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (33).png" alt="Service Delivery Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
-            <p class="font-['Inter'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
+            <p class="font-['Newsreader'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
                 Designing and implementing service delivery standards and citizen charters across public institutions.
             </p>
         </div>
@@ -259,7 +233,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (34).png" alt="Grievance Redress Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
-            <p class="font-['Inter'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
+            <p class="font-['Newsreader'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
                 Improving grievance redress and citizen feedback mechanisms at national and local government level.
             </p>
         </div>
@@ -269,7 +243,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (35).png" alt="Process Mapping Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
-            <p class="font-['Inter'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
+            <p class="font-['Newsreader'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
                 Conducting service process mapping and developing improvement plans with implementation support.
             </p>
         </div>
@@ -279,7 +253,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (36).png" alt="Performance Management Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
-            <p class="font-['Inter'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
+            <p class="font-['Newsreader'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
                 Strengthening institutional performance management, monitoring systems, and reporting frameworks.
             </p>
         </div>
@@ -289,7 +263,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (37).png" alt="Ethics & Integrity Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
-            <p class="font-['Inter'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
+            <p class="font-['Newsreader'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
                 Promoting ethics, integrity, anti-corruption awareness, and responsible conduct within institutions.
             </p>
         </div>
@@ -299,7 +273,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (38).png" alt="Capacity Building Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
-            <p class="font-['Inter'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
+            <p class="font-['Newsreader'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
                 Building capacity of civil servants through certified governance, digital, and policy design training.
             </p>
         </div>
@@ -309,7 +283,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (39).png" alt="Stakeholder Dialogue Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
-            <p class="font-['Inter'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
+            <p class="font-['Newsreader'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
                 Facilitating multi-stakeholder consultations, national dialogues, and public-private engagement platforms.
             </p>
         </div>
@@ -319,7 +293,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (40).png" alt="Policy Briefs Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
-            <p class="font-['Inter'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
+            <p class="font-['Newsreader'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
                 Preparing policy briefs, diagnostic reports, and advocacy papers for government and development partners.
             </p>
         </div>
@@ -329,7 +303,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
             <div class="bg-[#003054] w-[36px] h-[36px] rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="icons/SVG (49).png" alt="Reform Roadmaps Icon" class="w-[16px] h-[16px] object-contain brightness-0 invert">
             </div>
-            <p class="font-['Inter'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
+            <p class="font-['Newsreader'] text-[15px] leading-[23px] text-[#4B5563] text-justify">
                 Supporting implementation of governance reform roadmaps with embedded advisory and change management.
             </p>
         </div>
@@ -343,23 +317,23 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 <section style="border-top: 1px solid #E4EAF0;"
          class="w-full py-[48px] md:py-[72px] bg-[#F7F9FB] text-center select-none flex flex-col items-center justify-center">
 
-    <div class="w-full max-w-[1200px] px-4 md:px-[48px] flex flex-col gap-[52px] items-center">
+    <div class="w-full max-w-[1204px] mx-auto flex flex-col gap-[52px] items-center">
         
         <!-- SECTION HEADER LINE DESIGN -->
         <div class="flex items-center justify-center gap-4 w-full">
-            <!-- Horizontal Divider Left: Width: 387.5px, Height: 2px, Background: #18909C -->
-            <div class="bg-[#18909C] w-[387.5px] h-[2px] shrink-0"></div>
-            
+            <!-- Horizontal Divider Left -->
+            <div class="bg-[#18909C] flex-1 h-[2px]"></div>
+
             <h2 class="font-['Manrope'] font-extrabold text-[22px] leading-none tracking-[0.88px] text-[#003054] uppercase whitespace-nowrap">
                 Products & Solutions
             </h2>
-            
-            <!-- Horizontal Divider Right: Width: 387.5px, Height: 2px, Background: #18909C -->
-            <div class="bg-[#18909C] w-[387.5px] h-[2px] shrink-0"></div>
+
+            <!-- Horizontal Divider Right -->
+            <div class="bg-[#18909C] flex-1 h-[2px]"></div>
         </div>
 
         <!-- 7-COLUMN FIXED GRID METRIC ARRAY (Total Width: 1104px) -->
-        <div class="w-full max-w-[1104px] grid grid-cols-3 md:grid-cols-7 gap-[16px] md:gap-[20px]">
+        <div class="w-full max-w-[1204px] mx-auto grid grid-cols-3 md:grid-cols-7 gap-[16px] md:gap-[20px]">
             
             <!-- COL 1 -->
             <div class="px-2 pb-[14.93px] flex flex-col items-center text-center gap-[11px]">
@@ -372,7 +346,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                     Policy Reviews & Diagnostics
                 </h4>
                 <!-- Desc: Inter 400, Size: 12px, Line Height: 18.6px, Color: #6B7280 -->
-                <p class="font-['Inter'] text-[12px] leading-[18.6px] text-[#6B7280]">
+                <p class="font-['Newsreader'] text-[12px] leading-[18.6px] text-[#6B7280]">
                     Comprehensive analysis to identify governance gaps, bottlenecks, and reform priorities.
                 </p>
             </div>
@@ -385,7 +359,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 <h4 class="font-['Manrope'] font-extrabold text-[11.5px] leading-[14.95px] tracking-[0.46px] text-[#003054] w-full px-[10px] pb-[0.91px] uppercase flex items-center justify-center text-center">
                     Citizen Charter Design
                 </h4>
-                <p class="font-['Inter'] text-[12px] leading-[18.6px] text-[#6B7280]">
+                <p class="font-['Newsreader'] text-[12px] leading-[18.6px] text-[#6B7280]">
                     Standardized service charters with measurable commitments and monitoring frameworks.
                 </p>
             </div>
@@ -398,7 +372,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 <h4 class="font-['Manrope'] font-extrabold text-[11.5px] leading-[14.95px] tracking-[0.46px] text-[#003054] w-full px-[10px] pb-[0.91px] uppercase flex items-center justify-center text-center">
                     Grievance Redress Systems
                 </h4>
-                <p class="font-['Inter'] text-[12px] leading-[18.6px] text-[#6B7280]">
+                <p class="font-['Newsreader'] text-[12px] leading-[18.6px] text-[#6B7280]">
                     Digital and institutional grievance mechanisms that close the loop between citizens and government.
                 </p>
             </div>
@@ -411,7 +385,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 <h4 class="font-['Manrope'] font-extrabold text-[11.5px] leading-[14.95px] tracking-[0.46px] text-[#003054] w-full px-[10px] pb-[0.91px] uppercase flex items-center justify-center text-center">
                     Performance Management
                 </h4>
-                <p class="font-['Inter'] text-[12px] leading-[18.6px] text-[#6B7280]">
+                <p class="font-['Newsreader'] text-[12px] leading-[18.6px] text-[#6B7280]">
                     KPI frameworks, dashboards, and annual performance agreements for public institutions.
                 </p>
             </div>
@@ -424,7 +398,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 <h4 class="font-['Manrope'] font-extrabold text-[11.5px] leading-[14.95px] tracking-[0.46px] text-[#003054] w-full px-[10px] pb-[0.91px] uppercase flex items-center justify-center text-center">
                     Anti-Corruption Programmes
                 </h4>
-                <p class="font-['Inter'] text-[12px] leading-[18.6px] text-[#6B7280]">
+                <p class="font-['Newsreader'] text-[12px] leading-[18.6px] text-[#6B7280]">
                     Integrity frameworks, risk assessments, and awareness campaigns targeting high-vulnerability areas.
                 </p>
             </div>
@@ -437,7 +411,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 <h4 class="font-['Manrope'] font-extrabold text-[11.5px] leading-[14.95px] tracking-[0.46px] text-[#003054] w-full px-[10px] pb-[0.91px] uppercase flex items-center justify-center text-center">
                     Capacity Building & Training
                 </h4>
-                <p class="font-['Inter'] text-[12px] leading-[18.6px] text-[#6B7280]">
+                <p class="font-['Newsreader'] text-[12px] leading-[18.6px] text-[#6B7280]">
                     Certified programmes for civil servants on governance, digital tools, and policy design.
                 </p>
             </div>
@@ -450,7 +424,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 <h4 class="font-['Manrope'] font-extrabold text-[11.5px] leading-[14.95px] tracking-[0.46px] text-[#003054] w-full px-[10px] pb-[0.91px] uppercase flex items-center justify-center text-center">
                     Stakeholder Dialogue Platforms
                 </h4>
-                <p class="font-['Inter'] text-[12px] leading-[18.6px] text-[#6B7280]">
+                <p class="font-['Newsreader'] text-[12px] leading-[18.6px] text-[#6B7280]">
                     National forums and multi-stakeholder consultations that translate evidence into shared commitments.
                 </p>
             </div>
@@ -462,31 +436,31 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
    <!-- ========================================================================= -->
 <!-- 4. SECTION - PROJECTS (Width: 1920px, Height: 682.19px, Background: #FFFFFF) -->
 <!-- ========================================================================= -->
-<section class="w-full py-[48px] md:py-[80px] px-4 md:px-[360px] bg-white select-none flex items-center justify-center">
+<section class="w-full py-[48px] md:py-[80px] px-4 md:px-8 bg-white select-none flex items-center justify-center">
     <!-- Container Matrix (Width: 1200px, Padding-X: 48px, Gap: 44px) -->
- <div class="w-full max-w-[1200px] px-4 md:px-[48px] flex flex-col gap-[44px]">
+ <div class="w-full max-w-[1204px] mx-auto flex flex-col gap-[44px]">
         
         <!-- LIST HEADER ROW MAP (Gray border line removed) -->
         <div class="w-full flex justify-between items-end pb-4">
             <div class="text-left">
                 <!-- Related Projects: Inter 600, Size: 11px, Letter-Spacing: 1.76px, Color: #0E606B -->
-                <span class="font-['Inter'] font-semibold text-[11px] leading-none tracking-[1.76px] text-[#0E606B] uppercase inline-block mb-2">
+                <span class="font-['Newsreader'] font-semibold text-[11px] leading-none tracking-[1.76px] text-[#0E606B] uppercase inline-block mb-2">
                     Related Projects
                 </span>
                 <!-- Title: Merriweather 800, Size: 36px, Line-Height: 42.48px, Letter-Spacing: -0.36px, Color: #0F172A -->
-                <h2 class="font-['Merriweather'] font-extrabold text-[36px] leading-[42.48px] tracking-[-0.36px] text-[#003054]">
+                <h2 class="font-['Newsreader'] font-extrabold text-[36px] leading-[42.48px] tracking-[-0.36px] text-[#003054]">
                     Work We Have Delivered
                 </h2>
             </div>
             <!-- All Projects: Inter 600, Size: 13px, Color: #003054 -->
            <a href="#all-projects" 
-   class="font-['Inter'] font-semibold text-[13px] leading-none text-[#003054] border-b-2 border-[#003054] pb-[5px] transition-all">
+   class="font-['Newsreader'] font-semibold text-[13px] leading-none text-[#003054] border-b-2 border-[#003054] pb-[5px] transition-all">
     All Projects →
 </a>
         </div>
 
         <!-- 3-CARDS GRID ARRAY (Width: 1104px, Gap: 20px) -->
-        <div class="w-full max-w-[1104px] grid grid-cols-1 md:grid-cols-3 gap-[20px]">
+        <div class="w-full max-w-[1204px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-[20px]">
             
             <!-- CARD 1 -->
             <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden flex flex-col bg-white hover:shadow-md transition-all">
@@ -510,7 +484,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                             Strengthening Citizen-Centric Public Service Delivery in Bangladesh
                         </h4>
                         <!-- Card Desc: Inter 400, Size: 13px, Line-Height: 21px, Color: #1A1A1A -->
-                        <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 13px; line-height: 21px;" 
+                        <p class="font-['Newsreader']" style="font-family: 'Newsreader',serif; font-weight: 400; font-size: 13px; line-height: 21px;" 
                            class="text-[#1A1A1A] text-justify line-clamp-3">
                             Multi-district diagnostic across six ministries, delivering grievance redress recommendations and a digital service transformation roadmap with a 3-year implementation plan.
                         </p>
@@ -518,11 +492,11 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                     <!-- Footer Info Segment -->
                     <div class="flex justify-between items-center pt-4 border-t border-gray-100 mt-3">
                         <!-- Completed: Inter 400, Size: 11.5px, Color: #6B7280 -->
-                        <span class="font-['Inter'] text-[11.5px] leading-none text-[#6B7280]">
+                        <span class="font-['Newsreader'] text-[11.5px] leading-none text-[#6B7280]">
                             Completed · 2025
                         </span>
                         <!-- View: Inter 600, Size: 12px, Color: #A80C18 -->
-                        <span class="font-['Inter'] font-semibold text-[12px] leading-none text-[#A80C18] cursor-pointer hover:underline">
+                        <span class="font-['Newsreader'] font-semibold text-[12px] leading-none text-[#A80C18] cursor-pointer hover:underline">
                             View →
                         </span>
                     </div>
@@ -547,16 +521,16 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                             class="text-[#0F172A] mb-2 line-clamp-2">
                             Anti-Corruption Diagnostic & Integrity Framework for Public Procurement
                         </h4>
-                        <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 13px; line-height: 21px;" 
+                        <p class="font-['Newsreader']" style="font-family: 'Newsreader',serif; font-weight: 400; font-size: 13px; line-height: 21px;" 
                            class="text-[#1A1A1A] text-justify line-clamp-3">
                             Comprehensive assessment of public procurement workflows to implement anti-corruption guidelines, mitigate system vulnerabilities, and design real-time monitoring solutions.
                         </p>
                     </div>
                     <div class="flex justify-between items-center pt-4 border-t border-gray-100 mt-3">
-                        <span class="font-['Inter'] text-[11.5px] leading-none text-[#6B7280]">
+                        <span class="font-['Newsreader'] text-[11.5px] leading-none text-[#6B7280]">
                             Completed · 2024
                         </span>
-                        <span class="font-['Inter'] font-semibold text-[12px] leading-none text-[#A80C18] cursor-pointer hover:underline">
+                        <span class="font-['Newsreader'] font-semibold text-[12px] leading-none text-[#A80C18] cursor-pointer hover:underline">
                             View →
                         </span>
                     </div>
@@ -581,16 +555,16 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                             class="text-[#0F172A] mb-2 line-clamp-2">
                             Citizen Charter Development & Support for 20 Ministries
                         </h4>
-                        <p style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 13px; line-height: 21px;" 
+                        <p class="font-['Newsreader']" style="font-family: 'Newsreader',serif; font-weight: 400; font-size: 13px; line-height: 21px;" 
                            class="text-[#1A1A1A] text-justify line-clamp-3">
                             Assisting the operational rollout of streamlined performance indicators, designing visual citizen charters, and embedding responsive feedback mechanisms at ministerial touchpoints.
                         </p>
                     </div>
                     <div class="flex justify-between items-center pt-4 border-t border-gray-100 mt-3">
-                        <span class="font-['Inter'] text-[11.5px] leading-none text-[#6B7280]">
+                        <span class="font-['Newsreader'] text-[11.5px] leading-none text-[#6B7280]">
                             Completed · 2024
                         </span>
-                        <span class="font-['Inter'] font-semibold text-[12px] leading-none text-[#A80C18] cursor-pointer hover:underline">
+                        <span class="font-['Newsreader'] font-semibold text-[12px] leading-none text-[#A80C18] cursor-pointer hover:underline">
                             View →
                         </span>
                     </div>
@@ -604,31 +578,31 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
    <!-- ========================================================================= -->
 <!-- 5. SECTION - EXPERTS (Width: 1920px, Height: 592.59px, Background: #FFFFFF) -->
 <!-- ========================================================================= -->
-<section class="w-full py-[48px] md:py-[80px] px-4 md:px-[360px] bg-white select-none flex items-center justify-center">
+<section class="w-full py-[48px] md:py-[80px] px-4 md:px-8 bg-white select-none flex items-center justify-center">
     <!-- Container Matrix (Width: 1200px, Padding-X: 48px, Gap: 44px) -->
-    <div class="w-full max-w-[1200px] px-4 md:px-[48px] flex flex-col gap-[44px]">
+    <div class="w-full max-w-[1204px] mx-auto flex flex-col gap-[44px]">
         
         <!-- LIST HEADER ROW MAP -->
         <div class="w-full flex justify-between items-end pb-4">
             <div class="text-left">
                 <!-- Our People: Inter 600, Size: 11px, Letter-Spacing: 1.76px, Color: #0E606B -->
-                <span class="font-['Inter'] font-semibold text-[11px] leading-none tracking-[1.76px] text-[#0E606B] uppercase block mb-1">
+                <span class="font-['Newsreader'] font-semibold text-[11px] leading-none tracking-[1.76px] text-[#0E606B] uppercase block mb-1">
                     Our People
                 </span>
                 <!-- Title: Merriweather 800, Size: 36px, Line-Height: 42.48px, Letter-Spacing: -0.36px, Color: #0F172A -->
-                <h2 class="font-['Merriweather'] font-extrabold text-[36px] leading-[42.48px] tracking-[-0.36px] text-[#003054]">
+                <h2 class="font-['Newsreader'] font-extrabold text-[36px] leading-[42.48px] tracking-[-0.36px] text-[#003054]">
                     Experts in This Area
                 </h2>
             </div>
             <!-- All Experts: Inter 600, Size: 13px, Color: #003054, Border-Bottom: 2px -->
             <a href="#all-experts" 
-               class="font-['Inter'] font-semibold text-[13px] leading-none text-[#003054] border-b-2 border-[#003054] pb-[5px] transition-all">
+               class="font-['Newsreader'] font-semibold text-[13px] leading-none text-[#003054] border-b-2 border-[#003054] pb-[5px] transition-all">
                 All Experts →
             </a>
         </div>
 
         <!-- 4-EXPERT CARDS ARRAY GRID (Width: 1104px, Columns: 4, Gap: 18px) -->
-        <div class="w-full max-w-[1104px] grid grid-cols-2 md:grid-cols-4 gap-[18px]">
+        <div class="w-full max-w-[1204px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-[18px]">
             
             <!-- EXPERT 1 -->
             <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
@@ -640,11 +614,11 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 <div class="p-4 flex flex-col gap-1 flex-grow justify-between">
                     <div>
                         <!-- Name: Merriweather 800, Size: 15px, Color: #0F172A -->
-                        <h4 class="font-['Merriweather'] font-extrabold text-[15px] leading-none text-[#0F172A] mb-1">
+                        <h4 class="font-['Newsreader'] font-extrabold text-[15px] leading-none text-[#0F172A] mb-1">
                             Dr. Aminur Rahman
                         </h4>
                         <!-- Designation: Inter 400, Size: 12px, Line-Height: 16.8px, Color: #6B7280 -->
-                        <p class="font-['Inter'] text-[12px] leading-[16.8px] text-[#6B7280] min-h-[34px] line-clamp-2">
+                        <p class="font-['Newsreader'] text-[12px] leading-[16.8px] text-[#6B7280] min-h-[34px] line-clamp-2">
                             Chairman - Public Administration & Anti-Corruption
                         </p>
                     </div>
@@ -667,10 +641,10 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 </div>
                 <div class="p-4 flex flex-col gap-1 flex-grow justify-between">
                     <div>
-                        <h4 class="font-['Merriweather'] font-extrabold text-[15px] leading-none text-[#0F172A] mb-1">
+                        <h4 class="font-['Newsreader'] font-extrabold text-[15px] leading-none text-[#0F172A] mb-1">
                             Dr. Nusrat Jahan
                         </h4>
-                        <p class="font-['Inter'] text-[12px] leading-[16.8px] text-[#6B7280] min-h-[34px] line-clamp-2">
+                        <p class="font-['Newsreader'] text-[12px] leading-[16.8px] text-[#6B7280] min-h-[34px] line-clamp-2">
                             Executive Director - Governance Reform
                         </p>
                     </div>
@@ -692,10 +666,10 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 </div>
                 <div class="p-4 flex flex-col gap-1 flex-grow justify-between">
                     <div>
-                        <h4 class="font-['Merriweather'] font-extrabold text-[15px] leading-none text-[#0F172A] mb-1">
+                        <h4 class="font-['Newsreader'] font-extrabold text-[15px] leading-none text-[#0F172A] mb-1">
                             Ms. Fatema Begum
                         </h4>
-                        <p class="font-['Inter'] text-[12px] leading-[16.8px] text-[#6B7280] min-h-[34px] line-clamp-2">
+                        <p class="font-['Newsreader'] text-[12px] leading-[16.8px] text-[#6B7280] min-h-[34px] line-clamp-2">
                             Director, Programmes - Digital & Service Reform
                         </p>
                     </div>
@@ -717,10 +691,10 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 </div>
                 <div class="p-4 flex flex-col gap-1 flex-grow justify-between">
                     <div>
-                        <h4 class="font-['Merriweather'] font-extrabold text-[15px] leading-none text-[#0F172A] mb-1">
+                        <h4 class="font-['Newsreader'] font-extrabold text-[15px] leading-none text-[#0F172A] mb-1">
                             Mr. Kamal Hossain
                         </h4>
-                        <p class="font-['Inter'] text-[12px] leading-[16.8px] text-[#6B7280] min-h-[34px] line-clamp-2">
+                        <p class="font-['Newsreader'] text-[12px] leading-[16.8px] text-[#6B7280] min-h-[34px] line-clamp-2">
                             Director of Research - Institutional Analysis
                         </p>
                     </div>
@@ -741,18 +715,18 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
        <footer class="w-full relative select-none flex flex-col justify-between pt-[60px] bg-[#003054]">
     
-    <div class="w-full max-w-[1104px] mx-auto flex flex-col md:flex-row justify-between items-start pb-[40px] px-4 md:px-0 gap-8 md:gap-0">
+    <div class="w-full max-w-[1204px] mx-auto flex flex-col md:flex-row justify-between items-start pb-[40px] px-4 md:px-0 gap-8 md:gap-0">
         
         <div class="w-full md:w-[500px] flex flex-col text-left">
             <div class="w-[76px] h-[50px] bg-white rounded-[5px] p-1 flex items-center justify-center mb-4 overflow-hidden">
                 <img class="max-h-full max-w-full object-contain" src="images/Frame 26.png" alt="GIET Logo">
             </div>
             
-            <h3 class="font-['Inter'] text-[11px] leading-[16.5px] text-[#FFFFFFCC] mb-4 uppercase">
+            <h3 class="font-['Newsreader'] text-[11px] leading-[16.5px] text-[#FFFFFFCC] mb-4 uppercase">
     Foundation for Governance Innovation &<br>Economic Transformation
 </h3>
             
-<p class="font-['Inter'] text-[13px] leading-[23.4px] text-[#FFFFFFCC] mb-6 max-w-[440px]">
+<p class="font-['Newsreader'] text-[13px] leading-[23.4px] text-[#FFFFFFCC] mb-6 max-w-[440px]">
     A non-partisan, non-profit think tank advancing evidence-based governance reform and economic transformation in Bangladesh and beyond.
 </p>
             
@@ -773,7 +747,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
         </div>
 
         <div class="w-[320px] flex flex-col text-left pt-[24px]">
-           <h4 class="font-['Inter'] font-bold text-[12px] tracking-[0.15em] text-white/50 uppercase mb-5 block">
+           <h4 class="font-['Newsreader'] font-bold text-[12px] tracking-[0.15em] text-white/50 uppercase mb-5 block">
     Contact
 </h4>
             
@@ -800,8 +774,8 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     </div>
 
   <!-- BOTTOM RECONCILIATION STRIP (100% Color & Layout Reconciled with #003054 Background) -->
-<div class="bg-[#003054] w-full h-auto py-[20px] px-4 md:px-4 md:px-[408px] flex justify-center items-center border-t border-white/10">
-    <div class="w-full max-w-[1104px] flex flex-col md:flex-row justify-between items-center text-[13px] gap-2 md:gap-0">
+<div class="bg-[#003054] w-full h-auto py-[20px] px-4 md:px-4 md:px-8 flex justify-center items-center border-t border-white/10">
+    <div class="w-full max-w-[1204px] mx-auto flex flex-col md:flex-row justify-between items-center text-[13px] gap-2 md:gap-0">
         
         <!-- Copyright Stamp with Light Grey Text Matching image_f59846.png -->
         <span class="text-[#BBCDDE] opacity-60 font-normal">
@@ -822,6 +796,9 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
     <script src="main.js"></script>
 </body>
 </html>
+
+
+
 
 
 
