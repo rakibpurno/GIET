@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -453,7 +453,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 </h2>
             </div>
             <!-- All Projects: Inter 600, Size: 13px, Color: #003054 -->
-           <a href="#all-projects" 
+           <a href="projects.html" 
    class="font-['Newsreader'] font-semibold text-[13px] leading-none text-[#003054] border-b-2 border-[#003054] pb-[5px] transition-all">
     All Projects →
 </a>
@@ -496,9 +496,9 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                             Completed · 2025
                         </span>
                         <!-- View: Inter 600, Size: 12px, Color: #A80C18 -->
-                        <span class="font-['Newsreader'] font-semibold text-[12px] leading-none text-[#A80C18] cursor-pointer hover:underline">
+                        <a href="projectdetails.html" class="font-['Newsreader'] font-semibold text-[12px] leading-none text-[#A80C18] hover:underline">
                             View →
-                        </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -530,9 +530,9 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                         <span class="font-['Newsreader'] text-[11.5px] leading-none text-[#6B7280]">
                             Completed · 2024
                         </span>
-                        <span class="font-['Newsreader'] font-semibold text-[12px] leading-none text-[#A80C18] cursor-pointer hover:underline">
+                        <a href="projectdetails.html" class="font-['Newsreader'] font-semibold text-[12px] leading-none text-[#A80C18] hover:underline">
                             View →
-                        </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -564,9 +564,9 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                         <span class="font-['Newsreader'] text-[11.5px] leading-none text-[#6B7280]">
                             Completed · 2024
                         </span>
-                        <span class="font-['Newsreader'] font-semibold text-[12px] leading-none text-[#A80C18] cursor-pointer hover:underline">
+                        <a href="projectdetails.html" class="font-['Newsreader'] font-semibold text-[12px] leading-none text-[#A80C18] hover:underline">
                             View →
-                        </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -595,7 +595,7 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                 </h2>
             </div>
             <!-- All Experts: Inter 600, Size: 13px, Color: #003054, Border-Bottom: 2px -->
-            <a href="#all-experts" 
+            <a href="experts.html" 
                class="font-['Newsreader'] font-semibold text-[13px] leading-none text-[#003054] border-b-2 border-[#003054] pb-[5px] transition-all">
                 All Experts →
             </a>
@@ -603,42 +603,35 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
 
         <!-- 4-EXPERT CARDS ARRAY GRID (Width: 1104px, Columns: 4, Gap: 18px) -->
         <div class="w-full max-w-[1204px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-[18px]">
-            
+
             <!-- EXPERT 1 -->
-            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
-                <!-- Image Wrapper: Width: 260.5px, Height: 200px -->
+            <a href="expertdetails.html" class="group w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
                 <div class="w-full h-[200px] bg-[#EEF3F8] overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=300" alt="Expert Profile Portrait" class="w-full h-full object-cover object-top">
                 </div>
-                <!-- Card Content Frame -->
+                <div class="h-[4px] w-full overflow-hidden"><div class="h-full w-0 group-hover:w-full transition-all duration-500" style="background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div></div>
                 <div class="p-4 flex flex-col gap-1 flex-grow justify-between">
                     <div>
-                        <!-- Name: Merriweather 800, Size: 15px, Color: #0F172A -->
                         <h4 class="font-['Newsreader'] font-extrabold text-[15px] leading-none text-[#0F172A] mb-1">
                             Dr. Aminur Rahman
                         </h4>
-                        <!-- Designation: Inter 400, Size: 12px, Line-Height: 16.8px, Color: #6B7280 -->
                         <p class="font-['Newsreader'] text-[12px] leading-[16.8px] text-[#6B7280] min-h-[34px] line-clamp-2">
                             Chairman - Public Administration & Anti-Corruption
                         </p>
                     </div>
-                    <!-- Tags Area: Background: #E8F6F7, Border: 1px solid #0E606B33 (20% Opacity) -->
                     <div class="flex gap-1.5 mt-1">
-                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">
-                            Governance
-                        </span>
-                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">
-                            Integrity
-                        </span>
+                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">Governance</span>
+                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">Integrity</span>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <!-- EXPERT 2 -->
-            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
+            <a href="expertdetails.html" class="group w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
                 <div class="w-full h-[200px] bg-[#EEF3F8] overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300" alt="Expert Profile Portrait" class="w-full h-full object-cover object-top">
                 </div>
+                <div class="h-[4px] w-full overflow-hidden"><div class="h-full w-0 group-hover:w-full transition-all duration-500" style="background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div></div>
                 <div class="p-4 flex flex-col gap-1 flex-grow justify-between">
                     <div>
                         <h4 class="font-['Newsreader'] font-extrabold text-[15px] leading-none text-[#0F172A] mb-1">
@@ -649,21 +642,18 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                         </p>
                     </div>
                     <div class="flex gap-1.5 mt-1">
-                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">
-                            Policy Design
-                        </span>
-                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">
-                            Reform
-                        </span>
+                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">Policy Design</span>
+                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">Reform</span>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <!-- EXPERT 3 -->
-            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
+            <a href="expertdetails.html" class="group w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
                 <div class="w-full h-[200px] bg-[#EEF3F8] overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300" alt="Expert Profile Portrait" class="w-full h-full object-cover object-top">
                 </div>
+                <div class="h-[4px] w-full overflow-hidden"><div class="h-full w-0 group-hover:w-full transition-all duration-500" style="background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div></div>
                 <div class="p-4 flex flex-col gap-1 flex-grow justify-between">
                     <div>
                         <h4 class="font-['Newsreader'] font-extrabold text-[15px] leading-none text-[#0F172A] mb-1">
@@ -674,21 +664,18 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                         </p>
                     </div>
                     <div class="flex gap-1.5 mt-1">
-                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">
-                            Service Delivery
-                        </span>
-                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">
-                            Digital
-                        </span>
+                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">Service Delivery</span>
+                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">Digital</span>
                     </div>
                 </div>
-            </div>
+            </a>
 
             <!-- EXPERT 4 -->
-            <div class="w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
+            <a href="expertdetails.html" class="group w-full border border-[#E4EAF0] rounded-[14px] overflow-hidden bg-white hover:shadow-md transition-all flex flex-col text-left">
                 <div class="w-full h-[200px] bg-[#EEF3F8] overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300" alt="Expert Profile Portrait" class="w-full h-full object-cover object-top">
                 </div>
+                <div class="h-[4px] w-full overflow-hidden"><div class="h-full w-0 group-hover:w-full transition-all duration-500" style="background:linear-gradient(90deg,#003054 0%,#18909C 100%);"></div></div>
                 <div class="p-4 flex flex-col gap-1 flex-grow justify-between">
                     <div>
                         <h4 class="font-['Newsreader'] font-extrabold text-[15px] leading-none text-[#0F172A] mb-1">
@@ -699,15 +686,11 @@ document.getElementById("mobile-menu-btn")?.addEventListener("click",function(){
                         </p>
                     </div>
                     <div class="flex gap-1.5 mt-1">
-                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">
-                            Research
-                        </span>
-                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">
-                            PMI
-                        </span>
+                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">Research</span>
+                        <span class="bg-[#E8F6F7] border border-[rgba(14,96,107,0.2)] text-[#0E606B] text-[9px] font-semibold pt-[2px] pr-[9px] pb-[2px] pl-[9px] rounded-full">PMI</span>
                     </div>
                 </div>
-            </div>
+            </a>
 
         </div>
     </div>
